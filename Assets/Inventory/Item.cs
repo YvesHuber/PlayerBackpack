@@ -25,5 +25,4 @@ public class Item : MonoBehaviour
         public double Defense;
         public double Attack;
         public Type Equiptype;
-
 }
