@@ -16,7 +16,7 @@ public class ItemHolder : MonoBehaviour
         _script = s;
         amount = s.StackSize;
         }
-        if (_script != null && amount != null){
+        if (_script != null){
         mage = img.GetComponent<Image>();
         mage.sprite = _script.UiIcon;
         string am = amount.ToString();

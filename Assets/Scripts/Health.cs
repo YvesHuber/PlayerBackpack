@@ -7,9 +7,6 @@ public class Health : MonoBehaviour
 {
     private Stats stats;
     public Slider healthBar;
-    private float HP;
-    private float maxHP;
-    private float hpregen;
 
 
 
@@ -17,22 +14,20 @@ public class Health : MonoBehaviour
     void Start()
     {
         stats = GetComponent<Stats>();
-        maxHP = stats.maxHP;
-        hpregen = stats.hpregen;
-        HP = stats.hp;
-        healthBar.maxValue = maxHP;
-        healthBar.value = HP;
+        
+        healthBar.value = stats.hp;
     }
 
     // Update is called once per frame
     void Update()
     {
-        HP += 0.1f * Time.deltaTime;
-        healthBar.value = HP;
-        if (HP >= maxHP)
+        stats.hp += 0.1f * Time.deltaTime;
+        healthBar.value = stats.hp;
+        if (stats.hp >= stats.maxHP)
         {
-            HP = maxHP;
+            stats.hp =stats.maxHP;
         }
+        healthBar.maxValue = stats.maxHP;
 
     }
 }
