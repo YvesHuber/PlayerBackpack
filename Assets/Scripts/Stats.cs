@@ -43,6 +43,7 @@ public class Stats : MonoBehaviour
 
 
     void Update() {
+        /*
         Updatecheck(CurrentHead ,Head , Headitem);
         Updatecheck(CurrentChest ,Chest , Chestitem);
         Updatecheck(CurrentPants ,Pants , Pantsitem);
@@ -51,6 +52,7 @@ public class Stats : MonoBehaviour
         Updatecheck(CurrentSecondaryarm ,Secondaryarm , Secondaryarmitem);
         Updatecheck(CurrentCape ,Cape , Capeitem);
         Updatecheck(CurrentAmulet, Amulet, Amuletitem);
+        */
     }
 
     void Addstats(Item l){
