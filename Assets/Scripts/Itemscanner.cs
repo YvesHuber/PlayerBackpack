@@ -39,6 +39,7 @@ public class Itemscanner : MonoBehaviour
                 {
                     _inv = canvasObject.GetComponent<Inventory>();
                     _inv.AddValue(_script);
+                    Object.Destroy(thePlayer);
                 }
             }
         }
