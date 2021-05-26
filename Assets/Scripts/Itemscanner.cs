@@ -6,27 +6,27 @@ using TMPro;
 
 public class Itemscanner : MonoBehaviour
 {
-    public GameObject thePlayer = null;
+    private GameObject Object = null;
     public Item _script;
     public TextMeshProUGUI textMesh;
     // Start is called before the first frame update
     public GameObject canvasObject;
-    public Inventory _inv;
+    private Inventory _inv;
     private bool active = false;
     void Update()
     {
         RaycastHit hit;
         // Does the ray intersect any objects excluding the player layer
         Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 3, Color.yellow);
-        thePlayer = null;
+        Object = null;
         _script = null;
         textMesh.text = null;
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 3))
         {
             if (hit.collider.CompareTag("Item"))
             {
-                thePlayer = hit.transform.gameObject;
-                _script = thePlayer.GetComponent<Item>();
+                Object = hit.transform.gameObject;
+                _script = Object.GetComponent<Item>();
                 textMesh.text = _script.DisplayTitle;
                 int rarval = (int)_script.rarity;
                 if (rarval == 0) { textMesh.color = new Color(255, 255, 255, 255); }

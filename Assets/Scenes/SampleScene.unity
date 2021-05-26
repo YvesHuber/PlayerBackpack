@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 1481.7754, g: 1835.8867, b: 2430.4492, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -861,7 +861,7 @@ GameObject:
   - component: {fileID: 405134445}
   m_Layer: 0
   m_Name: Sphere
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -879,11 +879,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 2
-  Itemtype: 2
+  Itemtype: 0
   rarity: 2
   UiIcon: {fileID: 0}
-  DisplayTitle: Helmet of Development
-  Description: Just A Test lol
+  DisplayTitle: SUS
+  Description: AMONG US SUS??????!?!?
   Worth: 1000
   StackSize: 1
   MaxStackSize: 1
@@ -897,7 +897,7 @@ MonoBehaviour:
   Defense: 20
   Attack: 20
   Hp: 40
-  Speed: 0.06
+  Speed: 200
   Equiptype: 6
 --- !u!54 &405134446
 Rigidbody:
@@ -2411,11 +2411,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c22ba19a8a74f24dbe626a760deb7a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thePlayer: {fileID: 0}
   _script: {fileID: 0}
   textMesh: {fileID: 438768373}
   canvasObject: {fileID: 779495306}
-  _inv: {fileID: 0}
 --- !u!1 &912719566
 GameObject:
   m_ObjectHideFlags: 0
