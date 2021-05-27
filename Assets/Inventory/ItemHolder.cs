@@ -6,16 +6,20 @@ using TMPro;
 public class ItemHolder : MonoBehaviour
 {
     public Item _script;
-    public int amount;
+    public int amount = 0;
     public GameObject img;
     Image image;
     public TextMeshProUGUI counter;
     public void AddItem(Item s)
     {
-        Debug.Log(s + "Bevor");
         _script = s;
-        Debug.Log(_script + " After " + s);
-        amount = s.StackSize;
+        if (amount > 1 ){
+        amount += s.StackSize - 1;
+        }
+        else {
+            amount += s.StackSize;
+        }
+        Debug.Log("Added an Item");
         if (_script != null)
         {
             image = img.GetComponent<Image>();
@@ -23,8 +27,10 @@ public class ItemHolder : MonoBehaviour
             var tempColor = image.color;
             tempColor.a = 1f;
             image.color = tempColor;
+            if(amount > 1) {
             string am = amount.ToString();
             counter.text = am;
+            }
         }
     }
 }

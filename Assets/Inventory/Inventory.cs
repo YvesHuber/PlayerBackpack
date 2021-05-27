@@ -14,35 +14,38 @@ public class Inventory : MonoBehaviour
         foreach (GameObject currentSlot in Slots)
         {
             Slot = currentSlot.GetComponent<ItemHolder>();
-            try {
-            Debug.Log("New Item " + s.DisplayTitle + " current Slot Item " + Slot._script.DisplayTitle);
-            if (s.DisplayTitle == Slot._script.DisplayTitle)
+            try
             {
-                if (Slot.amount + s.StackSize <= Slot._script.MaxStackSize)
+                Debug.Log("New Item " + s.DisplayTitle + " current Slot Item " + Slot._script.DisplayTitle);
+                if (s.DisplayTitle == Slot._script.DisplayTitle)
                 {
-                    Slot.amount += s.StackSize;
-                    Slot.AddItem(s);
-                    break;
+                    if (Slot.amount + s.StackSize <= Slot._script.MaxStackSize)
+                    {
+                        Slot.amount += s.StackSize;
+                        Slot.AddItem(s);
+                        return;
+                    }
                 }
             }
+            catch (Exception e)
+            {
+                print("Slot empty");
             }
-            catch (Exception e) {
-            print("error");
-            }  
 
         }
-        foreach (GameObject currentSlot in Slots)
-        {
-            Slot = currentSlot.GetComponent<ItemHolder>();
-            if (Slot._script == null)
+            foreach (GameObject currentSlot in Slots)
             {
-                Debug.Log(s.DisplayTitle);
-                Slot.AddItem(s);
-                break;
+                Slot = currentSlot.GetComponent<ItemHolder>();
+                if (Slot._script == null)
+                {
+                    Debug.Log(s.DisplayTitle);
+                    Slot.AddItem(s);
+                    
+                    return;
+                }
             }
-        }
-        Slot = null;
-    
+            Slot = null;
+
     }
 
 }
