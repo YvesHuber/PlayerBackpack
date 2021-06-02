@@ -23,7 +23,7 @@ public class Item : MonoBehaviour
         public float Critdamage;
         public float Strength;
         public float Defense;
-        public float Attack;
+        public float Damage;
         public float Hp;
         public float Speed;
         public Type Equiptype;

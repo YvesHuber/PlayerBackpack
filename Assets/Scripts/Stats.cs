@@ -59,7 +59,7 @@ public class Stats : MonoBehaviour
         maxHP += l.Hp;
         stamina += l.Staminaajust;
         Speed += l.Speed;
-        Damage += l.Attack;
+        Damage += l.Damage;
         Strength += l.Strength;
         Defense += l.Defense;
         Critdamage += l.Critdamage;

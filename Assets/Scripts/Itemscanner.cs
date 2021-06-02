@@ -7,6 +7,7 @@ using TMPro;
 public class Itemscanner : MonoBehaviour
 {
     private GameObject Object = null;
+    public Item Player;
     public Item _script;
     public TextMeshProUGUI textMesh;
     // Start is called before the first frame update
@@ -23,6 +24,15 @@ public class Itemscanner : MonoBehaviour
         textMesh.text = null;
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 3))
         {
+            if (hit.collider.CompareTag("Enemy")){
+                Object = hit.transform.gameObject;
+                _script = Object.GetComponent<Item>();
+                textMesh.text = _script.DisplayTitle;
+                if (Input.GetMouseButtonDown(0)){
+                    float Damage = Player.Damage * Player.Strength;
+                    //DMG
+                }
+            }
             if (hit.collider.CompareTag("Item"))
             {
                 Object = hit.transform.gameObject;
@@ -39,7 +49,7 @@ public class Itemscanner : MonoBehaviour
                 {
                     _inv = canvasObject.GetComponent<Inventory>();
                     _inv.AddValue(_script);
-                    Object.Destroy(thePlayer);
+                    GameObject.Destroy(Object);
                 }
             }
         }
