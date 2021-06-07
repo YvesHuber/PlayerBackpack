@@ -14,8 +14,17 @@ Consumable to increase stats temporary <br>
 Equipable to increase stats while worn<br>
 
 ### Enemy
+An Enemy is of course an Enemy <br>
+Every Enemy has a Array of Items it can Drop <br>
+Each Array has a Defined Rarity <br>
 
+### Craftingstations
+A Crafting Station is Able to craft recepies that have the same Craftingstation<br>
 
-Craftingstations
-Craftingrecepies
-Breakables (Trees, Stones etc.)
+### Craftingrecepies
+A Crafting Recepie is a Recepie with the following Data <br>
+Crafting Station as String and Items as Array <br>
+if both is true you are able to craft the definded Item <br>
+
+### Breakables
+A Breakable is a Object that when hit with the right Weapon will Drop Items
