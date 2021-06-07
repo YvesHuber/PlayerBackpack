@@ -4,28 +4,20 @@ using UnityEngine;
 
 public class Stats : MonoBehaviour
 {
-    public ItemHolder CurrentHead;
     private ItemHolder Head;
     private Item Headitem;
-    public ItemHolder CurrentChest;
     private ItemHolder Chest;
     private Item Chestitem;
-    public ItemHolder CurrentPants;
     private ItemHolder Pants;
     private Item Pantsitem;
-    public ItemHolder CurrentShoes;
     private ItemHolder Shoes;
     private Item Shoesitem;
-    public ItemHolder CurrentPrimaryarm;
     private ItemHolder Primaryarm;
     private Item Primaryarmitem;
-    public ItemHolder CurrentSecondaryarm;
     private ItemHolder Secondaryarm;
     private Item Secondaryarmitem;
-    public ItemHolder CurrentCape;
     private ItemHolder Cape;
     private Item Capeitem;
-    public ItemHolder CurrentAmulet;
     private ItemHolder Amulet;
     private Item Amuletitem;
     public float maxHP;

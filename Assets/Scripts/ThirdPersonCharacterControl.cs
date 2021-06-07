@@ -7,6 +7,7 @@ public class ThirdPersonCharacterControl : MonoBehaviour
 {
     private Stats stats;
     public Slider staminaBar;
+    public Slider healthBar;
     private bool firstButtonPressed;
     private bool reset;
     private float timeOfFirstButton;
@@ -42,6 +43,18 @@ public class ThirdPersonCharacterControl : MonoBehaviour
         staminaBar.value = stats.stamina;
         jumpact();
         PlayerMovement();
+        Sethealthbar();
+    }
+
+    void Sethealthbar(){
+        stats.hp += 0.1f * Time.deltaTime;
+        healthBar.value = stats.hp;
+        if (stats.hp >= stats.maxHP)
+        {
+            stats.hp =stats.maxHP;
+        }
+        healthBar.maxValue = stats.maxHP;
+
     }
     void OnCollisionEnter(Collision collision)
     {
