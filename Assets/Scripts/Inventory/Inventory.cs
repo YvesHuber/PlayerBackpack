@@ -16,10 +16,10 @@ public class Inventory : MonoBehaviour
             Slot = currentSlot.GetComponent<ItemHolder>();
             try
             {
-                Debug.Log("New Item " + s.DisplayTitle + " current Slot Item " + Slot._script.DisplayTitle);
-                if (s.DisplayTitle == Slot._script.DisplayTitle)
+                Debug.Log("New Item " + s.DisplayTitle + " current Slot Item " + Slot.value.DisplayTitle);
+                if (s.DisplayTitle == Slot.value.DisplayTitle)
                 {
-                    if (Slot.amount + s.StackSize <= Slot._script.MaxStackSize)
+                    if (Slot.amount + s.StackSize <= Slot.value.MaxStackSize)
                     {
                         Slot.amount += s.StackSize;
                         Slot.AddItem(s);
@@ -36,7 +36,7 @@ public class Inventory : MonoBehaviour
             foreach (GameObject currentSlot in Slots)
             {
                 Slot = currentSlot.GetComponent<ItemHolder>();
-                if (Slot._script == null)
+                if (Slot.value == null)
                 {
                     Debug.Log(s.DisplayTitle);
                     Slot.AddItem(s);

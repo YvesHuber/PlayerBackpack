@@ -62,7 +62,7 @@ public class Stats : MonoBehaviour
     void Updatecheck(ItemHolder currentslot, ItemHolder slot, Itemvalue slotitem){
         if (currentslot != slot || slot == null) {
             slot = currentslot;
-            slotitem = slot._script;
+            slotitem = slot.value;
             Addstats(slotitem);
         }
     }

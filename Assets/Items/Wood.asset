@@ -18,9 +18,9 @@ MonoBehaviour:
   UiIcon: {fileID: 21300000, guid: ff3d926ded2a4284aa3f318ce2c7389b, type: 3}
   DisplayTitle: Wood
   Description: Wood-
-  Worth: 0
-  StackSize: 0
-  MaxStackSize: 0
+  Worth: 5
+  StackSize: 1
+  MaxStackSize: 2
   Healthajust: 0
   Staminaajust: 0
   Manaajust: 0
