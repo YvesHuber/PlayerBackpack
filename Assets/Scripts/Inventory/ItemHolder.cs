@@ -12,21 +12,38 @@ public class ItemHolder : MonoBehaviour , IBeginDragHandler, IDragHandler, IEndD
     public GameObject img;
     Image image;
     public TextMeshProUGUI counter;
+    public  Image itemBeingDragged;
+    Vector3 startPosition;
 
 
     public void OnBeginDrag(PointerEventData eventData){
         if (filled == true) {
         Debug.Log("Filled");
+        itemBeingDragged = image;
+        startPosition = transform.position;
         }
         else {
             Debug.Log("Not filled");
+            return;
         }
 
     }
     public void OnDrag(PointerEventData eventData){
-        
+        if (filled == true) {
+        transform.position = Input.mousePosition;
+        }
     }
     public void OnEndDrag(PointerEventData eventData){
+        //check for collision
+        if (filled == true) {
+        itemBeingDragged = null;
+        if(GetComponent<Collider2D>().bounds.Contains(transform.position))
+        {
+            print("point is inside collider");
+        }
+        transform.position = startPosition;
+
+        }
 
     }
     public void AddItem(Itemvalue s)
