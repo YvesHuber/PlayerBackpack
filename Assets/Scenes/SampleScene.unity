@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 1480.2295, g: 1833.8652, b: 2428.0332, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -247,7 +247,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7068922242757338226, guid: b9aab329bf0ca234d8bbc342d4fab131, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.7772717
+      value: 7.76
       objectReference: {fileID: 0}
     - target: {fileID: 7068922242757338226, guid: b9aab329bf0ca234d8bbc342d4fab131, type: 3}
       propertyPath: m_LocalRotation.w
@@ -316,6 +316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ce8ab5f5f0a06043ae22d02724efe6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  value: {fileID: 11400000, guid: b767f3acf55c041959eac35ab4406382, type: 2}
   id: 2
   Itemtype: 0
   rarity: 2
@@ -328,7 +329,7 @@ MonoBehaviour:
   Healthajust: 0
   Staminaajust: 0
   Manaajust: 0
-  Collectionspeed: 0
+  Miningspeed: 0
   Critchance: 20
   Critdamage: 1000
   Strength: 20
@@ -804,6 +805,45 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 3
+--- !u!1 &1903549643 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7068922242757338121, guid: b9aab329bf0ca234d8bbc342d4fab131, type: 3}
+  m_PrefabInstance: {fileID: 266272471}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1903549644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903549643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ce8ab5f5f0a06043ae22d02724efe6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value: {fileID: 11400000, guid: 5892fce6ef9f647438aeda519de802d5, type: 2}
+  id: 0
+  Itemtype: 0
+  rarity: 0
+  UiIcon: {fileID: 0}
+  DisplayTitle: 
+  Description: 
+  Worth: 0
+  StackSize: 0
+  MaxStackSize: 0
+  Healthajust: 0
+  Staminaajust: 0
+  Manaajust: 0
+  Miningspeed: 0
+  Critchance: 0
+  Critdamage: 0
+  Strength: 0
+  Defense: 0
+  Damage: 0
+  Hp: 0
+  Speed: 0
+  Equiptype: 0
 --- !u!1001 &7966413773020463653
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -866,7 +906,7 @@ PrefabInstance:
     - target: {fileID: 7966413773360724573, guid: 9d1c93ca39c61ff46b43d6adea283127, type: 3}
       propertyPath: _script
       value: 
-      objectReference: {fileID: 405134445}
+      objectReference: {fileID: 0}
     - target: {fileID: 7966413773427301400, guid: 9d1c93ca39c61ff46b43d6adea283127, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

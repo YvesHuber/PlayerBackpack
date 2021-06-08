@@ -47,7 +47,7 @@ public class Stats : MonoBehaviour
         */
     }
 
-    void Addstats(Item l){
+    void Addstats(Itemvalue l){
         maxHP += l.Hp;
         stamina += l.Staminaajust;
         Speed += l.Speed;
@@ -59,7 +59,7 @@ public class Stats : MonoBehaviour
 
     }
 
-    void Updatecheck(ItemHolder currentslot, ItemHolder slot, Item slotitem){
+    void Updatecheck(ItemHolder currentslot, ItemHolder slot, Itemvalue slotitem){
         if (currentslot != slot || slot == null) {
             slot = currentslot;
             slotitem = slot._script;

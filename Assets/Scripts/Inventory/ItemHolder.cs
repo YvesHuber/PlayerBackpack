@@ -5,12 +5,12 @@ using UnityEngine.UI;
 using TMPro;
 public class ItemHolder : MonoBehaviour
 {
-    public Item _script;
+    public Itemvalue _script;
     public int amount = 0;
     public GameObject img;
     Image image;
     public TextMeshProUGUI counter;
-    public void AddItem(Item s)
+    public void AddItem(Itemvalue s)
     {
         _script = s;
         if (amount > 1 ){

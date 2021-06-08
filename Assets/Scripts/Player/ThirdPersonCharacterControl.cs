@@ -12,10 +12,11 @@ public class ThirdPersonCharacterControl : MonoBehaviour
     private bool reset;
     private float timeOfFirstButton;
     private float staminareg;
-    float Sprint;
+    public float Sneak;
+    public float Sprint;
+    public float Tempo;
     public Vector3 jump;
     public float jumpForce = 2.0f;
-    public float Sneak;
     public bool Exhausted = false;
     public bool Walking = false;
     public bool Sprinting = false;
@@ -29,11 +30,8 @@ public class ThirdPersonCharacterControl : MonoBehaviour
     {
         stats = GetComponent<Stats>();
         staminareg = stats.sthregen;
-
-
         rb = GetComponent<Rigidbody>();
         jump = new Vector3(0.0f, 2.0f, 0.0f);
-        Sprint = stats.Speed * 2;
     }
     void Update()
     {
@@ -66,58 +64,42 @@ public class ThirdPersonCharacterControl : MonoBehaviour
 
     void PlayerMovement()
     {
+        Tempo = stats.Speed;
+        Walking = true;
         Sprinting = false;
+        Sneaking = false;
+        stats.stamina = stats.stamina + stats.sthregen * Time.deltaTime;
         //Sneak
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            stats.Speed = Sneak;
+            Tempo = Sneak;
             Sneaking = true;
         }
 
         //Sprint
-        if (Input.GetKeyDown(KeyCode.LeftControl))
+        if (Input.GetKey(KeyCode.LeftControl) && Exhausted == false)
         {
-                Debug.Log("Sprint");
-                if (Exhausted == false && stats.stamina > 0)
-                {
-                    stats.Speed = Sprint;
-                    stats.stamina = stats.stamina - 4 * Time.deltaTime;
-                    Sprinting = true;
-                    if (stats.stamina < 0)
-                    {
-                        Exhausted = true;
-                    }
-                }
-            
+            //Stamina Minus
+            Tempo = Sprint;
+            Sprinting = true;
         }
-
-            stats.stamina = stats.stamina + stats.sthregen * Time.deltaTime;
+        if (Sprinting == true) {
+            stats.stamina = stats.stamina - 4 * Time.deltaTime;
+            }
+        if (stats.stamina < 0)
+            {
+                Exhausted = true;
+            }
             if (stats.stamina > stats.maxStamina)
             {
                 stats.stamina = stats.maxStamina;
             }
-            if (stats.stamina > stats.maxStamina / 2)
+            if (stats.stamina >= stats.maxStamina / 2)
             {
                 Exhausted = false;
             }
-            float hor = Input.GetAxis("Horizontal");
-            float ver = Input.GetAxis("Vertical");
-            Vector3 playerMovement = new Vector3(hor, 0f, ver) * stats.Speed * Time.deltaTime;
-            transform.Translate(playerMovement, Space.Self);
-            stats.Speed = stats.Speed;
-            Walking = true;
-            if (Sprinting == true || Sneaking == true)
-            {
-                Walking = false;
-            }
-            if (Walking == true)
-            {
-                Sprinting = false;
-                Sneaking = false;
-            }
             if (Exhausted == true)
             {
-
                 staminaBar.transform.Find("Fill Area").Find("Fill").GetComponent<Image>().color = oragne;
             }
             else
@@ -125,7 +107,10 @@ public class ThirdPersonCharacterControl : MonoBehaviour
                 staminaBar.transform.Find("Fill Area").Find("Fill").GetComponent<Image>().color = green;
             }
             staminaBar.value = stats.stamina;
-
+            float hor = Input.GetAxis("Horizontal");
+            float ver = Input.GetAxis("Vertical");
+            Vector3 playerMovement = new Vector3(hor, 0f, ver) * Tempo * Time.deltaTime;
+            transform.Translate(playerMovement, Space.Self);
         }
         void jumpact()
         {

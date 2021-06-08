@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 7068922242757338124}
   - component: {fileID: 7068922242757338127}
   - component: {fileID: 7068922242757338126}
-  - component: {fileID: 7068922242757338227}
   m_Layer: 0
   m_Name: Wood
   m_TagString: Item
@@ -114,39 +113,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
---- !u!114 &7068922242757338227
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7068922242757338121}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ce8ab5f5f0a06043ae22d02724efe6b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: 1
-  Itemtype: 0
-  rarity: 0
-  UiIcon: {fileID: 21300000, guid: ff3d926ded2a4284aa3f318ce2c7389b, type: 3}
-  DisplayTitle: Wood
-  Description: A Pice of Wood
-  Worth: 0
-  StackSize: 1
-  MaxStackSize: 16
-  Healthajust: 0
-  Staminaajust: 0
-  Manaajust: 0
-  Collectionspeed: 0
-  Critchance: 0
-  Critdamage: 0
-  Strength: 0
-  Defense: 0
-  Damage: 0
-  Hp: 0
-  Speed: 0
-  Equiptype: 0
 --- !u!1001 &7068922243284334626
 PrefabInstance:
   m_ObjectHideFlags: 0

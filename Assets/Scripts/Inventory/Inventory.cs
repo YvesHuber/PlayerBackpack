@@ -9,7 +9,7 @@ public class Inventory : MonoBehaviour
     private ItemHolder Slot;
 
     // Check for slot then Add Slot
-    public void AddValue(Item s)
+    public void AddValue(Itemvalue s)
     {
         foreach (GameObject currentSlot in Slots)
         {

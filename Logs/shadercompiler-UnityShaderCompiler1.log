@@ -1,3 +1,446 @@
 Base path: '/Applications/Unity/Hub/Editor/2020.3.9f1/Unity.app/Contents', plugins path '/Applications/Unity/Hub/Editor/2020.3.9f1/Unity.app/Contents/PlaybackEngines'
 Cmd: initializeCompiler
 
+Cmd: compileSnippet
+  insize=1647 file=Assets/DefaultResourcesExtra/Standard pass=FORWARD cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=5 rsLen=0 pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR UNITY_PASS_FORWARDBASE uKW=DIRECTIONAL LIGHTPROBE_SH dKW=FOG_LINEAR FOG_EXP FOG_EXP2 INSTANCING_ON _NORMALMAP _ALPHATEST_ON _ALPHABLEND_ON _ALPHAPREMULTIPLY_ON _METALLICGLOSSMAP _PARALLAXMAP SHADOWS_SHADOWMASK DYNAMICLIGHTMAP_ON LIGHTMAP_ON LIGHTMAP_SHADOW_MIXING DIRLIGHTMAP_COMBINED SHADOWS_SCREEN VERTEXLIGHT_ON UNITY_NO_DXT5nm UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_NO_FULL_STANDARD_SHADER UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_COLORSPACE_GAMMA UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_VIRTUAL_TEXTURING UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_ASTC_NORMALMAP_ENCODING SHADER_API_GLES30 flags=0 lang=0 type=Vertex platform=metal reqs=227 mask=6 start=68 ok=1 outsize=3922
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Cmd: initializeCompiler
+
+Cmd: compileComputeKernel
+  insize=10754 file=/Users/yveshuber/Desktop/Abschlussarbeit/Evelution/Library/PackageCache/com.unity.render-pipelines.high-definition@10.5.0/Runtime/Lighting/LightLoop/Deferred.compute kernel=Deferred_Indirect_Fptl_Variant21 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=5 km=<SHADE_OPAQUE_ENTRY=Deferred_Indirect_Fptl_Variant21>,<USE_INDIRECT=1>,<VARIANT=21>,<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SCREEN_SPACE_SHADOWS_ON SHADOW_HIGH SHADER_STAGE_COMPUTE platform=metal flags=4096 ok=1 outsize=160037
+
+Cmd: compileComputeKernel
+  insize=10754 file=/Users/yveshuber/Desktop/Abschlussarbeit/Evelution/Library/PackageCache/com.unity.render-pipelines.high-definition@10.5.0/Runtime/Lighting/LightLoop/Deferred.compute kernel=Deferred_Indirect_Fptl_Variant20 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=5 km=<SHADE_OPAQUE_ENTRY=Deferred_Indirect_Fptl_Variant20>,<USE_INDIRECT=1>,<VARIANT=20>,<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SCREEN_SPACE_SHADOWS_ON SHADOW_HIGH SHADER_STAGE_COMPUTE platform=metal flags=4096 ok=1 outsize=110878
+
+Cmd: compileComputeKernel
+  insize=10754 file=/Users/yveshuber/Desktop/Abschlussarbeit/Evelution/Library/PackageCache/com.unity.render-pipelines.high-definition@10.5.0/Runtime/Lighting/LightLoop/Deferred.compute kernel=Deferred_Indirect_Fptl_Variant19 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=5 km=<SHADE_OPAQUE_ENTRY=Deferred_Indirect_Fptl_Variant19>,<USE_INDIRECT=1>,<VARIANT=19>,<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SCREEN_SPACE_SHADOWS_OFF SHADOWS_SHADOWMASK SHADOW_HIGH SHADER_STAGE_COMPUTE platform=metal flags=4096 ok=1 outsize=176098
+
+Cmd: compileComputeKernel
+  insize=10754 file=/Users/yveshuber/Desktop/Abschlussarbeit/Evelution/Library/PackageCache/com.unity.render-pipelines.high-definition@10.5.0/Runtime/Lighting/LightLoop/Deferred.compute kernel=Deferred_Indirect_Fptl_Variant19 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=5 km=<SHADE_OPAQUE_ENTRY=Deferred_Indirect_Fptl_Variant19>,<USE_INDIRECT=1>,<VARIANT=19>,<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SCREEN_SPACE_SHADOWS_ON SHADOW_HIGH SHADER_STAGE_COMPUTE platform=metal flags=4096 ok=1 outsize=173804
+
+Cmd: compileComputeKernel
+  insize=10754 file=/Users/yveshuber/Desktop/Abschlussarbeit/Evelution/Library/PackageCache/com.unity.render-pipelines.high-definition@10.5.0/Runtime/Lighting/LightLoop/Deferred.compute kernel=Deferred_Indirect_Fptl_Variant18 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=5 km=<SHADE_OPAQUE_ENTRY=Deferred_Indirect_Fptl_Variant18>,<USE_INDIRECT=1>,<VARIANT=18>,<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SCREEN_SPACE_SHADOWS_ON SHADOWS_SHADOWMASK SHADOW_LOW SHADER_STAGE_COMPUTE platform=metal flags=4096 ok=1 outsize=122869
+
+Cmd: compileComputeKernel
+  insize=10754 file=/Users/yveshuber/Desktop/Abschlussarbeit/Evelution/Library/PackageCache/com.unity.render-pipelines.high-definition@10.5.0/Runtime/Lighting/LightLoop/Deferred.compute kernel=Deferred_Indirect_Fptl_Variant18 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=5 km=<SHADE_OPAQUE_ENTRY=Deferred_Indirect_Fptl_Variant18>,<USE_INDIRECT=1>,<VARIANT=18>,<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SCREEN_SPACE_SHADOWS_ON SHADOWS_SHADOWMASK SHADOW_HIGH SHADER_STAGE_COMPUTE platform=metal flags=4096 ok=1 outsize=137808
+
+Cmd: compileComputeKernel
+  insize=10754 file=/Users/yveshuber/Desktop/Abschlussarbeit/Evelution/Library/PackageCache/com.unity.render-pipelines.high-definition@10.5.0/Runtime/Lighting/LightLoop/Deferred.compute kernel=Deferred_Indirect_Fptl_Variant17 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=5 km=<SHADE_OPAQUE_ENTRY=Deferred_Indirect_Fptl_Variant17>,<USE_INDIRECT=1>,<VARIANT=17>,<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SCREEN_SPACE_SHADOWS_OFF SHADOW_LOW SHADER_STAGE_COMPUTE platform=metal flags=4096 ok=1 outsize=203100
+
+Cmd: compileComputeKernel
+  insize=10754 file=/Users/yveshuber/Desktop/Abschlussarbeit/Evelution/Library/PackageCache/com.unity.render-pipelines.high-definition@10.5.0/Runtime/Lighting/LightLoop/Deferred.compute kernel=Deferred_Indirect_Fptl_Variant17 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=5 km=<SHADE_OPAQUE_ENTRY=Deferred_Indirect_Fptl_Variant17>,<USE_INDIRECT=1>,<VARIANT=17>,<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SCREEN_SPACE_SHADOWS_ON SHADOWS_SHADOWMASK SHADOW_MEDIUM SHADER_STAGE_COMPUTE platform=metal flags=4096 ok=1 outsize=223709
+
+Cmd: compileComputeKernel
+  insize=10754 file=/Users/yveshuber/Desktop/Abschlussarbeit/Evelution/Library/PackageCache/com.unity.render-pipelines.high-definition@10.5.0/Runtime/Lighting/LightLoop/Deferred.compute kernel=Deferred_Indirect_Fptl_Variant15 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=5 km=<SHADE_OPAQUE_ENTRY=Deferred_Indirect_Fptl_Variant15>,<USE_INDIRECT=1>,<VARIANT=15>,<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SCREEN_SPACE_SHADOWS_OFF SHADOWS_SHADOWMASK SHADOW_HIGH SHADER_STAGE_COMPUTE platform=metal flags=4096 ok=1 outsize=108763
+
+Cmd: compileComputeKernel
+  insize=10754 file=/Users/yveshuber/Desktop/Abschlussarbeit/Evelution/Library/PackageCache/com.unity.render-pipelines.high-definition@10.5.0/Runtime/Lighting/LightLoop/Deferred.compute kernel=Deferred_Indirect_Fptl_Variant15 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=5 km=<SHADE_OPAQUE_ENTRY=Deferred_Indirect_Fptl_Variant15>,<USE_INDIRECT=1>,<VARIANT=15>,<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SCREEN_SPACE_SHADOWS_ON SHADOW_HIGH SHADER_STAGE_COMPUTE platform=metal flags=4096 ok=1 outsize=105885
+
+Cmd: compileComputeKernel
+  insize=10754 file=/Users/yveshuber/Desktop/Abschlussarbeit/Evelution/Library/PackageCache/com.unity.render-pipelines.high-definition@10.5.0/Runtime/Lighting/LightLoop/Deferred.compute kernel=Deferred_Indirect_Fptl_Variant14 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=5 km=<SHADE_OPAQUE_ENTRY=Deferred_Indirect_Fptl_Variant14>,<USE_INDIRECT=1>,<VARIANT=14>,<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SCREEN_SPACE_SHADOWS_ON SHADOW_MEDIUM SHADER_STAGE_COMPUTE platform=metal flags=4096 ok=1 outsize=147414
+
+Cmd: compileComputeKernel
+  insize=10754 file=/Users/yveshuber/Desktop/Abschlussarbeit/Evelution/Library/PackageCache/com.unity.render-pipelines.high-definition@10.5.0/Runtime/Lighting/LightLoop/Deferred.compute kernel=Deferred_Indirect_Fptl_Variant14 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=5 km=<SHADE_OPAQUE_ENTRY=Deferred_Indirect_Fptl_Variant14>,<USE_INDIRECT=1>,<VARIANT=14>,<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SCREEN_SPACE_SHADOWS_OFF SHADOW_LOW SHADER_STAGE_COMPUTE platform=metal flags=4096 ok=1 outsize=140653
+
+Cmd: compileComputeKernel
+  insize=10754 file=/Users/yveshuber/Desktop/Abschlussarbeit/Evelution/Library/PackageCache/com.unity.render-pipelines.high-definition@10.5.0/Runtime/Lighting/LightLoop/Deferred.compute kernel=Deferred_Indirect_Fptl_Variant13 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=5 km=<SHADE_OPAQUE_ENTRY=Deferred_Indirect_Fptl_Variant13>,<USE_INDIRECT=1>,<VARIANT=13>,<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SCREEN_SPACE_SHADOWS_OFF SHADOWS_SHADOWMASK SHADOW_MEDIUM SHADER_STAGE_COMPUTE platform=metal flags=4096 ok=1 outsize=127611
+
+Cmd: compileComputeKernel
+  insize=10754 file=/Users/yveshuber/Desktop/Abschlussarbeit/Evelution/Library/PackageCache/com.unity.render-pipelines.high-definition@10.5.0/Runtime/Lighting/LightLoop/Deferred.compute kernel=Deferred_Indirect_Fptl_Variant13 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=5 km=<SHADE_OPAQUE_ENTRY=Deferred_Indirect_Fptl_Variant13>,<USE_INDIRECT=1>,<VARIANT=13>,<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SCREEN_SPACE_SHADOWS_ON SHADOW_MEDIUM SHADER_STAGE_COMPUTE platform=metal flags=4096 ok=1 outsize=126034
+
+Cmd: compileComputeKernel
+  insize=10754 file=/Users/yveshuber/Desktop/Abschlussarbeit/Evelution/Library/PackageCache/com.unity.render-pipelines.high-definition@10.5.0/Runtime/Lighting/LightLoop/Deferred.compute kernel=Deferred_Indirect_Fptl_Variant13 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=5 km=<SHADE_OPAQUE_ENTRY=Deferred_Indirect_Fptl_Variant13>,<USE_INDIRECT=1>,<VARIANT=13>,<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SCREEN_SPACE_SHADOWS_ON SHADOWS_SHADOWMASK SHADOW_MEDIUM SHADER_STAGE_COMPUTE platform=metal flags=4096 ok=1 outsize=131564
+
+Cmd: compileComputeKernel
+  insize=10754 file=/Users/yveshuber/Desktop/Abschlussarbeit/Evelution/Library/PackageCache/com.unity.render-pipelines.high-definition@10.5.0/Runtime/Lighting/LightLoop/Deferred.compute kernel=Deferred_Indirect_Fptl_Variant12 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=5 km=<SHADE_OPAQUE_ENTRY=Deferred_Indirect_Fptl_Variant12>,<USE_INDIRECT=1>,<VARIANT=12>,<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SCREEN_SPACE_SHADOWS_ON SHADOWS_SHADOWMASK SHADOW_LOW SHADER_STAGE_COMPUTE platform=metal flags=4096 ok=1 outsize=253236
+
+Cmd: compileComputeKernel
+  insize=10754 file=/Users/yveshuber/Desktop/Abschlussarbeit/Evelution/Library/PackageCache/com.unity.render-pipelines.high-definition@10.5.0/Runtime/Lighting/LightLoop/Deferred.compute kernel=Deferred_Indirect_Fptl_Variant12 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=5 km=<SHADE_OPAQUE_ENTRY=Deferred_Indirect_Fptl_Variant12>,<USE_INDIRECT=1>,<VARIANT=12>,<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SCREEN_SPACE_SHADOWS_ON SHADOWS_SHADOWMASK SHADOW_HIGH SHADER_STAGE_COMPUTE platform=metal flags=4096 ok=1 outsize=268509
+
+Cmd: compileComputeKernel
+  insize=10754 file=/Users/yveshuber/Desktop/Abschlussarbeit/Evelution/Library/PackageCache/com.unity.render-pipelines.high-definition@10.5.0/Runtime/Lighting/LightLoop/Deferred.compute kernel=Deferred_Indirect_Fptl_Variant11 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=5 km=<SHADE_OPAQUE_ENTRY=Deferred_Indirect_Fptl_Variant11>,<USE_INDIRECT=1>,<VARIANT=11>,<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SCREEN_SPACE_SHADOWS_ON SHADOW_HIGH SHADER_STAGE_COMPUTE platform=metal flags=4096 ok=1 outsize=173841
+
+Cmd: compileComputeKernel
+  insize=10754 file=/Users/yveshuber/Desktop/Abschlussarbeit/Evelution/Library/PackageCache/com.unity.render-pipelines.high-definition@10.5.0/Runtime/Lighting/LightLoop/Deferred.compute kernel=Deferred_Indirect_Fptl_Variant10 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=5 km=<SHADE_OPAQUE_ENTRY=Deferred_Indirect_Fptl_Variant10>,<USE_INDIRECT=1>,<VARIANT=10>,<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SCREEN_SPACE_SHADOWS_OFF SHADOWS_SHADOWMASK SHADOW_HIGH SHADER_STAGE_COMPUTE platform=metal flags=4096 ok=1 outsize=111367
+
+Cmd: compileComputeKernel
+  insize=10754 file=/Users/yveshuber/Desktop/Abschlussarbeit/Evelution/Library/PackageCache/com.unity.render-pipelines.high-definition@10.5.0/Runtime/Lighting/LightLoop/Deferred.compute kernel=Deferred_Indirect_Fptl_Variant9 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=5 km=<SHADE_OPAQUE_ENTRY=Deferred_Indirect_Fptl_Variant9>,<USE_INDIRECT=1>,<VARIANT=9>,<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SCREEN_SPACE_SHADOWS_ON SHADOW_LOW SHADER_STAGE_COMPUTE platform=metal flags=4096 ok=1 outsize=165227
+
+Cmd: compileComputeKernel
+  insize=10754 file=/Users/yveshuber/Desktop/Abschlussarbeit/Evelution/Library/PackageCache/com.unity.render-pipelines.high-definition@10.5.0/Runtime/Lighting/LightLoop/Deferred.compute kernel=Deferred_Indirect_Fptl_Variant9 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=5 km=<SHADE_OPAQUE_ENTRY=Deferred_Indirect_Fptl_Variant9>,<USE_INDIRECT=1>,<VARIANT=9>,<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SCREEN_SPACE_SHADOWS_ON SHADOW_HIGH SHADER_STAGE_COMPUTE platform=metal flags=4096 ok=1 outsize=174011
+
+Cmd: compileComputeKernel
+  insize=10754 file=/Users/yveshuber/Desktop/Abschlussarbeit/Evelution/Library/PackageCache/com.unity.render-pipelines.high-definition@10.5.0/Runtime/Lighting/LightLoop/Deferred.compute kernel=Deferred_Indirect_Fptl_Variant8 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=5 km=<SHADE_OPAQUE_ENTRY=Deferred_Indirect_Fptl_Variant8>,<USE_INDIRECT=1>,<VARIANT=8>,<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SCREEN_SPACE_SHADOWS_ON SHADOWS_SHADOWMASK SHADOW_MEDIUM SHADER_STAGE_COMPUTE platform=metal flags=4096 ok=1 outsize=151462
+
+Cmd: compileComputeKernel
+  insize=10754 file=/Users/yveshuber/Desktop/Abschlussarbeit/Evelution/Library/PackageCache/com.unity.render-pipelines.high-definition@10.5.0/Runtime/Lighting/LightLoop/Deferred.compute kernel=Deferred_Indirect_Fptl_Variant7 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=5 km=<SHADE_OPAQUE_ENTRY=Deferred_Indirect_Fptl_Variant7>,<USE_INDIRECT=1>,<VARIANT=7>,<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SCREEN_SPACE_SHADOWS_ON SHADOWS_SHADOWMASK SHADOW_LOW SHADER_STAGE_COMPUTE platform=metal flags=4096 ok=1 outsize=210274
+
+Cmd: compileComputeKernel
+  insize=10754 file=/Users/yveshuber/Desktop/Abschlussarbeit/Evelution/Library/PackageCache/com.unity.render-pipelines.high-definition@10.5.0/Runtime/Lighting/LightLoop/Deferred.compute kernel=Deferred_Indirect_Fptl_Variant6 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=5 km=<SHADE_OPAQUE_ENTRY=Deferred_Indirect_Fptl_Variant6>,<USE_INDIRECT=1>,<VARIANT=6>,<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SCREEN_SPACE_SHADOWS_ON SHADOW_MEDIUM SHADER_STAGE_COMPUTE platform=metal flags=4096 ok=1 outsize=143282
+
+Cmd: compileComputeKernel
+  insize=10754 file=/Users/yveshuber/Desktop/Abschlussarbeit/Evelution/Library/PackageCache/com.unity.render-pipelines.high-definition@10.5.0/Runtime/Lighting/LightLoop/Deferred.compute kernel=Deferred_Indirect_Fptl_Variant6 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=5 km=<SHADE_OPAQUE_ENTRY=Deferred_Indirect_Fptl_Variant6>,<USE_INDIRECT=1>,<VARIANT=6>,<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SCREEN_SPACE_SHADOWS_ON SHADOW_HIGH SHADER_STAGE_COMPUTE platform=metal flags=4096 ok=1 outsize=149146
+
+Cmd: compileComputeKernel
+  insize=10754 file=/Users/yveshuber/Desktop/Abschlussarbeit/Evelution/Library/PackageCache/com.unity.render-pipelines.high-definition@10.5.0/Runtime/Lighting/LightLoop/Deferred.compute kernel=Deferred_Indirect_Fptl_Variant5 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=5 km=<SHADE_OPAQUE_ENTRY=Deferred_Indirect_Fptl_Variant5>,<USE_INDIRECT=1>,<VARIANT=5>,<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SCREEN_SPACE_SHADOWS_ON SHADOW_MEDIUM SHADER_STAGE_COMPUTE platform=metal flags=4096 ok=1 outsize=96183
+
+Cmd: compileComputeKernel
+  insize=10754 file=/Users/yveshuber/Desktop/Abschlussarbeit/Evelution/Library/PackageCache/com.unity.render-pipelines.high-definition@10.5.0/Runtime/Lighting/LightLoop/Deferred.compute kernel=Deferred_Indirect_Fptl_Variant4 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=5 km=<SHADE_OPAQUE_ENTRY=Deferred_Indirect_Fptl_Variant4>,<USE_INDIRECT=1>,<VARIANT=4>,<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SCREEN_SPACE_SHADOWS_OFF SHADOWS_SHADOWMASK SHADOW_HIGH SHADER_STAGE_COMPUTE platform=metal flags=4096 ok=1 outsize=151535
+
+Cmd: compileComputeKernel
+  insize=10754 file=/Users/yveshuber/Desktop/Abschlussarbeit/Evelution/Library/PackageCache/com.unity.render-pipelines.high-definition@10.5.0/Runtime/Lighting/LightLoop/Deferred.compute kernel=Deferred_Indirect_Fptl_Variant4 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=5 km=<SHADE_OPAQUE_ENTRY=Deferred_Indirect_Fptl_Variant4>,<USE_INDIRECT=1>,<VARIANT=4>,<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SCREEN_SPACE_SHADOWS_ON SHADOW_HIGH SHADER_STAGE_COMPUTE platform=metal flags=4096 ok=1 outsize=148526
+
+Cmd: compileComputeKernel
+  insize=10754 file=/Users/yveshuber/Desktop/Abschlussarbeit/Evelution/Library/PackageCache/com.unity.render-pipelines.high-definition@10.5.0/Runtime/Lighting/LightLoop/Deferred.compute kernel=Deferred_Indirect_Fptl_Variant3 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=5 km=<SHADE_OPAQUE_ENTRY=Deferred_Indirect_Fptl_Variant3>,<USE_INDIRECT=1>,<VARIANT=3>,<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SCREEN_SPACE_SHADOWS_OFF SHADOWS_SHADOWMASK SHADOW_LOW SHADER_STAGE_COMPUTE platform=metal flags=4096 ok=1 outsize=114100
+
+Cmd: compileComputeKernel
+  insize=10754 file=/Users/yveshuber/Desktop/Abschlussarbeit/Evelution/Library/PackageCache/com.unity.render-pipelines.high-definition@10.5.0/Runtime/Lighting/LightLoop/Deferred.compute kernel=Deferred_Indirect_Fptl_Variant2 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=5 km=<SHADE_OPAQUE_ENTRY=Deferred_Indirect_Fptl_Variant2>,<USE_INDIRECT=1>,<VARIANT=2>,<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SCREEN_SPACE_SHADOWS_OFF SHADOWS_SHADOWMASK SHADOW_MEDIUM SHADER_STAGE_COMPUTE platform=metal flags=4096 ok=1 outsize=71395
+
+Cmd: compileComputeKernel
+  insize=10754 file=/Users/yveshuber/Desktop/Abschlussarbeit/Evelution/Library/PackageCache/com.unity.render-pipelines.high-definition@10.5.0/Runtime/Lighting/LightLoop/Deferred.compute kernel=Deferred_Indirect_Fptl_Variant2 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=5 km=<SHADE_OPAQUE_ENTRY=Deferred_Indirect_Fptl_Variant2>,<USE_INDIRECT=1>,<VARIANT=2>,<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SCREEN_SPACE_SHADOWS_ON SHADOWS_SHADOWMASK SHADOW_LOW SHADER_STAGE_COMPUTE platform=metal flags=4096 ok=1 outsize=71395
+
+Cmd: compileComputeKernel
+  insize=10754 file=/Users/yveshuber/Desktop/Abschlussarbeit/Evelution/Library/PackageCache/com.unity.render-pipelines.high-definition@10.5.0/Runtime/Lighting/LightLoop/Deferred.compute kernel=Deferred_Indirect_Fptl_Variant2 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=5 km=<SHADE_OPAQUE_ENTRY=Deferred_Indirect_Fptl_Variant2>,<USE_INDIRECT=1>,<VARIANT=2>,<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SCREEN_SPACE_SHADOWS_ON SHADOWS_SHADOWMASK SHADOW_HIGH SHADER_STAGE_COMPUTE platform=metal flags=4096 ok=1 outsize=71395
+
+Cmd: compileComputeKernel
+  insize=10754 file=/Users/yveshuber/Desktop/Abschlussarbeit/Evelution/Library/PackageCache/com.unity.render-pipelines.high-definition@10.5.0/Runtime/Lighting/LightLoop/Deferred.compute kernel=Deferred_Indirect_Fptl_Variant0 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=5 km=<SHADE_OPAQUE_ENTRY=Deferred_Indirect_Fptl_Variant0>,<USE_INDIRECT=1>,<VARIANT=0>,<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SCREEN_SPACE_SHADOWS_OFF SHADOWS_SHADOWMASK SHADOW_MEDIUM SHADER_STAGE_COMPUTE platform=metal flags=4096 ok=1 outsize=49607
+
+Cmd: compileComputeKernel
+  insize=10754 file=/Users/yveshuber/Desktop/Abschlussarbeit/Evelution/Library/PackageCache/com.unity.render-pipelines.high-definition@10.5.0/Runtime/Lighting/LightLoop/Deferred.compute kernel=Deferred_Indirect_Fptl_Variant0 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=5 km=<SHADE_OPAQUE_ENTRY=Deferred_Indirect_Fptl_Variant0>,<USE_INDIRECT=1>,<VARIANT=0>,<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SCREEN_SPACE_SHADOWS_OFF SHADOWS_SHADOWMASK SHADOW_LOW SHADER_STAGE_COMPUTE platform=metal flags=4096 ok=1 outsize=49607
+
+Cmd: compileComputeKernel
+  insize=10754 file=/Users/yveshuber/Desktop/Abschlussarbeit/Evelution/Library/PackageCache/com.unity.render-pipelines.high-definition@10.5.0/Runtime/Lighting/LightLoop/Deferred.compute kernel=Deferred_Direct_Fptl_DebugDisplay cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=5 km=<SHADE_OPAQUE_ENTRY=Deferred_Direct_Fptl_DebugDisplay>,<DEBUG_DISPLAY=1>,<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SCREEN_SPACE_SHADOWS_ON SHADOW_LOW SHADER_STAGE_COMPUTE platform=metal flags=4096 ok=1 outsize=353073
+
+Cmd: compileComputeKernel
+  insize=10754 file=/Users/yveshuber/Desktop/Abschlussarbeit/Evelution/Library/PackageCache/com.unity.render-pipelines.high-definition@10.5.0/Runtime/Lighting/LightLoop/Deferred.compute kernel=Deferred_Direct_Fptl_DebugDisplay cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=5 km=<SHADE_OPAQUE_ENTRY=Deferred_Direct_Fptl_DebugDisplay>,<DEBUG_DISPLAY=1>,<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SCREEN_SPACE_SHADOWS_OFF SHADOW_MEDIUM SHADER_STAGE_COMPUTE platform=metal flags=4096 ok=1 outsize=358126
+
+Cmd: compileComputeKernel
+  insize=10754 file=/Users/yveshuber/Desktop/Abschlussarbeit/Evelution/Library/PackageCache/com.unity.render-pipelines.high-definition@10.5.0/Runtime/Lighting/LightLoop/Deferred.compute kernel=Deferred_Direct_Fptl cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=5 km=<SHADE_OPAQUE_ENTRY=Deferred_Direct_Fptl>,<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SCREEN_SPACE_SHADOWS_ON SHADOWS_SHADOWMASK SHADOW_LOW SHADER_STAGE_COMPUTE platform=metal flags=4096 ok=1 outsize=303461
+
+Cmd: compileComputeKernel
+  insize=10754 file=/Users/yveshuber/Desktop/Abschlussarbeit/Evelution/Library/PackageCache/com.unity.render-pipelines.high-definition@10.5.0/Runtime/Lighting/LightLoop/Deferred.compute kernel=Deferred_Direct_Fptl cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=5 km=<SHADE_OPAQUE_ENTRY=Deferred_Direct_Fptl>,<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SCREEN_SPACE_SHADOWS_OFF SHADOW_HIGH SHADER_STAGE_COMPUTE platform=metal flags=4096 ok=1 outsize=305481
+
+Cmd: compileComputeKernel
+  insize=1145 file=/Users/yveshuber/Desktop/Abschlussarbeit/Evelution/Library/PackageCache/com.unity.render-pipelines.high-definition@10.5.0/Runtime/PostProcessing/Shaders/DepthOfFieldMipSafe.compute kernel=KMain cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=5 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=ENABLE_ALPHA SHADER_STAGE_COMPUTE platform=metal flags=4096 ok=1 outsize=12113
+
+Cmd: shutdown
