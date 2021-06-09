@@ -4,19 +4,22 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using TMPro;
-public class ItemHolder : MonoBehaviour , IBeginDragHandler, IDragHandler, IEndDragHandler
+public class ItemHolder : MonoBehaviour , IBeginDragHandler, IDragHandler, IEndDragHandler, IDropHandler
 {
+    public Inventory inv;
     public Itemvalue value;
     public bool filled = false;
     public int amount = 0;
     public GameObject img;
     Image image;
     public TextMeshProUGUI counter;
-    public  Image itemBeingDragged;
+    Image itemBeingDragged;
     Vector3 startPosition;
+    GameObject Self;
 
 
     public void OnBeginDrag(PointerEventData eventData){
+        
         if (filled == true) {
         Debug.Log("Filled");
         itemBeingDragged = image;
@@ -33,18 +36,19 @@ public class ItemHolder : MonoBehaviour , IBeginDragHandler, IDragHandler, IEndD
         transform.position = Input.mousePosition;
         }
     }
+    public void OnDrop(PointerEventData enventData) {
+        Self = transform.gameObject;
+        Debug.Log("Dropped");
+        inv.checkslotandswitch(transform.position,Self);
+        transform.position = startPosition;
+    }
     public void OnEndDrag(PointerEventData eventData){
         //check for collision
         if (filled == true) {
         itemBeingDragged = null;
-        if(GetComponent<Collider2D>().bounds.Contains(transform.position))
-        {
-            print("point is inside collider");
-        }
+        // if collision
         transform.position = startPosition;
-
         }
-
     }
     public void AddItem(Itemvalue s)
     {
@@ -70,5 +74,11 @@ public class ItemHolder : MonoBehaviour , IBeginDragHandler, IDragHandler, IEndD
             
             }
         }
+    }
+    public void clear(){
+        value = null;
+        filled = false;
+        amount = 0;
+        image = null;
     }
 }

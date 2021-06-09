@@ -6,6 +6,9 @@ using System;
 public class Inventory : MonoBehaviour
 {
     public GameObject[] Slots;
+    ItemHolder Current;
+    ItemHolder Future;
+    ItemHolder Temporary;
     private ItemHolder Slot;
 
     // Check for slot then Add Slot
@@ -46,6 +49,25 @@ public class Inventory : MonoBehaviour
             }
             Slot = null;
 
+    }
+    public void checkslotandswitch(Vector3 pos, GameObject selfslot){
+        foreach (GameObject currentSlot in Slots)
+        {
+            if(currentSlot.GetComponent<Collider>().bounds.Contains(pos)){
+                if ( currentSlot != selfslot){
+                    Debug.Log("Not the same");
+                    //over Slot and the slot is not itself
+                    Current = currentSlot.GetComponent<ItemHolder>();
+                    Future = selfslot.GetComponent<ItemHolder>();
+                    Temporary = Current;
+                    
+                    Debug.Log(Future);
+                    Debug.Log(Current);
+                    Debug.Log(Temporary);
+                    
+                }
+            }
+        }
     }
 
 }

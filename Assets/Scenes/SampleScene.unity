@@ -1269,6 +1269,10 @@ PrefabInstance:
       propertyPath: m_fontSizeBase
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 6736156446140890498, guid: 9d1c93ca39c61ff46b43d6adea283127, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6979518263347842017, guid: 9d1c93ca39c61ff46b43d6adea283127, type: 3}
       propertyPath: Slots.Array.data[1]
       value: 
