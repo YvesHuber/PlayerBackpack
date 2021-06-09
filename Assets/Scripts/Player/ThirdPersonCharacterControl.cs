@@ -39,8 +39,8 @@ public class ThirdPersonCharacterControl : MonoBehaviour
         Sneak = stats.Speed / 4;
         staminaBar.maxValue = stats.maxStamina;
         staminaBar.value = stats.stamina;
-        jumpact();
         PlayerMovement();
+        jumpact();
         Sethealthbar();
     }
 
@@ -77,7 +77,7 @@ public class ThirdPersonCharacterControl : MonoBehaviour
         }
 
         //Sprint
-        if (Input.GetKey(KeyCode.LeftControl) && Exhausted == false)
+        if (Input.GetKey(KeyCode.R) && Exhausted == false)
         {
             //Stamina Minus
             Tempo = Sprint;

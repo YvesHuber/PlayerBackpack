@@ -8,7 +8,8 @@ public class Inventory : MonoBehaviour
     public GameObject[] Slots;
     ItemHolder Current;
     ItemHolder Future;
-    ItemHolder Temporary;
+    ItemHolder Currentcopy;
+    ItemHolder Futurecopy;
     private ItemHolder Slot;
 
     // Check for slot then Add Slot
@@ -50,6 +51,22 @@ public class Inventory : MonoBehaviour
             Slot = null;
 
     }
+    public void copyItemholder(ItemHolder Future, ItemHolder Current, ItemHolder Futurecopy,ItemHolder Currentcopy){
+
+        Future.value = Currentcopy.value;
+
+        Future.amount = Currentcopy.amount;
+            Debug.Log("Befor" + Current.value);
+            if (Futurecopy.value != null){
+                Current.value = Futurecopy.value;
+            }else{
+                 Current.value = null;
+            }
+                Debug.Log("Dann" + Current.value);
+        Current.amount = Futurecopy.amount;
+      
+        
+    }
     public void checkslotandswitch(Vector3 pos, GameObject selfslot){
         foreach (GameObject currentSlot in Slots)
         {
@@ -58,12 +75,10 @@ public class Inventory : MonoBehaviour
                     Debug.Log("Not the same");
                     //over Slot and the slot is not itself
                     Current = currentSlot.GetComponent<ItemHolder>();
+                    Currentcopy = currentSlot.GetComponent<ItemHolder>();
                     Future = selfslot.GetComponent<ItemHolder>();
-                    Temporary = Current;
-                    
-                    Debug.Log(Future);
-                    Debug.Log(Current);
-                    Debug.Log(Temporary);
+                    Futurecopy = selfslot.GetComponent<ItemHolder>();
+                    copyItemholder(Future,Current,Futurecopy,Currentcopy);
                     
                 }
             }

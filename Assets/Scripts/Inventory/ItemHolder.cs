@@ -16,9 +16,45 @@ public class ItemHolder : MonoBehaviour , IBeginDragHandler, IDragHandler, IEndD
     Image itemBeingDragged;
     Vector3 startPosition;
     GameObject Self;
+    void Update() {
+        image = img.GetComponent<Image>();
+        if (value != null){
+            filled = true;
+            image.sprite = value.UiIcon;
+            var tempColor = image.color;
+            tempColor.a = 1f;
+            image.color = tempColor;
+            if(amount > 1) {
+            string am = amount.ToString();
+            counter.text = am;
+            }
+            else {
+                counter.text = "";
+            }
+        }
+        else {
+            filled = false;
+            image.sprite = null;
+            var tempColor = image.color;
+            tempColor.a = 0f;
+            image.color = tempColor;
+        }
+        
+    }
 
 
-    public void OnBeginDrag(PointerEventData eventData){
+
+    public void AddItem(Itemvalue s)
+    {
+        value = s;
+        if (amount > 1 ){
+        amount += s.StackSize - 1;
+        }
+        else {
+            amount += s.StackSize;
+        }
+    }
+        public void OnBeginDrag(PointerEventData eventData){
         
         if (filled == true) {
         Debug.Log("Filled");
@@ -40,45 +76,13 @@ public class ItemHolder : MonoBehaviour , IBeginDragHandler, IDragHandler, IEndD
         Self = transform.gameObject;
         Debug.Log("Dropped");
         inv.checkslotandswitch(transform.position,Self);
-        transform.position = startPosition;
     }
     public void OnEndDrag(PointerEventData eventData){
         //check for collision
         if (filled == true) {
         itemBeingDragged = null;
         // if collision
-        transform.position = startPosition;
+        gameObject.transform.position = startPosition;
         }
-    }
-    public void AddItem(Itemvalue s)
-    {
-        value = s;
-        if (amount > 1 ){
-        amount += s.StackSize - 1;
-        }
-        else {
-            amount += s.StackSize;
-        }
-        Debug.Log("Added an Item");
-        if (value != null)
-        {
-            filled = true;
-            image = img.GetComponent<Image>();
-            image.sprite = value.UiIcon;
-            var tempColor = image.color;
-            tempColor.a = 1f;
-            image.color = tempColor;
-            if(amount > 1) {
-            string am = amount.ToString();
-            counter.text = am;
-            
-            }
-        }
-    }
-    public void clear(){
-        value = null;
-        filled = false;
-        amount = 0;
-        image = null;
     }
 }
