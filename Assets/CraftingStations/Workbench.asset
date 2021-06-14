@@ -13,3 +13,5 @@ MonoBehaviour:
   m_Name: Workbench
   m_EditorClassIdentifier: 
   Name: Workbench
+  Recepies:
+  - {fileID: 11400000, guid: 6a2343ffda49242c3add90b5e722c0fc, type: 2}

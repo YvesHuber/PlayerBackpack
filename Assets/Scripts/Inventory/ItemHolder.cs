@@ -11,6 +11,7 @@ public class ItemHolder : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
     public bool filled = false;
     public int amount = 0;
     public GameObject img;
+    public bool output;
     Image image;
     public TextMeshProUGUI counter;
     Image itemBeingDragged;
@@ -55,7 +56,7 @@ public class ItemHolder : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
             amount += s.StackSize;
         }
     }
-    public void OnBeginDrag(PointerEventData eventData)
+        public void OnBeginDrag(PointerEventData eventData)
     {
 
         if (filled == true)
@@ -84,8 +85,10 @@ public class ItemHolder : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
     }
     public void OnDrop(PointerEventData enventData)
     {
+        if (output == false){
         Self = transform.gameObject;
         inv.checkslotandswitch(transform.position, Self);
+        }
     }
     public void OnEndDrag(PointerEventData eventData)
     {

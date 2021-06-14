@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7068922242757338124}
   - component: {fileID: 7068922242757338127}
   - component: {fileID: 7068922242757338126}
+  - component: {fileID: 5615611527573276294}
   m_Layer: 0
   m_Name: Wood
   m_TagString: Item
@@ -62,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73c176f402d2c2f4d929aa5da7585d17, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -113,6 +114,40 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &5615611527573276294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7068922242757338121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ce8ab5f5f0a06043ae22d02724efe6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value: {fileID: 11400000, guid: 5892fce6ef9f647438aeda519de802d5, type: 2}
+  id: 0
+  Itemtype: 0
+  rarity: 0
+  UiIcon: {fileID: 0}
+  DisplayTitle: 
+  Description: 
+  Worth: 0
+  StackSize: 0
+  MaxStackSize: 0
+  Healthajust: 0
+  Staminaajust: 0
+  Manaajust: 0
+  Miningspeed: 0
+  Critchance: 0
+  Critdamage: 0
+  Strength: 0
+  Defense: 0
+  Damage: 0
+  Hp: 0
+  Speed: 0
+  Equiptype: 0
 --- !u!1001 &7068922243284334626
 PrefabInstance:
   m_ObjectHideFlags: 0

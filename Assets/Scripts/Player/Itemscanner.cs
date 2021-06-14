@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Linq;
 
 public class Itemscanner : MonoBehaviour
 {
@@ -11,13 +12,25 @@ public class Itemscanner : MonoBehaviour
     public Item Itemobject;
     public Itemvalue Scriptableobject;
     public TextMeshProUGUI textMesh;
+    public TextMeshProUGUI FPS;
     // Start is called before the first frame update
     public GameObject canvasObject;
-    private Inventory _inv;
+    public GameObject Equip;
+    public GameObject Crafting;
+    private Inventory inv;
+    float time = 0;
+
     private bool active = false;
 
     void Update()
     {
+        float fps = 1.0f / Time.deltaTime;
+        if (time > 1f){
+        fps = Mathf.Floor(fps);
+        FPS.text = fps.ToString() + "FPS";
+        time = 0f;
+        }
+        time += Time.deltaTime;
         RaycastHit hit;
         // Does the ray intersect any objects excluding the player layer
         Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 3, Color.yellow);
@@ -27,9 +40,9 @@ public class Itemscanner : MonoBehaviour
         textMesh.text = null;
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 3))
         {
+            Object = hit.transform.gameObject;
             if (hit.collider.CompareTag("Enemy"))
             {
-                Object = hit.transform.gameObject;
                 Itemobject = Object.GetComponent<Item>();
                 Scriptableobject = Itemobject.value;
                 textMesh.text = Scriptableobject.DisplayTitle;
@@ -41,7 +54,6 @@ public class Itemscanner : MonoBehaviour
             }
             if (hit.collider.CompareTag("Item"))
             {
-                Object = hit.transform.gameObject;
                 Itemobject = Object.GetComponent<Item>();
                 Scriptableobject = Itemobject.value;
                 textMesh.text = Scriptableobject.DisplayTitle;
@@ -56,33 +68,50 @@ public class Itemscanner : MonoBehaviour
                 //Collect Item
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    _inv = canvasObject.GetComponent<Inventory>();
-                    if (_inv.AddValue(Scriptableobject) == true)
+                    inv = canvasObject.GetComponent<Inventory>();
+                    if (inv.AddValue(Scriptableobject) == true)
                     {
                         GameObject.Destroy(Object);
                     }
+                }
+            }
+            if (hit.collider.CompareTag("Crafting"))
+            {
+                Crafting crafting = Object.GetComponent<Crafting>();
+                CraftingStation Station = crafting.Station;
+                textMesh.text = Station.Name;
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    SetUIActive(canvasObject,Crafting);
                 }
             }
         }
         // Show and Hide Inventory
         if (Input.GetKeyDown(KeyCode.I))
         {
+            SetUIActive(canvasObject,Equip);
+        }
+
+
+    }
+
+
+    void SetUIActive(GameObject one, GameObject two){
             if (active == false)
             {
-                canvasObject.SetActive(true);
+                one.SetActive(true);
+                two.SetActive(true);
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.None;
                 active = true;
             }
             else if (active == true)
             {
-                canvasObject.SetActive(false);
+                one.SetActive(false);
+                two.SetActive(false);
                 Cursor.visible = false;
                 active = false;
                 Cursor.lockState = CursorLockMode.Locked;
             }
-        }
-
-
     }
 }

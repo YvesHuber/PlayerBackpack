@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Pants
   m_EditorClassIdentifier: 
   id: 5
-  Itemtype: 4
+  Itemtype: 5
   rarity: 3
   UiIcon: {fileID: 0}
   DisplayTitle: Pants
