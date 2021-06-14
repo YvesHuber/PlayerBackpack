@@ -4,22 +4,9 @@ using UnityEngine;
 
 public class Stats : MonoBehaviour
 {
-    private ItemHolder Head;
-    private Item Headitem;
-    private ItemHolder Chest;
-    private Item Chestitem;
-    private ItemHolder Pants;
-    private Item Pantsitem;
-    private ItemHolder Shoes;
-    private Item Shoesitem;
-    private ItemHolder Primaryarm;
-    private Item Primaryarmitem;
-    private ItemHolder Secondaryarm;
-    private Item Secondaryarmitem;
-    private ItemHolder Cape;
-    private Item Capeitem;
-    private ItemHolder Amulet;
-    private Item Amuletitem;
+    //T is the Temporary Item
+    public GameObject[] Slots;
+    public Itemvalue[] Itemvalues;
     public float maxHP;
     public float hp;
     public float hpregen;
@@ -34,36 +21,55 @@ public class Stats : MonoBehaviour
     public float Critdamage;
 
 
-    void Update() {
-        /*
-        Updatecheck(CurrentHead ,Head , Headitem);
-        Updatecheck(CurrentChest ,Chest , Chestitem);
-        Updatecheck(CurrentPants ,Pants , Pantsitem);
-        Updatecheck(CurrentShoes , Shoes, Shoesitem);
-        Updatecheck(CurrentPrimaryarm ,Primaryarm , Primaryarmitem);
-        Updatecheck(CurrentSecondaryarm ,Secondaryarm , Secondaryarmitem);
-        Updatecheck(CurrentCape ,Cape , Capeitem);
-        Updatecheck(CurrentAmulet, Amulet, Amuletitem);
-        */
+    void Update()
+    {
+        Updatecheck();
     }
 
-    void Addstats(Itemvalue l){
-        maxHP += l.Hp;
-        stamina += l.Staminaajust;
-        Speed += l.Speed;
-        Damage += l.Damage;
-        Strength += l.Strength;
-        Defense += l.Defense;
-        Critdamage += l.Critdamage;
-        Critchance += l.Critchance;
-
+    void Addstats(Itemvalue Item)
+    {
+        maxHP += Item.Hp;
+        stamina += Item.Staminaajust;
+        Speed += Item.Speed;
+        Damage += Item.Damage;
+        Strength += Item.Strength;
+        Defense += Item.Defense;
+        Critdamage += Item.Critdamage;
+        Critchance += Item.Critchance;
     }
-
-    void Updatecheck(ItemHolder currentslot, ItemHolder slot, Itemvalue slotitem){
-        if (currentslot != slot || slot == null) {
-            slot = currentslot;
-            slotitem = slot.value;
-            Addstats(slotitem);
+    void Removestats(Itemvalue Item)
+    {
+        maxHP -= Item.Hp;
+        stamina -= Item.Staminaajust;
+        Speed -= Item.Speed;
+        Damage -= Item.Damage;
+        Strength -= Item.Strength;
+        Defense -= Item.Defense;
+        Critdamage -= Item.Critdamage;
+        Critchance -= Item.Critchance;
+    }
+    void Updatecheck()
+    {
+        int i = 0;
+        foreach (GameObject Slot in Slots)
+        {
+            ItemHolder Holder = Slot.GetComponent<ItemHolder>();
+            Itemvalue Titem = Holder.value;
+            Itemvalue Iteminslot = Itemvalues[i];
+            if (Titem != null)
+            {
+                if (Iteminslot == null)
+                {
+                    Iteminslot = Titem;
+                    Addstats(Iteminslot);
+                }
+                if (Iteminslot != Titem){
+                    Removestats(Iteminslot);
+                    Iteminslot = Titem;
+                    Addstats(Iteminslot);
+                }
+                Itemvalues[i] = Iteminslot;
+            }
         }
     }
 }

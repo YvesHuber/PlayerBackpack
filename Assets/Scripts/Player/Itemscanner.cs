@@ -27,12 +27,14 @@ public class Itemscanner : MonoBehaviour
         textMesh.text = null;
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 3))
         {
-            if (hit.collider.CompareTag("Enemy")){
+            if (hit.collider.CompareTag("Enemy"))
+            {
                 Object = hit.transform.gameObject;
                 Itemobject = Object.GetComponent<Item>();
                 Scriptableobject = Itemobject.value;
                 textMesh.text = Scriptableobject.DisplayTitle;
-                if (Input.GetMouseButtonDown(0)){
+                if (Input.GetMouseButtonDown(0))
+                {
                     float Damage = Player.Damage * Player.Strength;
                     //DMG
                 }
@@ -43,6 +45,7 @@ public class Itemscanner : MonoBehaviour
                 Itemobject = Object.GetComponent<Item>();
                 Scriptableobject = Itemobject.value;
                 textMesh.text = Scriptableobject.DisplayTitle;
+                //Get rarity and change the color of the Text
                 int rarval = (int)Scriptableobject.rarity;
                 if (rarval == 0) { textMesh.color = new Color(255, 255, 255, 255); }
                 if (rarval == 1) { textMesh.color = new Color(0, 227, 0, 255); }
@@ -50,14 +53,18 @@ public class Itemscanner : MonoBehaviour
                 if (rarval == 3) { textMesh.color = new Color(186, 0, 254, 255); }
                 if (rarval == 4) { textMesh.color = new Color(214, 0, 0, 255); }
                 if (rarval == 5) { textMesh.color = new Color(0, 0, 0, 255); }
+                //Collect Item
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     _inv = canvasObject.GetComponent<Inventory>();
-                    _inv.AddValue(Scriptableobject);
-                    GameObject.Destroy(Object);
+                    if (_inv.AddValue(Scriptableobject) == true)
+                    {
+                        GameObject.Destroy(Object);
+                    }
                 }
             }
         }
+        // Show and Hide Inventory
         if (Input.GetKeyDown(KeyCode.I))
         {
             if (active == false)

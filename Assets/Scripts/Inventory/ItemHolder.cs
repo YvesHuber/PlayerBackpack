@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using TMPro;
-public class ItemHolder : MonoBehaviour , IBeginDragHandler, IDragHandler, IEndDragHandler, IDropHandler
+public class ItemHolder : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IDropHandler
 {
     public Inventory inv;
     public Itemvalue value;
@@ -16,73 +16,85 @@ public class ItemHolder : MonoBehaviour , IBeginDragHandler, IDragHandler, IEndD
     Image itemBeingDragged;
     Vector3 startPosition;
     GameObject Self;
-    void Update() {
+    void Update()
+    {
+        counter.text = " ";
         image = img.GetComponent<Image>();
-        if (value != null){
+        if (value != null)
+        {
             filled = true;
             image.sprite = value.UiIcon;
             var tempColor = image.color;
             tempColor.a = 1f;
             image.color = tempColor;
-            if(amount > 1) {
-            string am = amount.ToString();
-            counter.text = am;
-            }
-            else {
-                counter.text = "";
+            if (amount > 1)
+            {
+                string am = amount.ToString();
+                counter.text = am;
             }
         }
-        else {
+        else
+        {
             filled = false;
             image.sprite = null;
             var tempColor = image.color;
             tempColor.a = 0f;
             image.color = tempColor;
         }
-        
+
     }
-
-
-
     public void AddItem(Itemvalue s)
     {
         value = s;
-        if (amount > 1 ){
-        amount += s.StackSize - 1;
+        if (amount > 1)
+        {
+            amount += s.StackSize - 1;
         }
-        else {
+        else
+        {
             amount += s.StackSize;
         }
     }
-        public void OnBeginDrag(PointerEventData eventData){
-        
-        if (filled == true) {
-        Debug.Log("Filled");
-        itemBeingDragged = image;
-        startPosition = transform.position;
-        }
-        else {
-            Debug.Log("Not filled");
-            return;
+    public void OnBeginDrag(PointerEventData eventData)
+    {
+
+        if (filled == true)
+        {
+            itemBeingDragged = image;
+            startPosition = transform.position;
+            if ((int)value.Itemtype >= 2)
+            {
+                inv.Addarmor((int)value.Itemtype,transform.gameObject);
+                gameObject.transform.position = startPosition;
+                return;
+            }
+            else
+            {
+                return;
+            }
         }
 
     }
-    public void OnDrag(PointerEventData eventData){
-        if (filled == true) {
-        transform.position = Input.mousePosition;
+    public void OnDrag(PointerEventData eventData)
+    {
+        if (filled == true)
+        {
+            transform.position = Input.mousePosition;
         }
     }
-    public void OnDrop(PointerEventData enventData) {
+    public void OnDrop(PointerEventData enventData)
+    {
         Self = transform.gameObject;
-        Debug.Log("Dropped");
-        inv.checkslotandswitch(transform.position,Self);
+        inv.checkslotandswitch(transform.position, Self);
     }
-    public void OnEndDrag(PointerEventData eventData){
+    public void OnEndDrag(PointerEventData eventData)
+    {
         //check for collision
-        if (filled == true) {
-        itemBeingDragged = null;
-        // if collision
-        gameObject.transform.position = startPosition;
+        if (filled == true)
+        {
+            itemBeingDragged = null;
+            // if collision
+            gameObject.transform.position = startPosition;
         }
     }
 }

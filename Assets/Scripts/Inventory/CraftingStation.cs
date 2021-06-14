@@ -2,17 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CraftingStation : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+[CreateAssetMenu(fileName = "New CraftingStation", menuName ="Crafting/CraftingStation")]
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+public class CraftingStation : ScriptableObject
+{
+    public string Name;
+    
 }

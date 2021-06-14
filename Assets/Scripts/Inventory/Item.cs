@@ -5,7 +5,7 @@ using UnityEngine;
 public class Item : MonoBehaviour
 {
         public Itemvalue value;
-        public enum type {Material,Consumable,Equipable};
+        public enum type {Material,Consumable,Headarmor,Chestarmor,Leggingsarmor,Sheosarmor,Primaryarm,Secondaryarm};
         public enum raritys {Common,Uncommon,Rare,Epic,Legendary,Void};
         public enum Type{Pickaxe,Axe,Hoe,Meele,Range,Magic,Armor};
         public int id;
