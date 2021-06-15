@@ -18,9 +18,9 @@ public class Itemscanner : MonoBehaviour
     public GameObject Equip;
     public GameObject Crafting;
     private Inventory inv;
+    private bool UIEquipment = false;
+    private bool UICrafting = false;
     float time = 0;
-
-    private bool active = false;
 
     void Update()
     {
@@ -69,7 +69,7 @@ public class Itemscanner : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     inv = canvasObject.GetComponent<Inventory>();
-                    if (inv.AddValue(Scriptableobject) == true)
+                    if (inv.AddValue(Scriptableobject,false) == true)
                     {
                         GameObject.Destroy(Object);
                     }
@@ -82,21 +82,30 @@ public class Itemscanner : MonoBehaviour
                 textMesh.text = Station.Name;
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    SetUIActive(canvasObject,Crafting);
+                    //deactivate other if on
+                    if (UIEquipment == true){
+                        SetUIActive(canvasObject,Equip,UIEquipment);
+                    }
+                    UICrafting = SetUIActive(canvasObject,Crafting,UICrafting);
                 }
             }
         }
         // Show and Hide Inventory
         if (Input.GetKeyDown(KeyCode.I))
         {
-            SetUIActive(canvasObject,Equip);
+            //deactivate other if on
+            if(UICrafting == true){
+                SetUIActive(canvasObject,Crafting,UICrafting);
+            }
+            UIEquipment = SetUIActive(canvasObject,Equip,UIEquipment);
         }
 
 
     }
 
 
-    void SetUIActive(GameObject one, GameObject two){
+    bool SetUIActive(GameObject one, GameObject two, bool active){
+        
             if (active == false)
             {
                 one.SetActive(true);
@@ -113,5 +122,6 @@ public class Itemscanner : MonoBehaviour
                 active = false;
                 Cursor.lockState = CursorLockMode.Locked;
             }
+            return active;
     }
 }

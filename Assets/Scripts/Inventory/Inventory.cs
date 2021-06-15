@@ -18,7 +18,7 @@ public class Inventory : MonoBehaviour
     private ItemHolder Slot;
 
     // Check for slot then Add Slot
-    public bool AddValue(Itemvalue s)
+    public bool AddValue(Itemvalue s, bool armor)
     {
         foreach (GameObject currentSlot in Slots)
         {
@@ -29,9 +29,16 @@ public class Inventory : MonoBehaviour
                 {
                     if (Slot.amount + s.StackSize <= Slot.value.MaxStackSize)
                     {
+                        if(!armor == true){
                         Slot.amount += s.StackSize;
                         Slot.AddItem(s);
                         return true;
+                        }
+                        else {
+                        Slot.amount = s.StackSize;
+                        Slot.AddItem(s);
+                        return true;
+                        }
                     }
                 }
             }
@@ -93,7 +100,6 @@ public class Inventory : MonoBehaviour
     }
     public void copyItemholder(ItemHolder C, Itemvalue CItem, int Camount, ItemHolder F, Itemvalue FItem, int Famount)
     {
-
         C.value = FItem;
         C.amount = Famount;
         F.value = CItem;

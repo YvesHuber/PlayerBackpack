@@ -4,15 +4,17 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using TMPro;
-public class ItemHolder : MonoBehaviour,IPointerDownHandler, IBeginDragHandler, IDragHandler, IEndDragHandler, IDropHandler
+public class ItemHolder : MonoBehaviour, IPointerDownHandler, IPointerEnterHandler, IBeginDragHandler, IDragHandler, IEndDragHandler, IDropHandler, IPointerExitHandler
 {
     public Inventory inv;
     public Itemvalue value;
     public bool filled = false;
     public int amount = 0;
     public GameObject img;
+    public bool Equipmentslot;
     public bool output;
     public bool preview;
+    public TextMeshProUGUI hovertext;
     Image image;
     public TextMeshProUGUI counter;
     Image itemBeingDragged;
@@ -43,15 +45,31 @@ public class ItemHolder : MonoBehaviour,IPointerDownHandler, IBeginDragHandler, 
             tempColor.a = 0f;
             image.color = tempColor;
         }
-
     }
+
+
+    public void OnPointerEnter(PointerEventData eventData){
+        if(value != null){
+            hovertext.text =
+            value.DisplayTitle + "\n"+
+            value.Description + "\n" +
+            value.Worth;
+        }
+    }
+    public void OnPointerExit(PointerEventData eventData){
+        hovertext.text = null;
+    }    
     public void OnPointerDown(PointerEventData eventData) {
         if (filled == true && preview == false) 
         {
             if ((int)value.Itemtype >= 2 && output == false)
             {
-                gameObject.transform.position = startPosition;
                 inv.Addarmor((int)value.Itemtype,transform.gameObject);
+            }
+            if((int)value.Itemtype >= 2 && Equipmentslot == true){
+                if(inv.AddValue(value,true) == true){
+                    value = null;
+                }
             }
                 
         }
@@ -88,7 +106,8 @@ public class ItemHolder : MonoBehaviour,IPointerDownHandler, IBeginDragHandler, 
     }
     public void OnDrop(PointerEventData enventData)
     {
-        if (output == false && preview == false){
+        // Cant drop in specific Slots
+        if (output == false && preview == false && Equipmentslot == false){
         Self = transform.gameObject;
         inv.checkslotandswitch(transform.position, Self);
         }

@@ -180,7 +180,7 @@ ScriptsOnlyBuild:
     className: Outline
   - hash:
       serializedVersion: 2
-      Hash: c973012dd6bc25c0333992ace14b5cad
+      Hash: 57d64acc60ef5771231a01fe23ae0350
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Crafting
@@ -324,7 +324,7 @@ ScriptsOnlyBuild:
     className: GroupTrack
   - hash:
       serializedVersion: 2
-      Hash: 71da0bcdd6194257b044a9dc755044b8
+      Hash: 6cedff75bcb83320aac843dceff182d5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ItemHolder
@@ -667,4 +667,4 @@ ScriptsOnlyBuild:
   platform: 2
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: /Users/yveshuber/Desktop/Gamev0.2.app
+  playerPath: /Users/yveshuber/Desktop/Gamev0.3.app
