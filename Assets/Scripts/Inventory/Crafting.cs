@@ -9,13 +9,28 @@ public class Crafting : MonoBehaviour
     public Button Submit;
     public GameObject[] CraftingSlots;
     public Itemvalue[] Itemvalues = new Itemvalue[64];
+    public GameObject Output;
+    private ItemHolder Outputholder;
+    public bool pressed = false;
     void Start()
     {
+
+        Outputholder = Output.GetComponent<ItemHolder>();
         Submit.onClick.AddListener(TaskOnClick);
+        Outputholder.preview = true;
     }
     void TaskOnClick()
     {
+        pressed = true;
         Debug.Log("I have been pressed");
+        Outputholder.preview = false;
+
+    }
+    void Update() {
+        if(Outputholder.value == null){
+            Outputholder.filled = false;
+            Outputholder.preview = true;
+        }
         Slotdata();
         Checkforrecepies();
     }
@@ -37,12 +52,13 @@ public class Crafting : MonoBehaviour
         }
     }
 
-    bool checkifequal(Itemvalue CheckItem)
+    bool isitemfound(Itemvalue CheckItem)
     {
         for (int i = 0; i < Itemvalues.Length; i++)
         {
             if (Itemvalues[i] == CheckItem)
             {
+                Itemvalues[i] = null;
                 return true;
             }
         }
@@ -57,14 +73,29 @@ public class Crafting : MonoBehaviour
                 //get Recepie
                 foreach (Itemvalue Item in Currentrecepie.Itemvalues)
                 {
-                    if ( checkifequal(Item)){
-                        Debug.Log(Item + "Is needed");
+                    //Check if needed Item is in Slot
+                    if (!isitemfound(Item)){
+                        return;
+
+                    }else {
                     }
                 }
-                Debug.Log("Failed");
-                
-                Everyitem = true;
+                //Evey Item is used you can Craft
+                Craft(Currentrecepie);
             }
 
+        }
+        void Craft(CraftingRecepie recepie){
+            Outputholder.value = recepie.Result;
+            Outputholder.amount = 1;
+            Outputholder.filled = false;
+            if (pressed == true){
+                foreach(GameObject Slot in CraftingSlots){
+                    ItemHolder holder = Slot.GetComponent<ItemHolder>();
+                    holder.amount = 0;
+                    holder.value = null;
+                    Outputholder.filled = true;
+                }
+            }
         }
     }

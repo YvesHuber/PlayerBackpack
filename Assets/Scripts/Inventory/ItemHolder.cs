@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using TMPro;
-public class ItemHolder : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IDropHandler
+public class ItemHolder : MonoBehaviour,IPointerDownHandler, IBeginDragHandler, IDragHandler, IEndDragHandler, IDropHandler
 {
     public Inventory inv;
     public Itemvalue value;
@@ -12,6 +12,7 @@ public class ItemHolder : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
     public int amount = 0;
     public GameObject img;
     public bool output;
+    public bool preview;
     Image image;
     public TextMeshProUGUI counter;
     Image itemBeingDragged;
@@ -44,6 +45,17 @@ public class ItemHolder : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
         }
 
     }
+    public void OnPointerDown(PointerEventData eventData) {
+        if (filled == true && preview == false) 
+        {
+            if ((int)value.Itemtype >= 2 && output == false)
+            {
+                gameObject.transform.position = startPosition;
+                inv.Addarmor((int)value.Itemtype,transform.gameObject);
+            }
+                
+        }
+    }
     public void AddItem(Itemvalue s)
     {
         value = s;
@@ -59,33 +71,24 @@ public class ItemHolder : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
         public void OnBeginDrag(PointerEventData eventData)
     {
 
-        if (filled == true)
+        if (filled == true && preview == false) 
         {
             itemBeingDragged = image;
             startPosition = transform.position;
-            if ((int)value.Itemtype >= 2)
-            {
-                inv.Addarmor((int)value.Itemtype,transform.gameObject);
-                gameObject.transform.position = startPosition;
-                return;
-            }
-            else
-            {
-                return;
-            }
+                
         }
 
     }
     public void OnDrag(PointerEventData eventData)
     {
-        if (filled == true)
+        if (filled == true && preview == false)
         {
             transform.position = Input.mousePosition;
         }
     }
     public void OnDrop(PointerEventData enventData)
     {
-        if (output == false){
+        if (output == false && preview == false){
         Self = transform.gameObject;
         inv.checkslotandswitch(transform.position, Self);
         }
@@ -93,7 +96,7 @@ public class ItemHolder : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
     public void OnEndDrag(PointerEventData eventData)
     {
         //check for collision
-        if (filled == true)
+        if (filled == true && preview == false) 
         {
             itemBeingDragged = null;
             // if collision
