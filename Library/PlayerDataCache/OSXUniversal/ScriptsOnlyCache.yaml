@@ -9,6 +9,7 @@ ScriptsOnlyBuild:
     - ItemHolder
     - Itemscanner
     - Itemvalue
+    - Readme
     - Stats
     - ThirdPersonCameraControl
     - ThirdPersonCharacterControl
@@ -324,7 +325,7 @@ ScriptsOnlyBuild:
     className: GroupTrack
   - hash:
       serializedVersion: 2
-      Hash: 6cedff75bcb83320aac843dceff182d5
+      Hash: 914059e9bb5acbbd4e1b7b6caffc0d85
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ItemHolder
@@ -667,4 +668,4 @@ ScriptsOnlyBuild:
   platform: 2
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: /Users/yveshuber/Desktop/Gamev0.3.app
+  playerPath: /Users/yveshuber/Desktop/Gamev0.4.app

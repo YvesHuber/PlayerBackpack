@@ -14,6 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
+    - Assets/BreakableObject.meta
+    - Assets/BreakableObject/Tree.asset
+    - Assets/BreakableObject/Tree.asset.meta
     - Assets/CraftingRecepies.meta
     - Assets/CraftingRecepies/Alex.asset
     - Assets/CraftingRecepies/Alex.asset.meta
@@ -24,10 +27,8 @@ MonoBehaviour:
     - Assets/CraftingStations/Workbench.asset.meta
     - Assets/Inventory.meta
     - Assets/Items.meta
-    - Assets/Items/Alex.asset
-    - Assets/Items/Alex.asset.meta
-    - Assets/Items/Fish.asset
-    - Assets/Items/Fish.asset.meta
+    - Assets/Items/Axe.asset
+    - Assets/Items/Axe.asset.meta
     - Assets/Items/Helmet of stamina god pls help.asset
     - Assets/Items/Helmet of stamina god pls help.asset.meta
     - Assets/Items/Pants.asset
@@ -650,6 +651,21 @@ MonoBehaviour:
     - Assets/Packages/_TerrainAutoUpgrade/layer_RockSharp 1_DRockSharp 1_N793646612c42751.terrainlayer
     - Assets/Packages/_TerrainAutoUpgrade/layer_RockSharp 1_DRockSharp 1_N793646612c42751.terrainlayer.meta
     - Assets/Prefabs.meta
+    - Assets/Prefabs/Breakables.meta
+    - Assets/Prefabs/Breakables/Tree.prefab
+    - Assets/Prefabs/Breakables/Tree.prefab.meta
+    - Assets/Prefabs/Crafting Stations.meta
+    - Assets/Prefabs/Crafting Stations/Workbench.prefab
+    - Assets/Prefabs/Crafting Stations/Workbench.prefab.meta
+    - Assets/Prefabs/Items.meta
+    - Assets/Prefabs/Items/Axe.prefab
+    - Assets/Prefabs/Items/Axe.prefab.meta
+    - Assets/Prefabs/Items/Helmet of Development.prefab
+    - Assets/Prefabs/Items/Helmet of Development.prefab.meta
+    - Assets/Prefabs/Items/Pants.prefab
+    - Assets/Prefabs/Items/Pants.prefab.meta
+    - Assets/Prefabs/Items/Wood.prefab
+    - Assets/Prefabs/Items/Wood.prefab.meta
     - Assets/Prefabs/Player.prefab
     - Assets/Prefabs/Player.prefab.meta
     - Assets/Scenes.meta
@@ -734,22 +750,30 @@ MonoBehaviour:
     - Assets/Scenes/SampleSceneSettings.lighting.meta
     - Assets/Scripts.meta
     - Assets/Scripts/Inventory.meta
-    - Assets/Scripts/Inventory/Crafting.cs
-    - Assets/Scripts/Inventory/Crafting.cs.meta
-    - Assets/Scripts/Inventory/CraftingRecepie.cs
-    - Assets/Scripts/Inventory/CraftingRecepie.cs.meta
-    - Assets/Scripts/Inventory/CraftingStation.cs
-    - Assets/Scripts/Inventory/CraftingStation.cs.meta
-    - Assets/Scripts/Inventory/Enemy.cs
-    - Assets/Scripts/Inventory/Enemy.cs.meta
+    - Assets/Scripts/Inventory/Breakable.meta
+    - Assets/Scripts/Inventory/Breakable/Breakable.cs
+    - Assets/Scripts/Inventory/Breakable/Breakable.cs.meta
+    - Assets/Scripts/Inventory/Breakable/BreakableObject.cs
+    - Assets/Scripts/Inventory/Breakable/BreakableObject.cs.meta
+    - Assets/Scripts/Inventory/Crafting.meta
+    - Assets/Scripts/Inventory/Crafting/Crafting.cs
+    - Assets/Scripts/Inventory/Crafting/Crafting.cs.meta
+    - Assets/Scripts/Inventory/Crafting/CraftingRecepie.cs
+    - Assets/Scripts/Inventory/Crafting/CraftingRecepie.cs.meta
+    - Assets/Scripts/Inventory/Crafting/CraftingStation.cs
+    - Assets/Scripts/Inventory/Crafting/CraftingStation.cs.meta
+    - Assets/Scripts/Inventory/Enemy.meta
+    - Assets/Scripts/Inventory/Enemy/Enemy.cs
+    - Assets/Scripts/Inventory/Enemy/Enemy.cs.meta
     - Assets/Scripts/Inventory/Inventory.cs
     - Assets/Scripts/Inventory/Inventory.cs.meta
-    - Assets/Scripts/Inventory/Item.cs
-    - Assets/Scripts/Inventory/Item.cs.meta
-    - Assets/Scripts/Inventory/ItemHolder.cs
-    - Assets/Scripts/Inventory/ItemHolder.cs.meta
-    - Assets/Scripts/Inventory/Itemvalue.cs
-    - Assets/Scripts/Inventory/Itemvalue.cs.meta
+    - Assets/Scripts/Inventory/Items.meta
+    - Assets/Scripts/Inventory/Items/Item.cs
+    - Assets/Scripts/Inventory/Items/Item.cs.meta
+    - Assets/Scripts/Inventory/Items/ItemHolder.cs
+    - Assets/Scripts/Inventory/Items/ItemHolder.cs.meta
+    - Assets/Scripts/Inventory/Items/Itemvalue.cs
+    - Assets/Scripts/Inventory/Items/Itemvalue.cs.meta
     - Assets/Scripts/Player.meta
     - Assets/Scripts/Player/Itemscanner.cs
     - Assets/Scripts/Player/Itemscanner.cs.meta
@@ -781,8 +805,9 @@ MonoBehaviour:
     - ProjectSettings/EditorBuildSettings.asset
     - ProjectSettings/ProjectVersion.txt
     - ProjectSettings/TagManager.asset
+    - ProjectSettings/UnityConnectSettings.asset
     - 
-    m_Values: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    m_Values: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 

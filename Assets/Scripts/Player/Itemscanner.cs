@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.Linq;
-
+using System;
 public class Itemscanner : MonoBehaviour
 {
     private GameObject Object = null;
@@ -25,10 +25,11 @@ public class Itemscanner : MonoBehaviour
     void Update()
     {
         float fps = 1.0f / Time.deltaTime;
-        if (time > 1f){
-        fps = Mathf.Floor(fps);
-        FPS.text = fps.ToString() + "FPS";
-        time = 0f;
+        if (time > 1f)
+        {
+            fps = Mathf.Floor(fps);
+            FPS.text = fps.ToString() + "FPS";
+            time = 0f;
         }
         time += Time.deltaTime;
         RaycastHit hit;
@@ -69,7 +70,7 @@ public class Itemscanner : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     inv = canvasObject.GetComponent<Inventory>();
-                    if (inv.AddValue(Scriptableobject,false) == true)
+                    if (inv.AddValue(Scriptableobject, false) == true)
                     {
                         GameObject.Destroy(Object);
                     }
@@ -83,45 +84,76 @@ public class Itemscanner : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     //deactivate other if on
-                    if (UIEquipment == true){
-                        SetUIActive(canvasObject,Equip,UIEquipment);
+                    if (UIEquipment == true)
+                    {
+                        SetUIActive(canvasObject, Equip, UIEquipment);
                     }
-                    UICrafting = SetUIActive(canvasObject,Crafting,UICrafting);
+                    UICrafting = SetUIActive(canvasObject, Crafting, UICrafting);
                 }
+            }
+            if (hit.collider.CompareTag("Breakable"))
+            {
+                Breakable breakable = Object.GetComponent<Breakable>();
+                textMesh.text = breakable.Object.Name + " \n Requires " + breakable.Object.Breakeme + " to break";
+
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    try
+                    {
+                        if (breakable.Checktools(inv.Equipslots[4]) == true || breakable.Checktools(inv.Equipslots[5]) == true)
+                        {
+                            if (breakable.checktime() == true)
+                            {
+                                //Get array of every random Item Pool
+                                Itemvalue[] alldrops = breakable.returnItems();
+                                foreach (Itemvalue Dropeditem in alldrops){inv.Addbreakable(Dropeditem);}
+                                
+
+                            }
+                        }
+                    }
+                    catch (Exception e)
+                    {
+
+                    }
+                }
+
             }
         }
         // Show and Hide Inventory
         if (Input.GetKeyDown(KeyCode.I))
         {
             //deactivate other if on
-            if(UICrafting == true){
-                SetUIActive(canvasObject,Crafting,UICrafting);
+            if (UICrafting == true)
+            {
+                SetUIActive(canvasObject, Crafting, UICrafting);
             }
-            UIEquipment = SetUIActive(canvasObject,Equip,UIEquipment);
+            UIEquipment = SetUIActive(canvasObject, Equip, UIEquipment);
         }
 
 
     }
 
 
-    bool SetUIActive(GameObject one, GameObject two, bool active){
-        
-            if (active == false)
-            {
-                one.SetActive(true);
-                two.SetActive(true);
-                Cursor.visible = true;
-                Cursor.lockState = CursorLockMode.None;
-                active = true;
-            }
-            else if (active == true)
-            {
-                one.SetActive(false);
-                two.SetActive(false);
-                Cursor.visible = false;
-                active = false;
-                Cursor.lockState = CursorLockMode.Locked;
-            }
-            return active;
+    bool SetUIActive(GameObject one, GameObject two, bool active)
+    {
+
+        if (active == false)
+        {
+            one.SetActive(true);
+            two.SetActive(true);
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+            active = true;
+        }
+        else if (active == true)
+        {
+            one.SetActive(false);
+            two.SetActive(false);
+            Cursor.visible = false;
+            active = false;
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+        return active;
     }
 }

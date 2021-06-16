@@ -16,7 +16,6 @@ public class Inventory : MonoBehaviour
     private GameObject Slottoequip;
 
     private ItemHolder Slot;
-
     // Check for slot then Add Slot
     public bool AddValue(Itemvalue s, bool armor)
     {
@@ -29,15 +28,17 @@ public class Inventory : MonoBehaviour
                 {
                     if (Slot.amount + s.StackSize <= Slot.value.MaxStackSize)
                     {
-                        if(!armor == true){
-                        Slot.amount += s.StackSize;
-                        Slot.AddItem(s);
-                        return true;
+                        if (!armor == true)
+                        {
+                            Slot.amount += s.StackSize;
+                            Slot.AddItem(s);
+                            return true;
                         }
-                        else {
-                        Slot.amount = s.StackSize;
-                        Slot.AddItem(s);
-                        return true;
+                        else
+                        {
+                            Slot.amount = s.StackSize;
+                            Slot.AddItem(s);
+                            return true;
                         }
                     }
                 }
@@ -63,8 +64,50 @@ public class Inventory : MonoBehaviour
 
     }
 
+    public void Addbreakable(Itemvalue s)
+    {
+        bool added = false;
+        Debug.Log(s.DisplayTitle + "Add");
+        foreach (GameObject currentSlot in Slots)
+        {
+            Slot = currentSlot.GetComponent<ItemHolder>();
+            try
+            {
+                if (s.DisplayTitle == Slot.value.DisplayTitle)
+                {
+                    if (Slot.amount + s.StackSize <= Slot.value.MaxStackSize)
+                    {
 
-    public void Addarmor(int Enumint, GameObject selfslot){
+                        Slot.amount = s.StackSize;
+                        Slot.AddItem(s);
+                        added = true;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+            }
+
+        }
+
+            
+            foreach (GameObject currentSlot in Slots)
+            {
+                if (added == false)
+                {
+                Slot = currentSlot.GetComponent<ItemHolder>();
+                if (Slot.value == null)
+                {
+                    Slot.AddItem(s);
+                    added = true;
+                }
+                }
+            }
+        Slot = null;
+    }
+
+    public void Addarmor(int Enumint, GameObject selfslot)
+    {
         Enumint -= 2;
         Slottoequip = Equipslots[Enumint];
         Current = selfslot.GetComponent<ItemHolder>();
