@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Helmet of stamina god pls help
   m_EditorClassIdentifier: 
   id: 2
-  Itemtype: 6
+  Itemtype: 2
   rarity: 2
   UiIcon: {fileID: 21300000, guid: 0c91c7b7efc53d243a6c0cdb9701a1b3, type: 3}
   DisplayTitle: Helmet of Development
-  Description: This a library?
+  Description: Only Temporary
   Worth: 2
   StackSize: 1
   MaxStackSize: 1

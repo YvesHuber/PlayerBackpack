@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Stats : MonoBehaviour
 {
-    //T is the Temporary Item
     public GameObject[] Slots;
     public Itemvalue[] Itemvalues;
     public float maxHP;
@@ -20,12 +19,12 @@ public class Stats : MonoBehaviour
     public float Critchance;
     public float Critdamage;
 
-
+    //check every frame
     void Update()
     {
         Updatecheck();
     }
-
+    //add the stats to the player
     void Addstats(Itemvalue Item)
     {
         maxHP += Item.Hp;
@@ -37,6 +36,7 @@ public class Stats : MonoBehaviour
         Critdamage += Item.Critdamage;
         Critchance += Item.Critchance;
     }
+    //remove the stats from the player
     void Removestats(Itemvalue Item)
     {
         maxHP -= Item.Hp;
@@ -48,6 +48,7 @@ public class Stats : MonoBehaviour
         Critdamage -= Item.Critdamage;
         Critchance -= Item.Critchance;
     }
+    //check if the item is the same as the temporary item
     void Updatecheck()
     {
         int i = 0;

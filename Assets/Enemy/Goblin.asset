@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 544542ad6633d469eb4c4e020fecc69f, type: 3}
+  m_Name: Goblin
+  m_EditorClassIdentifier: 
+  Name: Globlin
+  Hp: 5
+  Attack: 5
+  Defense: 2
+  Drop100:
+  - {fileID: 108384048526549089, guid: 5fa5c78d56df845468f83272c24e2767, type: 3}
+  - {fileID: 8048459112721892817, guid: 3c64cbd2af7354583a0caed8a4a23535, type: 3}
+  Drop50: []
+  Drop20: []
+  Drop5: []
+  Drop1: []

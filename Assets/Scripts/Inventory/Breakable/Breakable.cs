@@ -6,7 +6,7 @@ public class Breakable : MonoBehaviour
 {
     public BreakableObject Object;
     public float timer = 0;
-
+    //update the timer
     void Update()
     {
         timer += Time.deltaTime;
@@ -16,7 +16,7 @@ public class Breakable : MonoBehaviour
         }
     }
 
-
+    //check if the timer is Timebetweenbreaks 
     public bool checktime()
     {
         if (timer >= Object.Timebetweenbreaks)
@@ -29,6 +29,7 @@ public class Breakable : MonoBehaviour
             return false;
         }
     }
+    //get an array of random items each with their own drop chance
     public Itemvalue[] returnItems()
     {
         Itemvalue[] RNGitems = new Itemvalue[64];
@@ -87,6 +88,7 @@ public class Breakable : MonoBehaviour
         return RNGitems;
 
     }
+    //check if the used tool is the same as the Breakablescriptableobject
     public bool Checktools(GameObject ItemSlot)
     {
         ItemHolder holder = ItemSlot.GetComponent<ItemHolder>();

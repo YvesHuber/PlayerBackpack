@@ -8,12 +8,11 @@ using System;
 public class Itemscanner : MonoBehaviour
 {
     private GameObject Object = null;
-    public Item Player;
+    public Stats Player;
     public Item Itemobject;
     public Itemvalue Scriptableobject;
     public TextMeshProUGUI textMesh;
     public TextMeshProUGUI FPS;
-    // Start is called before the first frame update
     public GameObject canvasObject;
     public GameObject Equip;
     public GameObject Crafting;
@@ -24,6 +23,7 @@ public class Itemscanner : MonoBehaviour
 
     void Update()
     {
+        // FPS counter
         float fps = 1.0f / Time.deltaTime;
         if (time > 1f)
         {
@@ -42,15 +42,18 @@ public class Itemscanner : MonoBehaviour
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 3))
         {
             Object = hit.transform.gameObject;
+            //if lazer hits enemy set the text to the name
             if (hit.collider.CompareTag("Enemy"))
             {
-                Itemobject = Object.GetComponent<Item>();
-                Scriptableobject = Itemobject.value;
-                textMesh.text = Scriptableobject.DisplayTitle;
+                Enemy enemy = Object.GetComponent<Enemy>();
+                EnemyObject enemyobject = enemy.Object;
+                textMesh.text = enemyobject.Name;
+                //if left mouse is pressed
                 if (Input.GetMouseButtonDown(0))
                 {
+                    //calculate damage and deal it to the enemy
                     float Damage = Player.Damage * Player.Strength;
-                    //DMG
+                    enemy.doDamage(Damage);
                 }
             }
             if (hit.collider.CompareTag("Item"))
@@ -65,25 +68,28 @@ public class Itemscanner : MonoBehaviour
                 if (rarval == 2) { textMesh.color = new Color(0, 0, 277, 255); }
                 if (rarval == 3) { textMesh.color = new Color(186, 0, 254, 255); }
                 if (rarval == 4) { textMesh.color = new Color(214, 0, 0, 255); }
-                if (rarval == 5) { textMesh.color = new Color(0, 0, 0, 255); }
                 //Collect Item
                 if (Input.GetKeyDown(KeyCode.E))
                 {
+                    //get inventory
                     inv = canvasObject.GetComponent<Inventory>();
+                    //if Item is added destroy it
                     if (inv.AddValue(Scriptableobject, false) == true)
                     {
                         GameObject.Destroy(Object);
                     }
                 }
             }
+            //lazer hits Crafting set the text to the name
             if (hit.collider.CompareTag("Crafting"))
             {
                 Crafting crafting = Object.GetComponent<Crafting>();
                 CraftingStation Station = crafting.Station;
                 textMesh.text = Station.Name;
+                //if the player presses E
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    //deactivate other if on
+                    //deactivate other UI if on and set UI actibe
                     if (UIEquipment == true)
                     {
                         SetUIActive(canvasObject, Equip, UIEquipment);
@@ -91,20 +97,23 @@ public class Itemscanner : MonoBehaviour
                     UICrafting = SetUIActive(canvasObject, Crafting, UICrafting);
                 }
             }
+            //Lazer hits a breakable set the text to the name and display the tool
             if (hit.collider.CompareTag("Breakable"))
             {
                 Breakable breakable = Object.GetComponent<Breakable>();
                 textMesh.text = breakable.Object.Name + " \n Requires " + breakable.Object.Breakeme + " to break";
-
+                //presses E
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     try
                     {
+                        //check the tool
                         if (breakable.Checktools(inv.Equipslots[4]) == true || breakable.Checktools(inv.Equipslots[5]) == true)
                         {
+                            //if the timer is ready
                             if (breakable.checktime() == true)
                             {
-                                //Get array of every random Item Pool
+                                //Get array of every random item pool and add it
                                 Itemvalue[] alldrops = breakable.returnItems();
                                 foreach (Itemvalue Dropeditem in alldrops){inv.Addbreakable(Dropeditem);}
                                 
@@ -120,7 +129,7 @@ public class Itemscanner : MonoBehaviour
 
             }
         }
-        // Show and Hide Inventory
+        // Show and Hide Inventory with I 
         if (Input.GetKeyDown(KeyCode.I))
         {
             //deactivate other if on
@@ -133,8 +142,7 @@ public class Itemscanner : MonoBehaviour
 
 
     }
-
-
+    // Set 2 UI items active
     bool SetUIActive(GameObject one, GameObject two, bool active)
     {
 

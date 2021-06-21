@@ -1,43 +1,47 @@
-# PlayerBackpack Asset
+# playerbackpack asset
 
-## About the Project
+## about the project
 
-This is a Unity Game Asset for a 3D First Person Game
-Simply steal the code from here or the Asset store (Not yet)
-and you are Done.<br>
-After the Inport you can edit all Scripts or add new ones
-With a right Click can you make new Game Object like: <br>
+this is a Unity game asset for a 3d First person game
+simply steal the code from here or the asset store (Not yet)
+and you are done.<br>
+after the inport you can edit all scripts or add new ones
+With a right click can you make new game object like: <br>
 
-### Item
-Every Item can be:<br>
-Material to Craft <br>
-Consumable to increase stats temporary <br>
-Equipable to increase stats while worn<br>
-Not all Parameters have to be set when creating an Item is should be enough to just set the ones you need / want<br>
+### item
+every item can be:<br>
+material to craft <br>
+equipable to increase stats while worn<br>
+Not all parameters have to be set when creating an item is should be enough to just set the ones you need / want<br>
+more paramaters can be added the item scirptableobject and used in your own scripts<br>
 
-### Enemy
-An Enemy is of course an Enemy <br>
-Every Enemy has a Array of Items it can Drop <br>
-Each Array has a Defined Rarity <br>
-There is no AI in the Enemy and it is puerly for Dropping items on kill<br>
+### enemy
+An enemy is of course an enemy <br>
+every enemy has a array of items it can drop <br>
+the array is build out of prefabs so you can add everything<br>
+each array has a defined rarity <br>
+the drop chance can be 100%, 50%, 20%, 5% and 1% you can allways add new droprates<br>
+there is no ai in the enemy and it is puerly for dropping items on kill<br>
 
-### Craftingstations
-A Crafting Station is Able to craft recepies that have the same Craftingstation<br>
-It has a name and a array of recipies<br>
+### craftingstations
+A crafting station is able to craft recepies that have the same craftingstation<br>
+it has a name and a array of recipies<br>
+you can add an unlimited amount of recepies to each station<br>
+if you want to add a new Station you need to create a new UI set for the crafting script<br>
+you need to add the activator to the Itemscanner as well I am working to make the implementation simpler but its not done yet<br>
 
-### Craftingrecepies
-A Crafting Recepie is a Recepie with the following Data <br>
-Crafting Station as String and Items as Array <br>
-if both is true you are able to craft the definded Item <br>
+### craftingrecepies
+A crafting recepie is a recepie with an array of items and a output<br>
+its a very simple class you can add everything in it but you cant get a specific amount of an output is allways one<br>
 
-### Breakables
-A Breakable is a Object that when hit with the right Weapon will Drop Items<br>
-You can Add one Item to the Breakable Object and it will drop that prefab when it is broken<br>
-The Breakable will have a Timer after the timer if the Object is Broken it will be repaired or just reappear<br>
+### breakables
+A breakable is a object that when hit with the right Weapon will drop items<br>
+its the same principle as with the enemy it has an array of items this time not prefabs with specific raritys they are the same as with the enemy<br>
+the item or items are simply added to the inventory when the breakable is hit with the right tool and it is ready to be broken<br>
 
-### Inventory
-The Inventory can be pulled up with I and is in its early stages of design<br>
-The whole Item system is for low numbers so 7 Wood would be a lot<br>
-You can change this by adding items with a big MaxStackSize and StackSize<br>
-You can move the items between the Slots but you cant unstack them<br>
-
+### inventory
+The inventory can be pulled up with i and is in its early stages of design<br>
+You can move the items between the slots but you cant unstack them<br>
+the maxstacksize controlls the max amount of the item<br>
+hovering over an item will show the name description and value <br>
+armor will be equiped on a click<br>

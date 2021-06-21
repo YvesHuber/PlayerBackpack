@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Pants
   m_EditorClassIdentifier: 
   id: 5
-  Itemtype: 5
+  Itemtype: 4
   rarity: 3
   UiIcon: {fileID: 0}
   DisplayTitle: Pants
-  Description: We are flexing tho
+  Description: Now you are faster
   Worth: 500
   StackSize: 1
   MaxStackSize: 1

@@ -21,6 +21,7 @@ public class ItemHolder : MonoBehaviour, IPointerDownHandler, IPointerEnterHandl
     Image itemBeingDragged;
     Vector3 startPosition;
     GameObject Self;
+    //check the counter and image of the Slot and clear hovertext
     void Update()
     {
         counter.text = " ";
@@ -34,8 +35,8 @@ public class ItemHolder : MonoBehaviour, IPointerDownHandler, IPointerEnterHandl
             image.color = tempColor;
             if (amount > 1)
             {
-                string am = amount.ToString();
-                counter.text = am;
+                string amountstr = amount.ToString();
+                counter.text = amountstr;
             }
         }
         else
@@ -45,10 +46,11 @@ public class ItemHolder : MonoBehaviour, IPointerDownHandler, IPointerEnterHandl
             var tempColor = image.color;
             tempColor.a = 0f;
             image.color = tempColor;
+            hovertext.text = " ";
         }
     }
 
-
+    //if the pointer is over A slot set the Hovertext
     public void OnPointerEnter(PointerEventData eventData){
         if(value != null){
             hovertext.text =
@@ -58,8 +60,9 @@ public class ItemHolder : MonoBehaviour, IPointerDownHandler, IPointerEnterHandl
         }
     }
     public void OnPointerExit(PointerEventData eventData){
-        hovertext.text = null;
+    hovertext.text = " ";
     }    
+    //if the slot is clicked Add the Armor to the specific slot
     public void OnPointerDown(PointerEventData eventData) {
         if (filled == true && preview == false) 
         {
@@ -80,19 +83,8 @@ public class ItemHolder : MonoBehaviour, IPointerDownHandler, IPointerEnterHandl
                 
         }
     }
-    public void AddItem(Itemvalue s)
-    {
-        value = s;
-        if (amount > 1)
-        {
-            amount += s.StackSize - 1;
-        }
-        else
-        {
-            amount += s.StackSize;
-        }
-    }
-        public void OnBeginDrag(PointerEventData eventData)
+    //check the slot if it is dragable and set the startposition
+    public void OnBeginDrag(PointerEventData eventData)
     {
 
         if (filled == true && preview == false) 
@@ -103,6 +95,7 @@ public class ItemHolder : MonoBehaviour, IPointerDownHandler, IPointerEnterHandl
         }
 
     }
+    //On drag set the Image position on the mouse if it is filled and not a preview
     public void OnDrag(PointerEventData eventData)
     {
         if (filled == true && preview == false)
@@ -110,6 +103,7 @@ public class ItemHolder : MonoBehaviour, IPointerDownHandler, IPointerEnterHandl
             transform.position = Input.mousePosition;
         }
     }
+    //On drop check the slot and switch the items and amounts
     public void OnDrop(PointerEventData enventData)
     {
         // Cant drop in specific Slots
@@ -118,6 +112,7 @@ public class ItemHolder : MonoBehaviour, IPointerDownHandler, IPointerEnterHandl
         inv.checkslotandswitch(transform.position, Self);
         }
     }
+    //On end of drag put the Image to the startposition
     public void OnEndDrag(PointerEventData eventData)
     {
         //check for collision
@@ -126,6 +121,19 @@ public class ItemHolder : MonoBehaviour, IPointerDownHandler, IPointerEnterHandl
             itemBeingDragged = null;
             // if collision
             gameObject.transform.position = startPosition;
+        }
+    }
+    //set the amount of the Item in the slot
+    public void AddItem(Itemvalue s)
+    {
+        value = s;
+        if (amount > 1)
+        {
+            amount += s.StackSize - 1;
+        }
+        else
+        {
+            amount += s.StackSize;
         }
     }
 }

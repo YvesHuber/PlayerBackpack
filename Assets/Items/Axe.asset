@@ -32,4 +32,4 @@ MonoBehaviour:
   Damage: 0
   Hp: 0
   Speed: 0
-  Equiptype: 0
+  Equiptype: 1
