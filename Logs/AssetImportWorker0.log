@@ -1421,3 +1421,125 @@ System memory in use after: 175.7 MB.
 Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1835.
 Total: 1.279541 ms (FindLiveObjects: 0.104042 ms CreateObjectMapping: 0.024375 ms MarkObjects: 1.069333 ms  DeleteObjects: 0.081084 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 668.922591 seconds.
+  path: Assets/Sprites/Coal.png
+  artifactKey: Guid(152b574061d1641efa9c0e2d3494aad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Coal.png using Guid(152b574061d1641efa9c0e2d3494aad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce16270b9135701c30e55b6ea61ebb4e') in 0.076226 seconds
+  Import took 0.079367 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.848646 seconds.
+  path: Assets/Sprites/Coal.png
+  artifactKey: Guid(152b574061d1641efa9c0e2d3494aad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Coal.png using Guid(152b574061d1641efa9c0e2d3494aad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96b3c3e7e6de242bfc45c49c58ad38ef') in 0.057712 seconds
+  Import took 0.060525 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.046982 seconds.
+  path: Assets/Items/Coal.asset
+  artifactKey: Guid(7c0f34090f47f411ab962bca649ab31d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/Coal.asset using Guid(7c0f34090f47f411ab962bca649ab31d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd491f29aaefb0f37780cc977f4048a6') in 0.003105 seconds
+  Import took 0.005419 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.250099 seconds.
+  path: Assets/CraftingRecepies/Coal.asset
+  artifactKey: Guid(f687a40e1d64c468ab9a53361fa3d1d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CraftingRecepies/Coal.asset using Guid(f687a40e1d64c468ab9a53361fa3d1d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d8bf1391c067cf85f45b169cfba1ed0') in 0.004412 seconds
+  Import took 0.006048 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.200997 seconds.
+  path: Assets/CraftingRecepies/Axe.asset
+  artifactKey: Guid(3d5112dc651fc401bb78220f89fcf6ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CraftingRecepies/Axe.asset using Guid(3d5112dc651fc401bb78220f89fcf6ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cf5b994892ffddef8365d76c8b8935e') in 0.002354 seconds
+  Import took 0.004003 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000591 seconds.
+  path: Assets/CraftingRecepies/Axe.asset
+  artifactKey: Guid(3d5112dc651fc401bb78220f89fcf6ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CraftingRecepies/Axe.asset using Guid(3d5112dc651fc401bb78220f89fcf6ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cf5b994892ffddef8365d76c8b8935e') in 0.002106 seconds
+  Import took 0.003650 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000853 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.23 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.530 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.22 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1130 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 176.0 MB.
+System memory in use after: 176.1 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1839.
+Total: 1.220500 ms (FindLiveObjects: 0.144958 ms CreateObjectMapping: 0.024959 ms MarkObjects: 0.980250 ms  DeleteObjects: 0.069625 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 695.256002 seconds.
+  path: Assets/Items/Alex.asset
+  artifactKey: Guid(ade5c85bc194f48a0918a85ad5b44d79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/Alex.asset using Guid(ade5c85bc194f48a0918a85ad5b44d79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '637b8881b95db6785d8bce95fd10a426') in 0.014863 seconds
+  Import took 0.016895 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 108.729066 seconds.
+  path: Assets/Sprites/Leather.png
+  artifactKey: Guid(b1a45a7fbfbbf4420a2f41844bca8fd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Leather.png using Guid(b1a45a7fbfbbf4420a2f41844bca8fd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8ca6847ffe88f59628d3eafbb8819c9') in 0.072909 seconds
+  Import took 0.075265 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.904188 seconds.
+  path: Assets/Sprites/Leather.png
+  artifactKey: Guid(b1a45a7fbfbbf4420a2f41844bca8fd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Leather.png using Guid(b1a45a7fbfbbf4420a2f41844bca8fd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab451b7c422b9a14ae1a1ae551335bcd') in 0.057904 seconds
+  Import took 0.059881 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 36.236518 seconds.
+  path: Assets/Prefabs/Items/Leather.prefab
+  artifactKey: Guid(42a3268e0c19747dbab75c4c936303cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Leather.prefab using Guid(42a3268e0c19747dbab75c4c936303cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da6bb45b1b1c07707a5ba2e79a04c178') in 0.088631 seconds
+  Import took 0.090660 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000965 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.23 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.502 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.23 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1130 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 176.3 MB.
+System memory in use after: 176.4 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 1843.
+Total: 1.179667 ms (FindLiveObjects: 0.106834 ms CreateObjectMapping: 0.024792 ms MarkObjects: 0.977375 ms  DeleteObjects: 0.069833 ms)
+
