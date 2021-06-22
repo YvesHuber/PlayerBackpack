@@ -1,41 +1,55 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System;
+using Random = UnityEngine.Random;
 public class Enemy : MonoBehaviour
 {
     public EnemyObject Object;
+    public float Maxhp;
     public float Hp;
     public float Attack;
     public float Defense;
 
-    void Start(){
-    Hp = Object.Hp;
-    Attack = Object.Attack;
-    Defense = Object.Defense;
+    void Start()
+    {
+        Maxhp = Object.Hp;
+        Hp = Object.Hp;
+        Attack = Object.Attack;
+        Defense = Object.Defense;
     }
 
     //get the damage and if the hp is 0 destroy self and spawn items
-    public void doDamage(float value){
+    public void doDamage(float value)
+    {
         Hp -= value;
 
-        if (Hp <= 0){
+        if (Hp <= 0)
+        {
             Destroy(this.gameObject);
             ondeath();
         }
     }
     //get the random items and instatiate them all
-    public void ondeath(){
+    public void ondeath()
+    {
         GameObject[] Spawnitems = getItems();
 
-
-        foreach (GameObject prefab in Spawnitems)
+        try
         {
-            Instantiate(prefab, gameObject.transform.position, Quaternion.identity);
+            foreach (GameObject prefab in Spawnitems)
+            {
+                Instantiate(prefab, gameObject.transform.position, Quaternion.identity);
+            }
+        }
+        catch (Exception e)
+        {
+
         }
     }
     //get the random items of each array
-    public GameObject[] getItems(){
+    public GameObject[] getItems()
+    {
         GameObject[] RNGitems = new GameObject[64];
         int i = 0;
         int random = 0;

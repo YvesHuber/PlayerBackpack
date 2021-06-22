@@ -10,7 +10,7 @@ public class Crafting : MonoBehaviour
     public Button Submit;
     public GameObject[] CraftingSlots;
     public Itemvalue[] Itemvalues = new Itemvalue[64];
-    private Itemvalue[] Temporaryvalues = new Itemvalue[64];
+    public Itemvalue[] Temporaryvalues = new Itemvalue[64];
     public GameObject OutputSlot;
     public Inventory Inventory;
     private ItemHolder Outputholder;
@@ -112,7 +112,6 @@ public class Crafting : MonoBehaviour
     //check if an recepie is craftable
     void Checkforrecepies()
     {
-
         foreach (CraftingRecepie Currentrecepie in Station.Recepies)
         {
             //get Recepie
@@ -121,9 +120,7 @@ public class Crafting : MonoBehaviour
                 //Check if needed Item is in Slot
                 if (!isitemfound(Item))
                 {
-                    Debug.Log("not correct crafting for");
                     return;
-
                 }
             }
             Currentrecepie.canbecrafted = true;
@@ -147,19 +144,39 @@ public class Crafting : MonoBehaviour
         Outputholder.filled = false;
         if (pressed == true)
         {
-            foreach (GameObject Slot in CraftingSlots)
+            int index = 0;
+            foreach (Itemvalue Item in recepie.Itemvalues)
             {
-                ItemHolder holder = Slot.GetComponent<ItemHolder>();
-                holder.amount = 0;
-                holder.value = null;
-                Outputholder.filled = true;
-                pressed = false;
-                for (int i = 0; i < Itemvalues.Length; i++)
-                {
-                    Itemvalues[i] = null;
+                bool ready = false;
+                while (ready == false) {
+                ItemHolder h = CraftingSlots[index].GetComponent<ItemHolder>();
+                if (checkforitem(Item,h.value)){
+                    h.amount -= 1;
+                    if (h.amount == 0){
+                        index++;
+                        h.value = null;
+                    }
+                    ready = true;
+                }
+                else {
+                index++;
+                }
                 }
             }
+            Outputholder.filled = true;
+            pressed = false;
+            for (int i = 0; i < Itemvalues.Length; i++)
+            {
+                Itemvalues[i] = null;
+            }
         }
-
     }
+    //compates 2 items and returns true or false
+    bool checkforitem(Itemvalue one, Itemvalue two){
+        if(one == two){
+            return true;
+        }
+        return false;
+    }
+
 }

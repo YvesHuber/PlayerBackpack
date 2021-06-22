@@ -13,6 +13,8 @@ public class Itemscanner : MonoBehaviour
     public Itemvalue Scriptableobject;
     public TextMeshProUGUI textMesh;
     public TextMeshProUGUI FPS;
+    public TextMeshProUGUI Enemytext;
+    public Slider Enemyhealthbar;
     public TextMeshProUGUI StationText;
     public GameObject canvasObject;
     public GameObject Equip;
@@ -20,11 +22,17 @@ public class Itemscanner : MonoBehaviour
     private Inventory inv;
     private bool UIEquipment = false;
     private bool UICrafting = false;
+    float enemytimer = 5;
 
     float time = 0;
 
     void Update()
     {
+        enemytimer += Time.deltaTime;
+        Enemyhealthbar.gameObject.SetActive(false);
+        if (enemytimer <= 5){
+        Enemyhealthbar.gameObject.SetActive(true);
+        }
         // FPS counter
         float fps = 1.0f / Time.deltaTime;
         if (time > 1f)
@@ -47,9 +55,14 @@ public class Itemscanner : MonoBehaviour
             //if lazer hits enemy set the text to the name
             if (hit.collider.CompareTag("Enemy"))
             {
+
                 Enemy enemy = Object.GetComponent<Enemy>();
+                Enemyhealthbar.gameObject.SetActive(true);
+                enemytimer = 0;
                 EnemyObject enemyobject = enemy.Object;
-                textMesh.text = enemyobject.Name;
+                Enemytext.text = enemyobject.Name;
+                Enemyhealthbar.maxValue = enemy.Maxhp;
+                Enemyhealthbar.value = enemy.Hp;
                 textMesh.color = new Color(255, 40, 40, 255);
                 //if left mouse is pressed
                 if (Input.GetMouseButtonDown(0))
