@@ -53,9 +53,7 @@ public class Inventory : MonoBehaviour
             Slot = currentSlot.GetComponent<ItemHolder>();
             if (Slot.value == null)
             {
-                Debug.Log(s.DisplayTitle);
                 Slot.AddItem(s);
-
                 return true;
             }
         }

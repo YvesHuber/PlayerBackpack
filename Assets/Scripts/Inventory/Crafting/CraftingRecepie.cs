@@ -9,4 +9,5 @@ public class CraftingRecepie : ScriptableObject
     public CraftingStation Place;
     public Itemvalue[] Itemvalues;
     public Itemvalue Result;
+    public bool canbecrafted;
 }

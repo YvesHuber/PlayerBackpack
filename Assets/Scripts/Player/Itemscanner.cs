@@ -13,12 +13,14 @@ public class Itemscanner : MonoBehaviour
     public Itemvalue Scriptableobject;
     public TextMeshProUGUI textMesh;
     public TextMeshProUGUI FPS;
+    public TextMeshProUGUI StationText;
     public GameObject canvasObject;
     public GameObject Equip;
     public GameObject Crafting;
     private Inventory inv;
     private bool UIEquipment = false;
     private bool UICrafting = false;
+
     float time = 0;
 
     void Update()
@@ -48,6 +50,7 @@ public class Itemscanner : MonoBehaviour
                 Enemy enemy = Object.GetComponent<Enemy>();
                 EnemyObject enemyobject = enemy.Object;
                 textMesh.text = enemyobject.Name;
+                textMesh.color = new Color(255, 40, 40, 255);
                 //if left mouse is pressed
                 if (Input.GetMouseButtonDown(0))
                 {
@@ -83,9 +86,13 @@ public class Itemscanner : MonoBehaviour
             //lazer hits Crafting set the text to the name
             if (hit.collider.CompareTag("Crafting"))
             {
+
                 Crafting crafting = Object.GetComponent<Crafting>();
+                crafting.enabled = true;
                 CraftingStation Station = crafting.Station;
                 textMesh.text = Station.Name;
+                textMesh.color = new Color(255, 255, 255, 255);
+                StationText.text = Station.Name;
                 //if the player presses E
                 if (Input.GetKeyDown(KeyCode.E))
                 {
@@ -100,6 +107,7 @@ public class Itemscanner : MonoBehaviour
             //Lazer hits a breakable set the text to the name and display the tool
             if (hit.collider.CompareTag("Breakable"))
             {
+                textMesh.color = new Color(255, 255, 255, 255);
                 Breakable breakable = Object.GetComponent<Breakable>();
                 textMesh.text = breakable.Object.Name + " \n Requires " + breakable.Object.Breakeme + " to break";
                 //presses E

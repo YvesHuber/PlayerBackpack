@@ -192,7 +192,7 @@ ScriptsOnlyBuild:
     className: Outline
   - hash:
       serializedVersion: 2
-      Hash: 8949b7819ac91d9dcea584ffcdecdead
+      Hash: 61d3c84ee6a887a7256bee1c34c79863
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Crafting

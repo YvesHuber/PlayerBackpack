@@ -12,13 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44d69d74030de4fbaa0510e674a7ea0f, type: 3}
   m_Name: Tree
   m_EditorClassIdentifier: 
-  Timebetweenbreaks: 1
+  Timebetweenbreaks: 5
   Name: Tree
   Breakeme: 1
   Drop100:
   - {fileID: 11400000, guid: 5892fce6ef9f647438aeda519de802d5, type: 2}
-  Drop50:
-  - {fileID: 11400000, guid: b767f3acf55c041959eac35ab4406382, type: 2}
+  Drop50: []
   Drop20: []
   Drop5: []
   Drop1: []

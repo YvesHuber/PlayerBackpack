@@ -18,7 +18,6 @@ MonoBehaviour:
   Defense: 2
   Drop100:
   - {fileID: 108384048526549089, guid: 5fa5c78d56df845468f83272c24e2767, type: 3}
-  - {fileID: 8048459112721892817, guid: 3c64cbd2af7354583a0caed8a4a23535, type: 3}
   Drop50: []
   Drop20: []
   Drop5: []

@@ -10,15 +10,16 @@ public class Crafting : MonoBehaviour
     public Button Submit;
     public GameObject[] CraftingSlots;
     public Itemvalue[] Itemvalues = new Itemvalue[64];
-    public Itemvalue[] Temporaryvalues = new Itemvalue[64];
-    public GameObject Output;
+    private Itemvalue[] Temporaryvalues = new Itemvalue[64];
+    public GameObject OutputSlot;
     public Inventory Inventory;
     private ItemHolder Outputholder;
     public bool pressed = false;
+
+    //listen to onclick
     void Start()
     {
-
-        Outputholder = Output.GetComponent<ItemHolder>();
+        Outputholder = OutputSlot.GetComponent<ItemHolder>();
         Submit.onClick.AddListener(TaskOnClick);
         Outputholder.preview = true;
     }
@@ -29,10 +30,12 @@ public class Crafting : MonoBehaviour
         Outputholder.preview = false;
 
     }
+    //check if an crafting recepie can be crafted and display a preview
     void Update()
     {
         if (Outputholder.value == null)
         {
+            pressed = false;
             Outputholder.filled = false;
             Outputholder.preview = true;
         }
@@ -40,6 +43,7 @@ public class Crafting : MonoBehaviour
         Checkforrecepies();
         GiveItemsBack();
     }
+    //give items back to the user if he leaves and the bool saveitems is false
     void GiveItemsBack()
     {
         // Add Items back on Exit if Saveitems is false
@@ -61,14 +65,16 @@ public class Crafting : MonoBehaviour
                         {
                             ItemHolder holder = Slot.GetComponent<ItemHolder>();
                             Itemvalue value = holder.value;
-                            holder.value =  null;
+                            holder.value = null;
                             holder.amount = 0;
                         }
                     }
                 }
             }
+            gameObject.GetComponent<Crafting>().enabled = false;
         }
     }
+    //get the items of each slot and add it to an array
     void Slotdata()
     {
         if (Station.Saveitems == true || CraftingSlots[1].activeInHierarchy == true)
@@ -90,7 +96,7 @@ public class Crafting : MonoBehaviour
             }
         }
     }
-
+    // check if the item is used in an recepie
     bool isitemfound(Itemvalue CheckItem)
     {
         for (int i = 0; i < Temporaryvalues.Length; i++)
@@ -103,10 +109,10 @@ public class Crafting : MonoBehaviour
         }
         return false;
     }
+    //check if an recepie is craftable
     void Checkforrecepies()
     {
-        bool Everyitem = false;
-        bool Itemthere = true;
+
         foreach (CraftingRecepie Currentrecepie in Station.Recepies)
         {
             //get Recepie
@@ -115,18 +121,25 @@ public class Crafting : MonoBehaviour
                 //Check if needed Item is in Slot
                 if (!isitemfound(Item))
                 {
+                    Debug.Log("not correct crafting for");
                     return;
 
                 }
-                else
-                {
-                }
             }
+            Currentrecepie.canbecrafted = true;
             //Evey Item is used you can Craft
-            Craft(Currentrecepie);
+            if (Currentrecepie.canbecrafted == true)
+            {
+                Craft(Currentrecepie);
+            }
         }
 
     }
+
+
+    //craft is button is pressed
+    //remove all items
+    //output can be grabed
     void Craft(CraftingRecepie recepie)
     {
         Outputholder.value = recepie.Result;
