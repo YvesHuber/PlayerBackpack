@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class Breakable : MonoBehaviour
 {
@@ -30,65 +31,21 @@ public class Breakable : MonoBehaviour
         }
     }
     //get an array of random items each with their own drop chance
-    public Itemvalue[] returnItems()
+    public List<Itemvalue> getitems()
     {
-        Itemvalue[] RNGitems = new Itemvalue[64];
-        int i = 0;
-        int random = 0;
-        foreach (Itemvalue value in Object.Drop100)
-        {
-            random = (int)Random.Range(0, 100);
-            if (random <= 100)
-            {
-                RNGitems[i] = value;
-                Debug.Log(value);
-            }
-            i++;
-        }
-        foreach (Itemvalue value in Object.Drop50)
-        {
-            random = (int)Random.Range(0, 100);
-            if (random <= 50)
-            {
-                RNGitems[i] = value;
-                Debug.Log(value);
-            }
-            i++;
-        }
-        foreach (Itemvalue value in Object.Drop20)
-        {
-            random = (int)Random.Range(0, 100);
-            if (random <= 20)
-            {
-                RNGitems[i] = value;
-                Debug.Log(value);
-            }
-            i++;
-        }
-        foreach (Itemvalue value in Object.Drop5)
-        {
-            random = (int)Random.Range(0, 100);
-            if (random <= 5)
-            {
-                RNGitems[i] = value;
-                Debug.Log(value);
-            }
-            i++;
-        }
-        foreach (Itemvalue value in Object.Drop1)
-        {
-            random = (int)Random.Range(0, 100);
-            if (random <= 1)
-            {
-                RNGitems[i] = value;
-                Debug.Log(value);
-            }
-            i++;
-        }
-        return RNGitems;
+        List<Itemvalue> items = new List<Itemvalue>();
 
+        foreach (BreakableDropProbability Drop in Object.Drops)
+        {
+            float random = Random.Range(0, 100);
+            if (random <= Drop.Probabilty + 1)
+            {
+                items.Add(Drop.Drops);
+            }
+        }
+        return items;
     }
-    //check if the used tool is the same as the Breakablescriptableobject
+    //check if the used tool is the same as the Breakablescriptableobjec
     public bool Checktools(GameObject ItemSlot)
     {
         ItemHolder holder = ItemSlot.GetComponent<ItemHolder>();

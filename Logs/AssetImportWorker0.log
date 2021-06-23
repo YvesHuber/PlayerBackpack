@@ -3953,3 +3953,54 @@ System memory in use after: 232.3 MB.
 Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2046.
 Total: 1.212250 ms (FindLiveObjects: 0.112000 ms CreateObjectMapping: 0.027167 ms MarkObjects: 0.999375 ms  DeleteObjects: 0.072875 ms)
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000352 seconds.
+Callback registration failed. Increase kMaxCallback.
+
+Fatal Error! Callback registration failed. Increase kMaxCallback.
+
+Obtained 42 stack frames.
+#0  0x007fff203df946 in __pthread_kill
+#1  0x007fff20363411 in abort
+#2  0x000001050b393e in CrashDontLaunchBugReporter()
+#3  0x00000102d32197 in EditorMonoConsole::LogToConsoleImplementation(CppLogEntry const&)
+#4  0x00000102d3156c in EditorMonoConsole::LogToConsoleImplementation(DebugStringToFileData const&)
+#5  0x00000102d32f2e in LogToConsoleImplementation(DebugStringToFileData const&)
+#6  0x00000104afe29d in DebugStringToFilePostprocessedStacktrace(DebugStringToFileData const&)
+#7  0x00000104afeb83 in DebugStringToFile(DebugStringToFileData const&)
+#8  0x0000010074cfb4 in CallbackArrayBase<void (*)(AssemblyLoadFailure), void (*)(void const*, AssemblyLoadFailure)>::Register(void (*)(AssemblyLoadFailure), void (*)(void const*, AssemblyLoadFailure), void const*)
+#9  0x000001036ca788 in LoadDomainAndUserAssemblies(bool)
+#10 0x000001036cd17e in LoadUserAssemblies()
+#11 0x00000103bb25d9 in AssetImportWorkerClient::ReloadMonoDomain(AssetResolver&)
+#12 0x00000103bdd8be in core::mutable_function<void ()>::DispatchT<void IOService::PostHelper<AssetImportWorkerClient::HandleMessage(PrepareMessage const&)::$_5>(AssetImportWorkerClient::HandleMessage(PrepareMessage const&)::$_5&&, IOService::WrapCallableInFunctionTag)::'lambda'()>::Dispatch()
+#13 0x00000103c51560 in asio::detail::completion_handler<core::mutable_function<void ()> >::do_complete(asio::detail::task_io_service*, asio::detail::task_io_service_operation*, std::__1::error_code const&, unsigned long)
+#14 0x00000103c4e825 in asio::detail::task_io_service::do_run_one(asio::detail::scoped_lock<asio::detail::posix_mutex>&, asio::detail::task_io_service_thread_info&, std::__1::error_code const&)
+#15 0x00000103c4e2c1 in asio::detail::task_io_service::run(std::__1::error_code&)
+#16 0x00000103c4858a in IOService::Run(bool)
+#17 0x00000103ba59bc in RunAssetImporterV2()
+#18 0x00000102ea93a3 in Application::InitializeProject()
+#19 0x000001050bf2ad in -[EditorApplication applicationDidFinishLaunching:]
+#20 0x007fff204fce89 in __CFNOTIFICATIONCENTER_IS_CALLING_OUT_TO_AN_OBSERVER__
+#21 0x007fff20598848 in ___CFXRegistrationPost_block_invoke
+#22 0x007fff205987c5 in _CFXRegistrationPost
+#23 0x007fff204cdf24 in _CFXNotificationPost
+#24 0x007fff211632c8 in -[NSNotificationCenter postNotificationName:object:userInfo:]
+#25 0x007fff22c34e00 in -[NSApplication _postDidFinishNotification]
+#26 0x007fff22c34b52 in -[NSApplication _sendFinishLaunchingNotification]
+#27 0x007fff22c31cf1 in -[NSApplication(NSAppleEventHandling) _handleAEOpenEvent:]
+#28 0x007fff22c31947 in -[NSApplication(NSAppleEventHandling) _handleCoreEvent:withReplyEvent:]
+#29 0x007fff2118ea16 in -[NSAppleEventManager dispatchRawAppleEvent:withRawReply:handlerRefCon:]
+#30 0x007fff2118e886 in _NSAppleEventManagerGenericHandler
+#31 0x007fff2622b7d3 in _AppleEventsCheckInAppWithBlock
+#32 0x007fff2622aeee in _AppleEventsCheckInAppWithBlock
+#33 0x007fff26223bf3 in aeProcessAppleEvent
+#34 0x007fff2899b022 in AEProcessAppleEvent
+#35 0x007fff22c2bfd0 in _DPSNextEvent
+#36 0x007fff22c2a305 in -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+#37 0x007fff22c1c679 in -[NSApplication run]
+#38 0x007fff22bf085c in NSApplicationMain
+#39 0x000001050fa079 in EditorMain(int, char const**)
+#40 0x000001050fa2a9 in main
+#41 0x007fff20429f3d in start

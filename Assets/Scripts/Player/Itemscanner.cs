@@ -135,7 +135,7 @@ public class Itemscanner : MonoBehaviour
                             if (breakable.checktime() == true)
                             {
                                 //Get array of every random item pool and add it
-                                Itemvalue[] alldrops = breakable.returnItems();
+                                List<Itemvalue> alldrops = breakable.getitems();
                                 foreach (Itemvalue Dropeditem in alldrops){inv.Addbreakable(Dropeditem);}
                                 
 
