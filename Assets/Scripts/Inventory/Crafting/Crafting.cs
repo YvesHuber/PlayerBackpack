@@ -49,6 +49,9 @@ public class Crafting : MonoBehaviour
         // Add Items back on Exit if Saveitems is false
         if (Station.Saveitems == false && CraftingSlots[1].activeInHierarchy == false)
         {
+            Outputholder.value = null;
+            Outputholder.filled = false;
+            Outputholder.preview = true;
             for (int i = 0; i < Itemvalues.Length; i++)
             {
                 if (Itemvalues[i] != null)
@@ -60,6 +63,7 @@ public class Crafting : MonoBehaviour
                     }
                     if (Inventory.AddValue(Itemvalues[i], isarmor))
                     {
+                        Debug.Log("Added" + Itemvalues[i]);
                         Itemvalues[i] = null;
                         foreach (GameObject Slot in CraftingSlots)
                         {
