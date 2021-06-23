@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6489032ff2a8c4226a7abeb0c9ac2858, type: 3}
   m_Name: Axe
   m_EditorClassIdentifier: 
-  Place: {fileID: 0}
-  Itemvalues: []
-  Result: {fileID: 0}
+  Place: {fileID: 11400000, guid: ab01ef5b86f794befae101c98ec267a9, type: 2}
+  Itemvalues:
+  - {fileID: 11400000, guid: 5892fce6ef9f647438aeda519de802d5, type: 2}
+  - {fileID: 11400000, guid: f7f1eeafb694b42e682cbb30675f4f1a, type: 2}
+  Result: {fileID: 11400000, guid: 57f4642cf03224427866303e59f5ac64, type: 2}
   canbecrafted: 0

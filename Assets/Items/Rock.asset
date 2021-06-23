@@ -15,12 +15,12 @@ MonoBehaviour:
   id: 0
   Itemtype: 0
   rarity: 0
-  UiIcon: {fileID: 0}
-  DisplayTitle: 
-  Description: 
-  Worth: 0
-  StackSize: 0
-  MaxStackSize: 0
+  UiIcon: {fileID: 21300000, guid: e705cca481ca84ae892a9a85d21f53ff, type: 3}
+  DisplayTitle: Rock
+  Description: A hard Rock
+  Worth: 1
+  StackSize: 1
+  MaxStackSize: 4
   Healthajust: 0
   Staminaajust: 0
   Manaajust: 0

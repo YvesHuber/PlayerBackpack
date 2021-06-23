@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: Pickaxe
   m_EditorClassIdentifier: 
   id: 0
-  Itemtype: 0
-  rarity: 0
-  UiIcon: {fileID: 0}
-  DisplayTitle: 
-  Description: 
-  Worth: 0
-  StackSize: 0
-  MaxStackSize: 0
+  Itemtype: 6
+  rarity: 1
+  UiIcon: {fileID: 21300000, guid: 6867673b3ad224cd8a88e090dee70116, type: 3}
+  DisplayTitle: Pickaxe
+  Description: Its from fortnite
+  Worth: 4
+  StackSize: 1
+  MaxStackSize: 1
   Healthajust: 0
   Staminaajust: 0
   Manaajust: 0
@@ -29,7 +29,7 @@ MonoBehaviour:
   Critdamage: 0
   Strength: 0
   Defense: 0
-  Damage: 0
+  Damage: 1
   Hp: 0
   Speed: 0
   Equiptype: 0

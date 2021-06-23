@@ -15,7 +15,7 @@ MonoBehaviour:
   id: 4
   Itemtype: 6
   rarity: 0
-  UiIcon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  UiIcon: {fileID: 21300000, guid: 6db251f0941814251b3be202ed617d9c, type: 3}
   DisplayTitle: Axe
   Description: Used for cutting
   Worth: 0

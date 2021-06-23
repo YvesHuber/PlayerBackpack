@@ -31,5 +31,5 @@ MonoBehaviour:
   Defense: 2
   Damage: 32
   Hp: 500
-  Speed: 0
+  Speed: 100
   Equiptype: 6

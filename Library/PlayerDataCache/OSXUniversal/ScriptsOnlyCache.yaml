@@ -6,6 +6,7 @@ ScriptsOnlyBuild:
     - Crafting
     - CraftingRecepie
     - CraftingStation
+    - DropObjectProbability
     - Enemy
     - EnemyObject
     - Inventory
@@ -63,6 +64,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
     - Class: 81
@@ -72,59 +75,61 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1736}
+      Script: {instanceID: 1672}
     - Class: 114
-      Script: {instanceID: 1750}
+      Script: {instanceID: 1754}
     - Class: 114
-      Script: {instanceID: 1852}
+      Script: {instanceID: 1856}
     - Class: 114
-      Script: {instanceID: 1912}
+      Script: {instanceID: 1916}
     - Class: 114
-      Script: {instanceID: 1944}
+      Script: {instanceID: 1948}
     - Class: 114
-      Script: {instanceID: 2070}
+      Script: {instanceID: 2074}
     - Class: 114
-      Script: {instanceID: 2260}
+      Script: {instanceID: 2264}
     - Class: 114
-      Script: {instanceID: 2402}
+      Script: {instanceID: 2406}
     - Class: 114
-      Script: {instanceID: 2456}
+      Script: {instanceID: 2460}
     - Class: 114
-      Script: {instanceID: 2796}
+      Script: {instanceID: 2800}
     - Class: 114
-      Script: {instanceID: 2896}
+      Script: {instanceID: 2900}
     - Class: 114
-      Script: {instanceID: 2940}
+      Script: {instanceID: 2944}
     - Class: 114
-      Script: {instanceID: 3076}
+      Script: {instanceID: 3080}
     - Class: 114
-      Script: {instanceID: 3134}
+      Script: {instanceID: 3138}
     - Class: 114
-      Script: {instanceID: 3158}
+      Script: {instanceID: 3162}
     - Class: 114
-      Script: {instanceID: 3176}
+      Script: {instanceID: 3180}
     - Class: 114
-      Script: {instanceID: 3178}
+      Script: {instanceID: 3182}
     - Class: 114
-      Script: {instanceID: 3242}
+      Script: {instanceID: 3246}
     - Class: 114
-      Script: {instanceID: 3252}
+      Script: {instanceID: 3256}
     - Class: 114
-      Script: {instanceID: 3296}
+      Script: {instanceID: 3300}
     - Class: 114
-      Script: {instanceID: 3316}
+      Script: {instanceID: 3320}
     - Class: 114
-      Script: {instanceID: 3352}
+      Script: {instanceID: 3356}
     - Class: 114
-      Script: {instanceID: 3588}
+      Script: {instanceID: 3592}
     - Class: 114
-      Script: {instanceID: 3636}
+      Script: {instanceID: 3640}
     - Class: 114
-      Script: {instanceID: 3772}
+      Script: {instanceID: 3776}
     - Class: 114
-      Script: {instanceID: 3818}
+      Script: {instanceID: 3822}
     - Class: 114
-      Script: {instanceID: 3838}
+      Script: {instanceID: 3842}
+    - Class: 114
+      Script: {instanceID: 149660}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -156,16 +161,16 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
-      Hash: 5ab533713adae59372fb3e10a585c186
-    assemblyName: Unity.Timeline.dll
-    namespaceName: UnityEngine.Timeline
-    className: AnimationPlayableAsset
-  - hash:
-      serializedVersion: 2
       Hash: a6e561615949734e9f12f9b61661f43e
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Image
+  - hash:
+      serializedVersion: 2
+      Hash: 5ab533713adae59372fb3e10a585c186
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
       Hash: d87c9225dc05d40f8ab8b7ac5f980827
@@ -192,7 +197,7 @@ ScriptsOnlyBuild:
     className: Outline
   - hash:
       serializedVersion: 2
-      Hash: 61d3c84ee6a887a7256bee1c34c79863
+      Hash: 246bbbdd0a11460349a4e8f49081f943
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Crafting
@@ -222,7 +227,7 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 478193bd676ed17f817a6a0fb45cdd12
+      Hash: 36bd10cda3aa905e5e2bd14bb855b04e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyObject
@@ -516,7 +521,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
-      Hash: 7dd09a89d8b9bb8e65eb53ad2015f25d
+      Hash: b641cab335331614e63ca016d0aa9067
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Itemscanner
@@ -666,7 +671,7 @@ ScriptsOnlyBuild:
     className: GridLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: 048f25bfdc31b4f8442045a772a1c492
+      Hash: 78637283c7a14f8c059835ac0ad0f707
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Enemy
@@ -684,7 +689,7 @@ ScriptsOnlyBuild:
     className: LookWithMouse
   - hash:
       serializedVersion: 2
-      Hash: 59cf8ace8b47f93b936ea34f86731c7f
+      Hash: d97828d97f0c16a98cfd5f7b08e6339c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CraftingRecepie
@@ -694,7 +699,13 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextContainer
+  - hash:
+      serializedVersion: 2
+      Hash: 196554bc926fa3f0d16ea65655b00ed4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DropObjectProbability
   platform: 2
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: /Users/yveshuber/Desktop/Gamev0.5.app
+  playerPath: /Users/yveshuber/Desktop/Gamev0.6.app

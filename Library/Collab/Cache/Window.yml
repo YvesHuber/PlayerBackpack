@@ -14,6 +14,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
+    - Assets/6 Free Textures.meta
+    - Assets/6 Free Textures/Materials.meta
+    - Assets/6 Free Textures/Materials/Cracked Dirt.mat
+    - Assets/6 Free Textures/Materials/Cracked Dirt.mat.meta
+    - Assets/6 Free Textures/Materials/Seamless Bark Chips.mat
+    - Assets/6 Free Textures/Materials/Seamless Bark Chips.mat.meta
+    - Assets/6 Free Textures/Materials/Seamless Concrete.mat
+    - Assets/6 Free Textures/Materials/Seamless Concrete.mat.meta
+    - Assets/6 Free Textures/Materials/Seamless Grass.mat
+    - Assets/6 Free Textures/Materials/Seamless Grass.mat.meta
+    - Assets/6 Free Textures/Materials/Seamless Gravel.mat
+    - Assets/6 Free Textures/Materials/Seamless Gravel.mat.meta
+    - Assets/6 Free Textures/Materials/Tree Bark Texture.mat
+    - Assets/6 Free Textures/Materials/Tree Bark Texture.mat.meta
+    - Assets/6 Free Textures/Textures.meta
+    - Assets/6 Free Textures/Textures/Cracked Dirt.jpg
+    - Assets/6 Free Textures/Textures/Cracked Dirt.jpg.meta
+    - Assets/6 Free Textures/Textures/Seamless Bark Chips.jpg
+    - Assets/6 Free Textures/Textures/Seamless Bark Chips.jpg.meta
+    - Assets/6 Free Textures/Textures/Seamless Concrete.jpg
+    - Assets/6 Free Textures/Textures/Seamless Concrete.jpg.meta
+    - Assets/6 Free Textures/Textures/Seamless Grass.jpg
+    - Assets/6 Free Textures/Textures/Seamless Grass.jpg.meta
+    - Assets/6 Free Textures/Textures/Seamless Gravel.jpg
+    - Assets/6 Free Textures/Textures/Seamless Gravel.jpg.meta
+    - Assets/6 Free Textures/Textures/Tree Bark Texture.jpg
+    - Assets/6 Free Textures/Textures/Tree Bark Texture.jpg.meta
     - Assets/BreakableObject.meta
     - Assets/BreakableObject/Rock.asset
     - Assets/BreakableObject/Rock.asset.meta
@@ -35,9 +62,187 @@ MonoBehaviour:
     - Assets/CraftingStations/Furnace.asset.meta
     - Assets/CraftingStations/Workbench.asset
     - Assets/CraftingStations/Workbench.asset.meta
+    - Assets/DropProbbabiltyItems.meta
+    - Assets/DropProbbabiltyItems/Alex.asset
+    - Assets/DropProbbabiltyItems/Alex.asset.meta
+    - Assets/DropProbbabiltyItems/leather.asset
+    - Assets/DropProbbabiltyItems/leather.asset.meta
     - Assets/Enemy.meta
     - Assets/Enemy/Goblin.asset
     - Assets/Enemy/Goblin.asset.meta
+    - Assets/Enemy/Test.asset
+    - Assets/Enemy/Test.asset.meta
+    - Assets/Enemy/t.asset
+    - Assets/Enemy/t.asset.meta
+    - Assets/Ground textures pack.meta
+    - Assets/Ground textures pack/Dry ground.meta
+    - Assets/Ground textures pack/Dry ground/Dry ground pattern.mat
+    - Assets/Ground textures pack/Dry ground/Dry ground pattern.mat.meta
+    - Assets/Ground textures pack/Dry ground/diffuse.tga
+    - Assets/Ground textures pack/Dry ground/diffuse.tga.meta
+    - Assets/Ground textures pack/Dry ground/normal.tga
+    - Assets/Ground textures pack/Dry ground/normal.tga.meta
+    - Assets/Ground textures pack/Dry ground/preview.jpg
+    - Assets/Ground textures pack/Dry ground/preview.jpg.meta
+    - Assets/Ground textures pack/Grass & dead leafs 01.meta
+    - Assets/Ground textures pack/Grass & dead leafs 01/Grass & dead leafs pattern
+      01.mat
+    - Assets/Ground textures pack/Grass & dead leafs 01/Grass & dead leafs pattern
+      01.mat.meta
+    - Assets/Ground textures pack/Grass & dead leafs 01/diffuse.tga
+    - Assets/Ground textures pack/Grass & dead leafs 01/diffuse.tga.meta
+    - Assets/Ground textures pack/Grass & dead leafs 01/normal.tga
+    - Assets/Ground textures pack/Grass & dead leafs 01/normal.tga.meta
+    - Assets/Ground textures pack/Grass & dead leafs 01/preview.jpg
+    - Assets/Ground textures pack/Grass & dead leafs 01/preview.jpg.meta
+    - Assets/Ground textures pack/Grass & dead leafs 02.meta
+    - Assets/Ground textures pack/Grass & dead leafs 02/Grass & dead leafs pattern
+      02.mat
+    - Assets/Ground textures pack/Grass & dead leafs 02/Grass & dead leafs pattern
+      02.mat.meta
+    - Assets/Ground textures pack/Grass & dead leafs 02/diffuse.tga
+    - Assets/Ground textures pack/Grass & dead leafs 02/diffuse.tga.meta
+    - Assets/Ground textures pack/Grass & dead leafs 02/normal.tga
+    - Assets/Ground textures pack/Grass & dead leafs 02/normal.tga.meta
+    - Assets/Ground textures pack/Grass & dead leafs 02/preview.jpg
+    - Assets/Ground textures pack/Grass & dead leafs 02/preview.jpg.meta
+    - Assets/Ground textures pack/Grass & rocks.meta
+    - Assets/Ground textures pack/Grass & rocks/Grass & rocks pattern.mat
+    - Assets/Ground textures pack/Grass & rocks/Grass & rocks pattern.mat.meta
+    - Assets/Ground textures pack/Grass & rocks/diffuse.tga
+    - Assets/Ground textures pack/Grass & rocks/diffuse.tga.meta
+    - Assets/Ground textures pack/Grass & rocks/normal.tga
+    - Assets/Ground textures pack/Grass & rocks/normal.tga.meta
+    - Assets/Ground textures pack/Grass & rocks/preview.jpg
+    - Assets/Ground textures pack/Grass & rocks/preview.jpg.meta
+    - Assets/Ground textures pack/Grass 01.meta
+    - Assets/Ground textures pack/Grass 01/Grass pattern 01.mat
+    - Assets/Ground textures pack/Grass 01/Grass pattern 01.mat.meta
+    - Assets/Ground textures pack/Grass 01/diffuse.tga
+    - Assets/Ground textures pack/Grass 01/diffuse.tga.meta
+    - Assets/Ground textures pack/Grass 01/normal.tga
+    - Assets/Ground textures pack/Grass 01/normal.tga.meta
+    - Assets/Ground textures pack/Grass 01/preview.jpg
+    - Assets/Ground textures pack/Grass 01/preview.jpg.meta
+    - Assets/Ground textures pack/Grass 02.meta
+    - Assets/Ground textures pack/Grass 02/Grass pattern 02.mat
+    - Assets/Ground textures pack/Grass 02/Grass pattern 02.mat.meta
+    - Assets/Ground textures pack/Grass 02/diffuse.tga
+    - Assets/Ground textures pack/Grass 02/diffuse.tga.meta
+    - Assets/Ground textures pack/Grass 02/normal.tga
+    - Assets/Ground textures pack/Grass 02/normal.tga.meta
+    - Assets/Ground textures pack/Grass 02/preview.jpg
+    - Assets/Ground textures pack/Grass 02/preview.jpg.meta
+    - Assets/Ground textures pack/Grass 03.meta
+    - Assets/Ground textures pack/Grass 03/Grass pattern 03.mat
+    - Assets/Ground textures pack/Grass 03/Grass pattern 03.mat.meta
+    - Assets/Ground textures pack/Grass 03/diffuse.tga
+    - Assets/Ground textures pack/Grass 03/diffuse.tga.meta
+    - Assets/Ground textures pack/Grass 03/normal.tga
+    - Assets/Ground textures pack/Grass 03/normal.tga.meta
+    - Assets/Ground textures pack/Grass 03/preview.jpg
+    - Assets/Ground textures pack/Grass 03/preview.jpg.meta
+    - Assets/Ground textures pack/Grass 04.meta
+    - Assets/Ground textures pack/Grass 04/Grass pattern 04.mat
+    - Assets/Ground textures pack/Grass 04/Grass pattern 04.mat.meta
+    - Assets/Ground textures pack/Grass 04/diffuse.tga
+    - Assets/Ground textures pack/Grass 04/diffuse.tga.meta
+    - Assets/Ground textures pack/Grass 04/normal.tga
+    - Assets/Ground textures pack/Grass 04/normal.tga.meta
+    - Assets/Ground textures pack/Grass 04/preview.jpg
+    - Assets/Ground textures pack/Grass 04/preview.jpg.meta
+    - Assets/Ground textures pack/Grass 05.meta
+    - Assets/Ground textures pack/Grass 05/Grass pattern 05.mat
+    - Assets/Ground textures pack/Grass 05/Grass pattern 05.mat.meta
+    - Assets/Ground textures pack/Grass 05/diffuse.tga
+    - Assets/Ground textures pack/Grass 05/diffuse.tga.meta
+    - Assets/Ground textures pack/Grass 05/normal.tga
+    - Assets/Ground textures pack/Grass 05/normal.tga.meta
+    - Assets/Ground textures pack/Grass 05/preview.jpg
+    - Assets/Ground textures pack/Grass 05/preview.jpg.meta
+    - Assets/Ground textures pack/Grass 06.meta
+    - Assets/Ground textures pack/Grass 06/Grass pattern 06.mat
+    - Assets/Ground textures pack/Grass 06/Grass pattern 06.mat.meta
+    - Assets/Ground textures pack/Grass 06/diffuse.tga
+    - Assets/Ground textures pack/Grass 06/diffuse.tga.meta
+    - Assets/Ground textures pack/Grass 06/normal.tga
+    - Assets/Ground textures pack/Grass 06/normal.tga.meta
+    - Assets/Ground textures pack/Grass 06/preview.jpg
+    - Assets/Ground textures pack/Grass 06/preview.jpg.meta
+    - Assets/Ground textures pack/Ground & moss.meta
+    - Assets/Ground textures pack/Ground & moss/Ground & moss pattern.mat
+    - Assets/Ground textures pack/Ground & moss/Ground & moss pattern.mat.meta
+    - Assets/Ground textures pack/Ground & moss/diffuse.tga
+    - Assets/Ground textures pack/Ground & moss/diffuse.tga.meta
+    - Assets/Ground textures pack/Ground & moss/normal.tga
+    - Assets/Ground textures pack/Ground & moss/normal.tga.meta
+    - Assets/Ground textures pack/Ground & moss/preview.jpg
+    - Assets/Ground textures pack/Ground & moss/preview.jpg.meta
+    - Assets/Ground textures pack/Ground & rocks 01.meta
+    - Assets/Ground textures pack/Ground & rocks 01/Ground & rocks pattern 01.mat
+    - Assets/Ground textures pack/Ground & rocks 01/Ground & rocks pattern 01.mat.meta
+    - Assets/Ground textures pack/Ground & rocks 01/diffuse.tga
+    - Assets/Ground textures pack/Ground & rocks 01/diffuse.tga.meta
+    - Assets/Ground textures pack/Ground & rocks 01/normal.tga
+    - Assets/Ground textures pack/Ground & rocks 01/normal.tga.meta
+    - Assets/Ground textures pack/Ground & rocks 01/preview.jpg
+    - Assets/Ground textures pack/Ground & rocks 01/preview.jpg.meta
+    - Assets/Ground textures pack/Ground & rocks 02.meta
+    - Assets/Ground textures pack/Ground & rocks 02/Ground & rocks pattern 02.mat
+    - Assets/Ground textures pack/Ground & rocks 02/Ground & rocks pattern 02.mat.meta
+    - Assets/Ground textures pack/Ground & rocks 02/diffuse.tga
+    - Assets/Ground textures pack/Ground & rocks 02/diffuse.tga.meta
+    - Assets/Ground textures pack/Ground & rocks 02/normal.tga
+    - Assets/Ground textures pack/Ground & rocks 02/normal.tga.meta
+    - Assets/Ground textures pack/Ground & rocks 02/preview.jpg
+    - Assets/Ground textures pack/Ground & rocks 02/preview.jpg.meta
+    - Assets/Ground textures pack/Ground & rocks 03.meta
+    - Assets/Ground textures pack/Ground & rocks 03/Ground & rocks pattern 03.mat
+    - Assets/Ground textures pack/Ground & rocks 03/Ground & rocks pattern 03.mat.meta
+    - Assets/Ground textures pack/Ground & rocks 03/diffuse.tga
+    - Assets/Ground textures pack/Ground & rocks 03/diffuse.tga.meta
+    - Assets/Ground textures pack/Ground & rocks 03/normal.tga
+    - Assets/Ground textures pack/Ground & rocks 03/normal.tga.meta
+    - Assets/Ground textures pack/Ground & rocks 03/preview.jpg
+    - Assets/Ground textures pack/Ground & rocks 03/preview.jpg.meta
+    - Assets/Ground textures pack/Ground & weeds.meta
+    - Assets/Ground textures pack/Ground & weeds/Ground & weeds.mat
+    - Assets/Ground textures pack/Ground & weeds/Ground & weeds.mat.meta
+    - Assets/Ground textures pack/Ground & weeds/diffuse.tga
+    - Assets/Ground textures pack/Ground & weeds/diffuse.tga.meta
+    - Assets/Ground textures pack/Ground & weeds/normal.tga
+    - Assets/Ground textures pack/Ground & weeds/normal.tga.meta
+    - Assets/Ground textures pack/Ground & weeds/preview.jpg
+    - Assets/Ground textures pack/Ground & weeds/preview.jpg.meta
+    - Assets/Ground textures pack/Ground 01.meta
+    - Assets/Ground textures pack/Ground 01/Ground pattern 01.mat
+    - Assets/Ground textures pack/Ground 01/Ground pattern 01.mat.meta
+    - Assets/Ground textures pack/Ground 01/diffuse.tga
+    - Assets/Ground textures pack/Ground 01/diffuse.tga.meta
+    - Assets/Ground textures pack/Ground 01/normal.tga
+    - Assets/Ground textures pack/Ground 01/normal.tga.meta
+    - Assets/Ground textures pack/Ground 01/preview.jpg
+    - Assets/Ground textures pack/Ground 01/preview.jpg.meta
+    - Assets/Ground textures pack/Ground 02.meta
+    - Assets/Ground textures pack/Ground 02/Ground pattern 02.mat
+    - Assets/Ground textures pack/Ground 02/Ground pattern 02.mat.meta
+    - Assets/Ground textures pack/Ground 02/diffuse.tga
+    - Assets/Ground textures pack/Ground 02/diffuse.tga.meta
+    - Assets/Ground textures pack/Ground 02/normal.tga
+    - Assets/Ground textures pack/Ground 02/normal.tga.meta
+    - Assets/Ground textures pack/Ground 02/preview.jpg
+    - Assets/Ground textures pack/Ground 02/preview.jpg.meta
+    - Assets/Ground textures pack/Lava.meta
+    - Assets/Ground textures pack/Lava/Lava pattern.mat
+    - Assets/Ground textures pack/Lava/Lava pattern.mat.meta
+    - Assets/Ground textures pack/Lava/diffuse.tga
+    - Assets/Ground textures pack/Lava/diffuse.tga.meta
+    - Assets/Ground textures pack/Lava/emissive.tga
+    - Assets/Ground textures pack/Lava/emissive.tga.meta
+    - Assets/Ground textures pack/Lava/normal.tga
+    - Assets/Ground textures pack/Lava/normal.tga.meta
+    - Assets/Ground textures pack/Lava/preview.jpg
+    - Assets/Ground textures pack/Lava/preview.jpg.meta
     - Assets/Inventory.meta
     - Assets/Items.meta
     - Assets/Items/Alex.asset
@@ -60,6 +265,30 @@ MonoBehaviour:
     - Assets/Materials/New Material.mat
     - Assets/Materials/New Material.mat.meta
     - Assets/Models.meta
+    - Assets/Models/ArbolTipo1.blend
+    - Assets/Models/ArbolTipo1.blend.meta
+    - Assets/Models/ArbolTipo1.fbx
+    - Assets/Models/ArbolTipo1.fbx.meta
+    - Assets/Models/ArbolTipo2.blend
+    - Assets/Models/ArbolTipo2.blend.meta
+    - Assets/Models/ArbolTipo2.fbx
+    - Assets/Models/ArbolTipo2.fbx.meta
+    - Assets/Models/ArbolTipo3.1.blend
+    - Assets/Models/ArbolTipo3.1.blend.meta
+    - Assets/Models/ArbolTipo3.1.fbx
+    - Assets/Models/ArbolTipo3.1.fbx.meta
+    - Assets/Models/ArbolTipo3.2.blend
+    - Assets/Models/ArbolTipo3.2.blend.meta
+    - Assets/Models/ArbolTipo3.2.fbx
+    - Assets/Models/ArbolTipo3.2.fbx.meta
+    - Assets/Models/ArbolTipo3.3.blend
+    - Assets/Models/ArbolTipo3.3.blend.meta
+    - Assets/Models/ArbolTipo3.3.fbx
+    - Assets/Models/ArbolTipo3.3.fbx.meta
+    - Assets/Models/ArbolTipo4.blend
+    - Assets/Models/ArbolTipo4.blend.meta
+    - Assets/Models/ArbolTipo4.fbx
+    - Assets/Models/ArbolTipo4.fbx.meta
     - Assets/Models/Schwert.fbx
     - Assets/Models/Schwert.fbx.meta
     - Assets/Models/Sword.fbx
@@ -74,6 +303,8 @@ MonoBehaviour:
     - Assets/Models/tree.fbx.meta
     - Assets/Models/untitled.fbx
     - Assets/Models/untitled.fbx.meta
+    - Assets/Models/weapon_ml0 - fireaxe.fbx
+    - Assets/Models/weapon_ml0 - fireaxe.fbx.meta
     - Assets/New Terrain.asset
     - Assets/New Terrain.asset.meta
     - Assets/Packages.meta
@@ -676,8 +907,6 @@ MonoBehaviour:
     - Assets/Packages/_TerrainAutoUpgrade/layer_Groundplants 1_DGroundplants 1_N2023054508611406.terrainlayer.meta
     - Assets/Packages/_TerrainAutoUpgrade/layer_RockSharp 1_DRockSharp 1_N793646612c42751.terrainlayer
     - Assets/Packages/_TerrainAutoUpgrade/layer_RockSharp 1_DRockSharp 1_N793646612c42751.terrainlayer.meta
-    - Assets/Pants.png
-    - Assets/Pants.png.meta
     - Assets/Prefabs.meta
     - Assets/Prefabs/Breakables.meta
     - Assets/Prefabs/Breakables/Tree.prefab
@@ -801,6 +1030,8 @@ MonoBehaviour:
     - Assets/Scripts/Inventory/Crafting/CraftingStation.cs
     - Assets/Scripts/Inventory/Crafting/CraftingStation.cs.meta
     - Assets/Scripts/Inventory/Enemy.meta
+    - Assets/Scripts/Inventory/Enemy/DropObjectProbability.cs
+    - Assets/Scripts/Inventory/Enemy/DropObjectProbability.cs.meta
     - Assets/Scripts/Inventory/Enemy/Enemy.cs
     - Assets/Scripts/Inventory/Enemy/Enemy.cs.meta
     - Assets/Scripts/Inventory/Enemy/EnemyObject.cs
@@ -859,7 +1090,7 @@ MonoBehaviour:
     - ProjectSettings/TagManager.asset
     - ProjectSettings/UnityConnectSettings.asset
     - 
-    m_Values: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    m_Values: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 

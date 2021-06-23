@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6489032ff2a8c4226a7abeb0c9ac2858, type: 3}
   m_Name: Pickaxe
   m_EditorClassIdentifier: 
-  Place: {fileID: 0}
-  Itemvalues: []
-  Result: {fileID: 0}
-  canbecrafted: 0
+  Place: {fileID: 11400000, guid: f17570092e65f4c4eb337a12bfbe0d31, type: 2}
+  Itemvalues:
+  - {fileID: 11400000, guid: 5892fce6ef9f647438aeda519de802d5, type: 2}
+  - {fileID: 11400000, guid: 7c0f34090f47f411ab962bca649ab31d, type: 2}
+  Result: {fileID: 11400000, guid: ec4de0b7731b943d39c0a8c1cf0eea1e, type: 2}
+  canbecrafted: 1

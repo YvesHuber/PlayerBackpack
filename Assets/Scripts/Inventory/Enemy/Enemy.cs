@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using Random = UnityEngine.Random;
+using System.Linq;
 public class Enemy : MonoBehaviour
 {
     public EnemyObject Object;
@@ -23,7 +24,6 @@ public class Enemy : MonoBehaviour
     public void doDamage(float value)
     {
         Hp -= value;
-
         if (Hp <= 0)
         {
             Destroy(this.gameObject);
@@ -33,77 +33,33 @@ public class Enemy : MonoBehaviour
     //get the random items and instatiate them all
     public void ondeath()
     {
-        GameObject[] Spawnitems = getItems();
+        List<GameObject> Itemstospawn =  getitems();
 
         try
         {
-            foreach (GameObject prefab in Spawnitems)
+            
+            foreach (GameObject prefab in Itemstospawn)
             {
                 Instantiate(prefab, gameObject.transform.position, Quaternion.identity);
             }
+            
         }
         catch (Exception e)
         {
-
+            Debug.Log(e);
         }
+        
     }
     //get the random items of each array
-    public GameObject[] getItems()
-    {
-        GameObject[] RNGitems = new GameObject[64];
-        int i = 0;
-        int random = 0;
-        foreach (GameObject value in Object.Drop100)
-        {
-            random = (int)Random.Range(0, 100);
-            if (random <= 100)
-            {
-                RNGitems[i] = value;
-                Debug.Log(value);
-            }
-            i++;
-        }
-        foreach (GameObject value in Object.Drop50)
-        {
-            random = (int)Random.Range(0, 100);
-            if (random <= 50)
-            {
-                RNGitems[i] = value;
-                Debug.Log(value);
-            }
-            i++;
-        }
-        foreach (GameObject value in Object.Drop20)
-        {
-            random = (int)Random.Range(0, 100);
-            if (random <= 20)
-            {
-                RNGitems[i] = value;
-                Debug.Log(value);
-            }
-            i++;
-        }
-        foreach (GameObject value in Object.Drop5)
-        {
-            random = (int)Random.Range(0, 100);
-            if (random <= 5)
-            {
-                RNGitems[i] = value;
-                Debug.Log(value);
-            }
-            i++;
-        }
-        foreach (GameObject value in Object.Drop1)
-        {
-            random = (int)Random.Range(0, 100);
-            if (random <= 1)
-            {
-                RNGitems[i] = value;
-                Debug.Log(value);
-            }
-            i++;
-        }
-        return RNGitems;
+    public List<GameObject> getitems(){
+        List<GameObject> items = new List<GameObject>();
 
+        foreach(DropObjectProbability Drop in Object.Spawnitems){
+            float random = Random.Range(0,100);
+            if (random <= Drop.Probabilty + 1){
+                items.Add(Drop.Object);
+            }
+        }
+        return items;
     }
 }

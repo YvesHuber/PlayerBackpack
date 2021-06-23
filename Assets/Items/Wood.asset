@@ -17,7 +17,7 @@ MonoBehaviour:
   rarity: 0
   UiIcon: {fileID: 21300000, guid: ff3d926ded2a4284aa3f318ce2c7389b, type: 3}
   DisplayTitle: Wood
-  Description: Wood-
+  Description: Wood + Wood = Wood
   Worth: 5
   StackSize: 1
   MaxStackSize: 2

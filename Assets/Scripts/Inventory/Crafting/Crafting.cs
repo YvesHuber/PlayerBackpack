@@ -39,7 +39,6 @@ public class Crafting : MonoBehaviour
             Outputholder.filled = false;
             Outputholder.preview = true;
         }
-        Slotdata();
         Checkforrecepies();
         GiveItemsBack();
     }
@@ -50,27 +49,23 @@ public class Crafting : MonoBehaviour
         if (Station.Saveitems == false && CraftingSlots[1].activeInHierarchy == false)
         {
             Outputholder.value = null;
-            Outputholder.filled = false;
+            Outputholder.output = false;
             Outputholder.preview = true;
-            for (int i = 0; i < Itemvalues.Length; i++)
+            foreach (GameObject Slot in CraftingSlots)
             {
-                if (Itemvalues[i] != null)
+                ItemHolder holder = Slot.GetComponent<ItemHolder>();
+                if (holder.value != null)
                 {
-                    bool isarmor = false;
-                    if ((int)Itemvalues[i].Itemtype > 2)
+                    for (int i = 0; i < holder.amount; i++)
                     {
-                        isarmor = true;
-                    }
-                    if (Inventory.AddValue(Itemvalues[i], isarmor))
-                    {
-                        Debug.Log("Added" + Itemvalues[i]);
-                        Itemvalues[i] = null;
-                        foreach (GameObject Slot in CraftingSlots)
+                        if (holder.value != null)
                         {
-                            ItemHolder holder = Slot.GetComponent<ItemHolder>();
-                            Itemvalue value = holder.value;
+                            Inventory.AddValue(holder.value, false);
+                        }
+                        holder.amount--;
+                        if (holder.amount == 0)
+                        {
                             holder.value = null;
-                            holder.amount = 0;
                         }
                     }
                 }
@@ -78,55 +73,47 @@ public class Crafting : MonoBehaviour
             gameObject.GetComponent<Crafting>().enabled = false;
         }
     }
-    //get the items of each slot and add it to an array
-    void Slotdata()
-    {
-        if (Station.Saveitems == true || CraftingSlots[1].activeInHierarchy == true)
-        {
-            int i = 0;
-            foreach (GameObject Slot in CraftingSlots)
-            {
-                ItemHolder holder = Slot.GetComponent<ItemHolder>();
-                Itemvalue value = holder.value;
-                if (value != null)
-                {
-                    for (int amount = holder.amount; amount > 0; amount--)
-                    {
-                        Temporaryvalues[i] = value;
-                        Itemvalues[i] = value;
-                        i++;
-                    }
-                }
-            }
-        }
-    }
+
     // check if the item is used in an recepie
     bool isitemfound(Itemvalue CheckItem)
     {
-        for (int i = 0; i < Temporaryvalues.Length; i++)
+        bool everyitemtrue = false;
+        foreach (GameObject Slot in CraftingSlots)
         {
-            if (Temporaryvalues[i] == CheckItem)
+            ItemHolder holder = Slot.GetComponent<ItemHolder>();
+            if (holder.value != null)
             {
-                Temporaryvalues[i] = null;
-                return true;
+                Debug.Log(holder.value);
+                if (holder.value == CheckItem)
+                {
+                    
+                    everyitemtrue = true;
+                }
+                else if (holder.value != CheckItem)
+                {
+                    everyitemtrue = false;
+                }
             }
+
         }
-        return false;
+        return everyitemtrue;
     }
     //check if an recepie is craftable
     void Checkforrecepies()
     {
+        //get Recepie
         foreach (CraftingRecepie Currentrecepie in Station.Recepies)
         {
-            //get Recepie
+            //Check if needed Item is in Slot
             foreach (Itemvalue Item in Currentrecepie.Itemvalues)
             {
-                //Check if needed Item is in Slot
                 if (!isitemfound(Item))
                 {
+                    Debug.Log(Item + " was not found for " + Currentrecepie );
                     return;
                 }
             }
+            Debug.Log(Currentrecepie + " can be crafted");
             Currentrecepie.canbecrafted = true;
             //Evey Item is used you can Craft
             if (Currentrecepie.canbecrafted == true)
@@ -136,8 +123,6 @@ public class Crafting : MonoBehaviour
         }
 
     }
-
-
     //craft is button is pressed
     //remove all items
     //output can be grabed
@@ -152,19 +137,23 @@ public class Crafting : MonoBehaviour
             foreach (Itemvalue Item in recepie.Itemvalues)
             {
                 bool ready = false;
-                while (ready == false) {
-                ItemHolder h = CraftingSlots[index].GetComponent<ItemHolder>();
-                if (checkforitem(Item,h.value)){
-                    h.amount -= 1;
-                    if (h.amount == 0){
-                        index++;
-                        h.value = null;
+                while (ready == false)
+                {
+                    ItemHolder h = CraftingSlots[index].GetComponent<ItemHolder>();
+                    if (checkforitem(Item, h.value))
+                    {
+                        h.amount -= 1;
+                        if (h.amount == 0)
+                        {
+                            index++;
+                            h.value = null;
+                        }
+                        ready = true;
                     }
-                    ready = true;
-                }
-                else {
-                index++;
-                }
+                    else
+                    {
+                        index++;
+                    }
                 }
             }
             Outputholder.filled = true;
@@ -176,8 +165,10 @@ public class Crafting : MonoBehaviour
         }
     }
     //compates 2 items and returns true or false
-    bool checkforitem(Itemvalue one, Itemvalue two){
-        if(one == two){
+    bool checkforitem(Itemvalue one, Itemvalue two)
+    {
+        if (one == two)
+        {
             return true;
         }
         return false;
