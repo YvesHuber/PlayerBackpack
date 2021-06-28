@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0e3d915400244b5ca9cdee9603cb24a, type: 3}
   m_Name: Wood
   m_EditorClassIdentifier: 
-  Drops: {fileID: 0}
-  Probabilty: 0
+  Drops: {fileID: 11400000, guid: 5892fce6ef9f647438aeda519de802d5, type: 2}
+  Probabilty: 100

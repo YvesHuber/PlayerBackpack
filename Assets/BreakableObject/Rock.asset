@@ -15,10 +15,5 @@ MonoBehaviour:
   Timebetweenbreaks: 3
   Name: Rock
   Breakeme: 0
-  Drop100:
-  - {fileID: 11400000, guid: f7f1eeafb694b42e682cbb30675f4f1a, type: 2}
-  Drop50:
-  - {fileID: 11400000, guid: 7c0f34090f47f411ab962bca649ab31d, type: 2}
-  Drop20: []
-  Drop5: []
-  Drop1: []
+  Drops:
+  - {fileID: 11400000, guid: 445e26a1735e34ce8a120b571a6beae5, type: 2}

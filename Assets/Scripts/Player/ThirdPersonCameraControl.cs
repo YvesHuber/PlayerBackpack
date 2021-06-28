@@ -8,10 +8,9 @@ public class ThirdPersonCameraControl : MonoBehaviour
     public Transform Target, Player;
     float mouseX, mouseY;
     bool looking = true;
-    public Transform Obstruction;    
+    public Itemscanner Scannerscript;
     void Start()
     {
-        Obstruction = Target;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }
@@ -20,27 +19,31 @@ public class ThirdPersonCameraControl : MonoBehaviour
     {
         CamControl();
     }
-    
+
     //move camera with mouse
     void CamControl()
-    {   
-        mouseX += Input.GetAxis("Mouse X") * rotationSpeed;
-        mouseY -= Input.GetAxis("Mouse Y") * rotationSpeed;
-        mouseY = Mathf.Clamp(mouseY, -60, 60);
+    {
+        //only if the inventory of crafting is closed
+        if (Scannerscript.Mouseactive == false)
+        {
+            mouseX += Input.GetAxis("Mouse X") * rotationSpeed;
+            mouseY -= Input.GetAxis("Mouse Y") * rotationSpeed;
+            mouseY = Mathf.Clamp(mouseY, -60, 60);
 
 
-        //if rightclick only move camera not player
-        if (Input.GetMouseButton(1))
-        {
-            transform.LookAt(Player);
-            Target.rotation = Quaternion.Euler(mouseY, mouseX, 0);                
-        }
-        else
-        {
-        transform.LookAt(Target);
-        Target.rotation = Quaternion.Euler(mouseY, mouseX, 0);
-        Player.rotation = Quaternion.Euler(0, mouseX, 0);
+            //if rightclick only move camera not player
+            if (Input.GetMouseButton(1))
+            {
+                transform.LookAt(Player);
+                Target.rotation = Quaternion.Euler(mouseY, mouseX, 0);
+            }
+            else
+            {
+                transform.LookAt(Target);
+                Target.rotation = Quaternion.Euler(mouseY, mouseX, 0);
+                Player.rotation = Quaternion.Euler(0, mouseX, 0);
+            }
         }
     }
-    
+
 }

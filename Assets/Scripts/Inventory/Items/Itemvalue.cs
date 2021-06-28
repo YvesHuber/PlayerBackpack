@@ -7,7 +7,7 @@ public class Itemvalue : ScriptableObject
 {
     public int id;
     public enum type {Material,Consumable,Headarmor,Chestarmor,Leggingsarmor,Sheosarmor,Primaryarm,Secondaryarm};
-    public enum raritys {Common,Uncommon,Rare,Epic,Legendary,Void};
+    public enum raritys {Common,Uncommon,Rare,Epic,Legendary};
     public enum Type{Pickaxe,Axe,Hoe};
     public type Itemtype;
     public raritys rarity;
@@ -19,7 +19,6 @@ public class Itemvalue : ScriptableObject
     public int MaxStackSize;
     public float Healthajust;
     public float Staminaajust;
-    public float Manaajust;
     public float Miningspeed;
     public float Critchance;
     public float Critdamage;

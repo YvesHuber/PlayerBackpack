@@ -38,7 +38,7 @@ public class Breakable : MonoBehaviour
         foreach (BreakableDropProbability Drop in Object.Drops)
         {
             float random = Random.Range(0, 100);
-            if (random <= Drop.Probabilty + 1)
+            if (random <= Drop.Probabilty + 0.01)
             {
                 items.Add(Drop.Drops);
             }

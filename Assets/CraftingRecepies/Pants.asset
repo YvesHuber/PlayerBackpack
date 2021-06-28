@@ -15,7 +15,5 @@ MonoBehaviour:
   Place: {fileID: 11400000, guid: ab01ef5b86f794befae101c98ec267a9, type: 2}
   Itemvalues:
   - {fileID: 11400000, guid: 5892fce6ef9f647438aeda519de802d5, type: 2}
-  - {fileID: 11400000, guid: 5892fce6ef9f647438aeda519de802d5, type: 2}
-  - {fileID: 11400000, guid: 5892fce6ef9f647438aeda519de802d5, type: 2}
   Result: {fileID: 11400000, guid: aebdbcee4e2c94bd3a699b0979b4f771, type: 2}
   canbecrafted: 1

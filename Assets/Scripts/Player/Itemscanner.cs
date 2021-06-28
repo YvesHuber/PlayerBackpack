@@ -23,11 +23,17 @@ public class Itemscanner : MonoBehaviour
     private bool UIEquipment = false;
     private bool UICrafting = false;
     float enemytimer = 5;
+    public bool Mouseactive;
 
     float time = 0;
 
     void Update()
     {
+        Mouseactive = false;
+        if (UIEquipment == true || UICrafting == true){
+            Mouseactive = true;
+        }
+
         enemytimer += Time.deltaTime;
         Enemyhealthbar.gameObject.SetActive(false);
         if (enemytimer <= 5){
@@ -115,6 +121,7 @@ public class Itemscanner : MonoBehaviour
                         SetUIActive(canvasObject, Equip, UIEquipment);
                     }
                     UICrafting = SetUIActive(canvasObject, Crafting, UICrafting);
+                    UIEquipment = false;
                 }
             }
             //Lazer hits a breakable set the text to the name and display the tool
@@ -124,7 +131,7 @@ public class Itemscanner : MonoBehaviour
                 Breakable breakable = Object.GetComponent<Breakable>();
                 textMesh.text = breakable.Object.Name + " \n Requires " + breakable.Object.Breakeme + " to break";
                 //presses E
-                if (Input.GetKeyDown(KeyCode.E))
+                if (Input.GetMouseButtonDown(0))
                 {
                     try
                     {
@@ -151,7 +158,7 @@ public class Itemscanner : MonoBehaviour
             }
         }
         // Show and Hide Inventory with I 
-        if (Input.GetKeyDown(KeyCode.I))
+        if (Input.GetKeyDown(KeyCode.Tab))
         {
             //deactivate other if on
             if (UICrafting == true)
@@ -159,6 +166,7 @@ public class Itemscanner : MonoBehaviour
                 SetUIActive(canvasObject, Crafting, UICrafting);
             }
             UIEquipment = SetUIActive(canvasObject, Equip, UIEquipment);
+            UICrafting = false;
         }
 
 

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5045155164641380446}
   - component: {fileID: 5045155164641380442}
   - component: {fileID: 5045155164641380447}
+  - component: {fileID: 1199552329714217465}
   m_Layer: 0
   m_Name: Tree
   m_TagString: Breakable
@@ -63,20 +64,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Object: {fileID: 11400000, guid: a4dea721cf6a9436d8dac10fa022bc85, type: 2}
   timer: 0
---- !u!64 &8378746654131770892
-MeshCollider:
+--- !u!205 &1199552329714217465
+LODGroup:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5862183543948026555}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_GameObject: {fileID: 5045155164641380441}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -1.953064, y: 3.8756647, z: -0.9865072}
+  m_Size: 8.529066
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 6295701782037385496}
+    - renderer: {fileID: 7105416435486542117}
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 7105416435486542117}
+    - renderer: {fileID: 6295701782037385496}
+  - screenRelativeHeight: 0.1
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 7105416435486542117}
+    - renderer: {fileID: 6295701782037385496}
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!1001 &6745197133414309866
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -140,19 +157,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4683669308469848369, guid: 5fc3c7141189c4f61bd1468978a3c47c, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 776046731749314290, guid: 5fc3c7141189c4f61bd1468978a3c47c, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 776046731749314290, guid: 5fc3c7141189c4f61bd1468978a3c47c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 061b3c5aacca044ceb6d34e6d8defcdf, type: 2}
     - target: {fileID: 919132149155446097, guid: 5fc3c7141189c4f61bd1468978a3c47c, type: 3}
       propertyPath: m_Name
       value: ArbolTipo2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fc3c7141189c4f61bd1468978a3c47c, type: 3}
---- !u!1 &5862183543948026555 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5fc3c7141189c4f61bd1468978a3c47c, type: 3}
-  m_PrefabInstance: {fileID: 6745197133414309866}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6490100974870984705 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5fc3c7141189c4f61bd1468978a3c47c, type: 3}
+  m_PrefabInstance: {fileID: 6745197133414309866}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &7105416435486542117 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -4683669308469848369, guid: 5fc3c7141189c4f61bd1468978a3c47c, type: 3}
+  m_PrefabInstance: {fileID: 6745197133414309866}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &6295701782037385496 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 776046731749314290, guid: 5fc3c7141189c4f61bd1468978a3c47c, type: 3}
   m_PrefabInstance: {fileID: 6745197133414309866}
   m_PrefabAsset: {fileID: 0}

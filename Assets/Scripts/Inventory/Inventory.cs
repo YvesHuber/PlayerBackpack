@@ -12,6 +12,7 @@ public class Inventory : MonoBehaviour
     int Currentamount;
     ItemHolder Future;
     Itemvalue FutureItemvalue;
+    public Stats Playerstats;
     int Futureamount;
     private GameObject Slottoequip;
     private ItemHolder Slot;
@@ -99,6 +100,15 @@ public class Inventory : MonoBehaviour
             }
         }
         Slot = null;
+    }
+
+    public void Consume(GameObject Slot){
+        ItemHolder holder = Slot.GetComponent<ItemHolder>();
+        Playerstats.Addstats(holder.value);
+        holder.amount -= 1;
+        if (holder.amount <= 0){
+            holder.value = null;
+        }
     }
     //Add armor and compare the slots 
     public void Addarmor(int Enumint, GameObject selfslot)

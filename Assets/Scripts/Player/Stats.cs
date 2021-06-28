@@ -25,7 +25,7 @@ public class Stats : MonoBehaviour
         Updatecheck();
     }
     //add the stats to the player
-    void Addstats(Itemvalue Item)
+    public void Addstats(Itemvalue Item)
     {
         maxHP += Item.Hp;
         stamina += Item.Staminaajust;
@@ -35,6 +35,7 @@ public class Stats : MonoBehaviour
         Defense += Item.Defense;
         Critdamage += Item.Critdamage;
         Critchance += Item.Critchance;
+        hp += Item.Healthajust;
     }
     //remove the stats from the player
     void Removestats(Itemvalue Item)

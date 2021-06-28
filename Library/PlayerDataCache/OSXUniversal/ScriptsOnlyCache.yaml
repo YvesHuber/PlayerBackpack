@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - Breakable
+    - BreakableDropProbability
     - BreakableObject
     - Crafting
     - CraftingRecepie
@@ -77,59 +78,61 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1672}
     - Class: 114
-      Script: {instanceID: 1754}
+      Script: {instanceID: 1752}
     - Class: 114
-      Script: {instanceID: 1856}
+      Script: {instanceID: 1854}
     - Class: 114
-      Script: {instanceID: 1916}
+      Script: {instanceID: 1914}
     - Class: 114
-      Script: {instanceID: 1948}
+      Script: {instanceID: 1946}
     - Class: 114
-      Script: {instanceID: 2074}
+      Script: {instanceID: 2072}
+    - Class: 114
+      Script: {instanceID: 2190}
     - Class: 114
       Script: {instanceID: 2264}
     - Class: 114
-      Script: {instanceID: 2406}
+      Script: {instanceID: 2388}
     - Class: 114
-      Script: {instanceID: 2460}
+      Script: {instanceID: 2408}
     - Class: 114
-      Script: {instanceID: 2800}
+      Script: {instanceID: 2462}
     - Class: 114
-      Script: {instanceID: 2900}
+      Script: {instanceID: 2802}
     - Class: 114
-      Script: {instanceID: 2944}
+      Script: {instanceID: 2902}
     - Class: 114
-      Script: {instanceID: 3080}
+      Script: {instanceID: 2946}
     - Class: 114
-      Script: {instanceID: 3138}
+      Script: {instanceID: 3082}
     - Class: 114
-      Script: {instanceID: 3162}
+      Script: {instanceID: 3140}
     - Class: 114
-      Script: {instanceID: 3180}
+      Script: {instanceID: 3164}
     - Class: 114
       Script: {instanceID: 3182}
     - Class: 114
-      Script: {instanceID: 3246}
+      Script: {instanceID: 3184}
     - Class: 114
-      Script: {instanceID: 3256}
+      Script: {instanceID: 3248}
     - Class: 114
-      Script: {instanceID: 3300}
+      Script: {instanceID: 3258}
     - Class: 114
-      Script: {instanceID: 3320}
+      Script: {instanceID: 3302}
     - Class: 114
-      Script: {instanceID: 3356}
+      Script: {instanceID: 3322}
     - Class: 114
-      Script: {instanceID: 3592}
+      Script: {instanceID: 3358}
     - Class: 114
-      Script: {instanceID: 3640}
+      Script: {instanceID: 3594}
     - Class: 114
-      Script: {instanceID: 3776}
+      Script: {instanceID: 3642}
     - Class: 114
-      Script: {instanceID: 3822}
+      Script: {instanceID: 3778}
     - Class: 114
-      Script: {instanceID: 3842}
+      Script: {instanceID: 3824}
     - Class: 114
-      Script: {instanceID: 149660}
+      Script: {instanceID: 3844}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -317,13 +320,19 @@ ScriptsOnlyBuild:
     className: PositionAsUV1
   - hash:
       serializedVersion: 2
+      Hash: ddd00a8aa37fa0f1693f6fd800c57690
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BreakableDropProbability
+  - hash:
+      serializedVersion: 2
       Hash: 87ff43d2baf3385cba327d8f803a4ebb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AudioPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: 218f337a26ae864fc3711c5235e7cbb1
+      Hash: d849668768a5a0c84d10997515af9808
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BreakableObject
@@ -347,13 +356,19 @@ ScriptsOnlyBuild:
     className: Dropdown
   - hash:
       serializedVersion: 2
+      Hash: 196554bc926fa3f0d16ea65655b00ed4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DropObjectProbability
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: GroupTrack
   - hash:
       serializedVersion: 2
-      Hash: 914059e9bb5acbbd4e1b7b6caffc0d85
+      Hash: 6a38ac711a02f7457d081b10dd60935a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ItemHolder
@@ -425,7 +440,7 @@ ScriptsOnlyBuild:
     className: SignalReceiver
   - hash:
       serializedVersion: 2
-      Hash: 0e6ba203c1c467bb97fce2c5edf2aeaf
+      Hash: 15e57d1c3914f3859981bbb8fda717e6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ThirdPersonCameraControl
@@ -521,7 +536,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
-      Hash: b641cab335331614e63ca016d0aa9067
+      Hash: 014f01e739ddff5e66d96ed80302092d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Itemscanner
@@ -699,13 +714,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextContainer
-  - hash:
-      serializedVersion: 2
-      Hash: 196554bc926fa3f0d16ea65655b00ed4
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DropObjectProbability
   platform: 2
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: /Users/yveshuber/Desktop/Gamev0.6.app
+  playerPath: /Users/yveshuber/Desktop/Gamev0.8.app

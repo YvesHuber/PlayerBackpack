@@ -19,3 +19,4 @@ MonoBehaviour:
   Spawnitems:
   - {fileID: 11400000, guid: d346fbf83e49d413ebd8dc54a848df04, type: 2}
   - {fileID: 11400000, guid: f3e5735d56f364456b67449a67bf776c, type: 2}
+  - {fileID: 11400000, guid: f3e5735d56f364456b67449a67bf776c, type: 2}

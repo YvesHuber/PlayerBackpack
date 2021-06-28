@@ -15,9 +15,5 @@ MonoBehaviour:
   Timebetweenbreaks: 5
   Name: Tree
   Breakeme: 1
-  Drop100:
-  - {fileID: 11400000, guid: 5892fce6ef9f647438aeda519de802d5, type: 2}
-  Drop50: []
-  Drop20: []
-  Drop5: []
-  Drop1: []
+  Drops:
+  - {fileID: 11400000, guid: b917ec63235fb4f218b3f5e518cfc83e, type: 2}

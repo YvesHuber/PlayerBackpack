@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using TMPro;
 using System;
-public class ItemHolder : MonoBehaviour, IPointerDownHandler, IPointerEnterHandler, IBeginDragHandler, IDragHandler, IEndDragHandler, IDropHandler, IPointerExitHandler
+public class ItemHolder : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IDragHandler, IEndDragHandler, IDropHandler
 {
     public Inventory inv;
     public Itemvalue value;
@@ -15,13 +15,12 @@ public class ItemHolder : MonoBehaviour, IPointerDownHandler, IPointerEnterHandl
     public bool Equipmentslot;
     public bool output;
     public bool preview;
-    public TextMeshProUGUI hovertext;
     Image image;
     public TextMeshProUGUI counter;
     Image itemBeingDragged;
     Vector3 startPosition;
     GameObject Self;
-    //check the counter and image of the Slot and clear hovertext
+    //check the counter and image of the Slot
     void Update()
     {
         counter.text = " ";
@@ -46,31 +45,22 @@ public class ItemHolder : MonoBehaviour, IPointerDownHandler, IPointerEnterHandl
             var tempColor = image.color;
             tempColor.a = 0f;
             image.color = tempColor;
-            hovertext.text = " ";
+            amount = 0;
         }
     }
-
-    //if the pointer is over A slot set the Hovertext
-    public void OnPointerEnter(PointerEventData eventData){
-        if(value != null){
-            hovertext.text =
-            value.DisplayTitle + "\n"+
-            value.Description + "\n" +
-            value.Worth;
-        }
-    }
-    public void OnPointerExit(PointerEventData eventData){
-    hovertext.text = " ";
-    }    
     //if the slot is clicked Add the Armor to the specific slot
     public void OnPointerDown(PointerEventData eventData) {
         if (filled == true && preview == false) 
         {
+            try {
+            if ((int)value.Itemtype == 1 && output == false){
+                inv.Consume(transform.gameObject);
+            }
             if ((int)value.Itemtype >= 2 && output == false)
             {
                 inv.Addarmor((int)value.Itemtype,transform.gameObject);
             }
-            try {
+            
             if((int)value.Itemtype >= 2 && Equipmentslot == true){
                 if(inv.AddValue(value,true) == true){
                     value = null;
@@ -107,7 +97,7 @@ public class ItemHolder : MonoBehaviour, IPointerDownHandler, IPointerEnterHandl
     public void OnDrop(PointerEventData enventData)
     {
         // Cant drop in specific Slots
-        if (output == false && preview == false && Equipmentslot == false){
+        if (preview == false && Equipmentslot == false){
         Self = transform.gameObject;
         inv.checkslotandswitch(transform.position, Self);
         }

@@ -78,14 +78,14 @@ public class ThirdPersonCharacterControl : MonoBehaviour
         Sneaking = false;
         stats.stamina = stats.stamina + stats.sthregen * Time.deltaTime;
         //Sneak with shift
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKey(KeyCode.RightControl))
         {
             Tempo = Sneak;
             Sneaking = true;
         }
 
         //Sprint with R
-        if (Input.GetKey(KeyCode.R) && Exhausted == false)
+        if (Input.GetKey(KeyCode.LeftShift) && Exhausted == false)
         {
             Tempo = Sprint;
             Sprinting = true;

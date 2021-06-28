@@ -19,7 +19,6 @@ public class Item : MonoBehaviour
         public int MaxStackSize;
         public float Healthajust;
         public float Staminaajust;
-        public float Manaajust;
         public float Miningspeed;
         public float Critchance;
         public float Critdamage;
@@ -43,7 +42,6 @@ public class Item : MonoBehaviour
         MaxStackSize = value.MaxStackSize;
         Healthajust = value.Healthajust;
         Staminaajust = value.Staminaajust;
-        Manaajust = value.Manaajust;
         Miningspeed = value.Miningspeed;
         Critchance = value.Critchance;
         Critdamage = value.Critdamage;
