@@ -85,7 +85,7 @@ public class Itemscanner : MonoBehaviour
                 textMesh.text = Scriptableobject.DisplayTitle;
                 //Get rarity and change the color of the Text
                 int rarval = (int)Scriptableobject.rarity;
-                if (rarval == 0) { textMesh.color = new Color(255, 255, 255, 255); }
+                if (rarval == 0) { textMesh.color = new Color(0, 0, 0, 255); }
                 if (rarval == 1) { textMesh.color = new Color(0, 227, 0, 255); }
                 if (rarval == 2) { textMesh.color = new Color(0, 0, 277, 255); }
                 if (rarval == 3) { textMesh.color = new Color(186, 0, 254, 255); }
@@ -110,7 +110,7 @@ public class Itemscanner : MonoBehaviour
                 crafting.enabled = true;
                 CraftingStation Station = crafting.Station;
                 textMesh.text = Station.Name;
-                textMesh.color = new Color(255, 255, 255, 255);
+                textMesh.color = new Color(0, 0, 0, 255);
                 StationText.text = Station.Name;
                 //if the player presses E
                 if (Input.GetKeyDown(KeyCode.E))
@@ -127,7 +127,7 @@ public class Itemscanner : MonoBehaviour
             //Lazer hits a breakable set the text to the name and display the tool
             if (hit.collider.CompareTag("Breakable"))
             {
-                textMesh.color = new Color(255, 255, 255, 255);
+                textMesh.color = new Color(0, 0, 0, 255);
                 Breakable breakable = Object.GetComponent<Breakable>();
                 textMesh.text = breakable.Object.Name + " \n Requires " + breakable.Object.Breakeme + " to break";
                 //presses E

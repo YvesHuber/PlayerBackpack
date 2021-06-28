@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0e3d915400244b5ca9cdee9603cb24a, type: 3}
   m_Name: Apple
   m_EditorClassIdentifier: 
-  Drops: {fileID: 0}
-  Probabilty: 0
+  Drops: {fileID: 11400000, guid: 7f1ed3d681d7648ac9f2c3d77b42a4a5, type: 2}
+  Probabilty: 70

@@ -17,3 +17,4 @@ MonoBehaviour:
   Breakeme: 1
   Drops:
   - {fileID: 11400000, guid: b917ec63235fb4f218b3f5e518cfc83e, type: 2}
+  - {fileID: 11400000, guid: 1fb6d9540d5dc45e4931ef83205297c3, type: 2}

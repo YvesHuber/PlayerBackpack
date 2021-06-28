@@ -17,13 +17,12 @@ MonoBehaviour:
   rarity: 0
   UiIcon: {fileID: 21300000, guid: ff3d926ded2a4284aa3f318ce2c7389b, type: 3}
   DisplayTitle: Wood
-  Description: Wood + Wood = Wood
+  Description: A piece of wood
   Worth: 5
   StackSize: 1
   MaxStackSize: 1
   Healthajust: 0
   Staminaajust: 0
-  Manaajust: 0
   Miningspeed: 0
   Critchance: 0
   Critdamage: 0

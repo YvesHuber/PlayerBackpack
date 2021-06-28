@@ -149,6 +149,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
+    - Class: 205
+      Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
     - Class: 218
@@ -160,6 +162,8 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
     - Class: 850595691
+      Script: {instanceID: 0}
+    - Class: 1953259897
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -176,7 +180,7 @@ ScriptsOnlyBuild:
     className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: d87c9225dc05d40f8ab8b7ac5f980827
+      Hash: 25dbeb2c01e3ba53fe1d7c0b8f190186
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Itemvalue
@@ -560,7 +564,7 @@ ScriptsOnlyBuild:
     className: ThirdPersonCharacterControl
   - hash:
       serializedVersion: 2
-      Hash: ba019a79deb9b6568257a41c1fa5e9a2
+      Hash: 847ba7c8ad1b619ca597c2762b1b28bd
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Item
@@ -590,7 +594,7 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
-      Hash: 4e6e3adad0a25a7cbc30e59bc481780c
+      Hash: 69467f834100d39234a389e0d25d3f1b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Inventory
@@ -717,4 +721,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: /Volumes/Storage/Gamev0.8/Evelutuion.exe
+  playerPath: /Users/yveshuber/Desktop/pc killer/Evelutuion.exe

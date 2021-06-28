@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 544542ad6633d469eb4c4e020fecc69f, type: 3}
   m_Name: Goblin
   m_EditorClassIdentifier: 
-  Name: Globlin
+  Name: Goblin
   Hp: 5
   Attack: 5
   Defense: 2
   Spawnitems:
   - {fileID: 11400000, guid: d346fbf83e49d413ebd8dc54a848df04, type: 2}
-  - {fileID: 11400000, guid: f3e5735d56f364456b67449a67bf776c, type: 2}
+  - {fileID: 11400000, guid: d346fbf83e49d413ebd8dc54a848df04, type: 2}
   - {fileID: 11400000, guid: f3e5735d56f364456b67449a67bf776c, type: 2}

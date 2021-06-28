@@ -16,4 +16,5 @@ MonoBehaviour:
   Recepies:
   - {fileID: 11400000, guid: 6a2343ffda49242c3add90b5e722c0fc, type: 2}
   - {fileID: 11400000, guid: 3d5112dc651fc401bb78220f89fcf6ee, type: 2}
+  - {fileID: 11400000, guid: 9814aeea7739d469697704ba1f7eb5b9, type: 2}
   Saveitems: 0
