@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class CraftingStation : ScriptableObject{
     public string Name;
 
-    public CraftingRecepie[] Recepies;
+    public CraftingRecipe[] recipes;
 
     public bool Saveitems;
 

@@ -1256,8 +1256,8 @@ MonoBehaviour:
     - Assets/Scripts/Inventory/Crafting.meta
     - Assets/Scripts/Inventory/Crafting/Crafting.cs
     - Assets/Scripts/Inventory/Crafting/Crafting.cs.meta
-    - Assets/Scripts/Inventory/Crafting/CraftingRecepie.cs
-    - Assets/Scripts/Inventory/Crafting/CraftingRecepie.cs.meta
+    - Assets/Scripts/Inventory/Crafting/CraftingRecipe.cs
+    - Assets/Scripts/Inventory/Crafting/CraftingRecipe.cs.meta
     - Assets/Scripts/Inventory/Crafting/CraftingStation.cs
     - Assets/Scripts/Inventory/Crafting/CraftingStation.cs.meta
     - Assets/Scripts/Inventory/Enemy.meta

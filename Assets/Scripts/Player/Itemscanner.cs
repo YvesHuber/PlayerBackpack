@@ -88,7 +88,7 @@ public class Itemscanner : MonoBehaviour
                     float Damage = Player.Damage * Player.Strength;
                     if (Random.Range(0, 100) < Player.Critchance)
                     {
-                        Damage *= Player.Critdamage;
+                        Damage /= (Player.Critdamage / 100);
                     }
                     Damage /= enemy.Defense;
                     enemy.doDamage(Damage);

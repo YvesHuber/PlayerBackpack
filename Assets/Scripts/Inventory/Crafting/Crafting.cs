@@ -28,15 +28,15 @@ public class Crafting : MonoBehaviour
     {
         pressed = true;
     }
-    //check if an crafting recepie can be crafted and display a preview
+    //check if an crafting recipe can be crafted and display a preview
     void Update()
     {
-        //check if the recepie can be crafted
-        foreach (CraftingRecepie recepie in Station.Recepies)
+        //check if the recipe can be crafted
+        foreach (CraftingRecipe recipe in Station.recipes)
         {
-            if (recepie.canbecrafted == true)
+            if (recipe.canbecrafted == true)
             {
-                Outputholder.value = recepie.Result;
+                Outputholder.value = recipe.Result;
                 Outputholder.amount = 1;
                 Outputholder.filled = false;
             }
@@ -57,7 +57,7 @@ public class Crafting : MonoBehaviour
         {
             Outputholder.value = null;
         }
-        Checkforrecepies();
+        Checkforrecipes();
         GiveItemsBack();
     }
     //give items back to the user if he leaves and the bool saveitems is false
@@ -125,13 +125,13 @@ public class Crafting : MonoBehaviour
         }
     }
 
-    // check if the item is used in an recepie
-    bool CheckRecepie(CraftingRecepie recepie, bool multipleitems)
+    // check if the item is used in an recipe
+    bool Checkrecipe(CraftingRecipe recipe, bool multipleitems)
     {
         if (multipleitems == true)
         {
             int t = 0;
-            foreach (Itemvalue Item in recepie.Itemvalues)
+            foreach (Itemvalue Item in recipe.Itemvalues)
             {
                 if (!CheckeveryslotforItem(Item))
                 {
@@ -144,7 +144,7 @@ public class Crafting : MonoBehaviour
         {
             bool singlefound = false;
             bool singledifferentfound = false;
-            foreach (Itemvalue Item in recepie.Itemvalues)
+            foreach (Itemvalue Item in recipe.Itemvalues)
             {
                 for (int i = 0; i < 4; i++)
                 {
@@ -205,35 +205,35 @@ public class Crafting : MonoBehaviour
         }
         return allempty;
     }
-    //check if an recepie is craftable
-    void Checkforrecepies()
+    //check if an recipe is craftable
+    void Checkforrecipes()
     {
-        bool OneRecepie = false;
+        bool Onerecipe = false;
         if (Outputholder.amount < 1)
         {
             Outputholder.value = null;
         }
-        //get Recepie
-        foreach (CraftingRecepie Currentrecepie in Station.Recepies)
+        //get recipe
+        foreach (CraftingRecipe Currentrecipe in Station.recipes)
         {
             bool multipleitems = false;
-            Currentrecepie.canbecrafted = false;
-            if (Currentrecepie.Itemvalues.Length > 1)
+            Currentrecipe.canbecrafted = false;
+            if (Currentrecipe.Itemvalues.Length > 1)
             {
                 multipleitems = true;
             }
 
-            Currentrecepie.canbecrafted = CheckRecepie(Currentrecepie, multipleitems);
+            Currentrecipe.canbecrafted = Checkrecipe(Currentrecipe, multipleitems);
             //Evey Item is used you can Craft
-            if (Currentrecepie.canbecrafted == true)
+            if (Currentrecipe.canbecrafted == true)
             {
-                OneRecepie = true;
+                Onerecipe = true;
                 Outputholder.output = true;
-                Craft(Currentrecepie);
+                Craft(Currentrecipe);
 
             }
         }
-        if (OneRecepie != true && Outputholder.output != true)
+        if (Onerecipe != true && Outputholder.output != true)
         {
             Outputholder.value = null;
         }
@@ -242,12 +242,12 @@ public class Crafting : MonoBehaviour
     //craft is button is pressed
     //remove all items
     //output can be grabed
-    void Craft(CraftingRecepie recepie)
+    void Craft(CraftingRecipe recipe)
     {
 
         if (pressed == true)
         {
-            foreach (Itemvalue Item in recepie.Itemvalues)
+            foreach (Itemvalue Item in recipe.Itemvalues)
             {
                 DeleteItemFromSlot(Item);
             }
