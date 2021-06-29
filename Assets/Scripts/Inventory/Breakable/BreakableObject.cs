@@ -10,7 +10,7 @@ public class BreakableObject : ScriptableObject {
     public enum Type{Pickaxe,Axe,Hoe};
     public float Timebetweenbreaks;
     public string Name;
-    public Type Breakeme; 
+    public Type Tool; 
     [SerializeField]
     public List<BreakableDropProbability> Drops;
 }

@@ -5,7 +5,6 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Item", menuName = "Item")]
 public class Itemvalue : ScriptableObject
 {
-    public int id;
     public enum type {Material,Consumable,Headarmor,Chestarmor,Leggingsarmor,Sheosarmor,Primaryarm,Secondaryarm};
     public enum raritys {Common,Uncommon,Rare,Epic,Legendary};
     public enum Type{Pickaxe,Axe,Hoe};

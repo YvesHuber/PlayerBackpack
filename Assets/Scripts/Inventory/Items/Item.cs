@@ -8,7 +8,6 @@ public class Item : MonoBehaviour
         public enum type {Material,Consumable,Headarmor,Chestarmor,Leggingsarmor,Sheosarmor,Primaryarm,Secondaryarm};
         public enum raritys {Common,Uncommon,Rare,Epic,Legendary};
         public enum Type{Pickaxe,Axe,Hoe,Meele,Range,Magic,Armor};
-        public int id;
         public type Itemtype;
         public raritys rarity;
         public Sprite UiIcon;
@@ -31,7 +30,6 @@ public class Item : MonoBehaviour
 
     void Start() {
         //Convert the Itemvalue ScirpableObject to Monobehaviour data
-         id = value.id;
         Itemtype = (type)value.Itemtype;
         //rarity = value.rarity;
         UiIcon = value.UiIcon;

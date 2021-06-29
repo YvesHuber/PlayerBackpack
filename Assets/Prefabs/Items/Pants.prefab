@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 2908339569842781165}
   - component: {fileID: 2908339569842781164}
   - component: {fileID: 2908339569842781167}
-  - component: {fileID: 2908339569842781166}
   - component: {fileID: 2908339569842781073}
   - component: {fileID: 2908339569842781072}
+  - component: {fileID: 1107544380654144288}
   m_Layer: 0
   m_Name: Pants
   m_TagString: Item
@@ -84,19 +84,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &2908339569842781166
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2908339569842781075}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &2908339569842781073
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -126,7 +113,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: {fileID: 11400000, guid: aebdbcee4e2c94bd3a699b0979b4f771, type: 2}
-  id: 0
   Itemtype: 0
   rarity: 0
   UiIcon: {fileID: 0}
@@ -137,7 +123,6 @@ MonoBehaviour:
   MaxStackSize: 0
   Healthajust: 0
   Staminaajust: 0
-  Manaajust: 0
   Miningspeed: 0
   Critchance: 0
   Critdamage: 0
@@ -147,3 +132,16 @@ MonoBehaviour:
   Hp: 0
   Speed: 0
   Equiptype: 0
+--- !u!65 &1107544380654144288
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2908339569842781075}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.9871826, z: 1}
+  m_Center: {x: 0, y: -0.0064086914, z: 0}

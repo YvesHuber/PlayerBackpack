@@ -101,7 +101,7 @@ public class Inventory : MonoBehaviour
         }
         Slot = null;
     }
-
+    //is used for the consumable all increases are permanent
     public void Consume(GameObject Slot){
         ItemHolder holder = Slot.GetComponent<ItemHolder>();
         Playerstats.Addstats(holder.value);

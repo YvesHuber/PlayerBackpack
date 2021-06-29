@@ -5,6 +5,8 @@ using UnityEngine.UI;
 using TMPro;
 using System.Linq;
 using System;
+using Random = UnityEngine.Random;
+
 public class Itemscanner : MonoBehaviour
 {
     private GameObject Object = null;
@@ -29,32 +31,41 @@ public class Itemscanner : MonoBehaviour
 
     void Update()
     {
+        //reset every stat
+        Object = null;
+        Itemobject = null;
+        Scriptableobject = null;
+        textMesh.text = null;
         Mouseactive = false;
-        if (UIEquipment == true || UICrafting == true){
-            Mouseactive = true;
-        }
 
+        //register timers
+        time += Time.deltaTime;
+        RaycastHit hit;
         enemytimer += Time.deltaTime;
         Enemyhealthbar.gameObject.SetActive(false);
-        if (enemytimer <= 5){
-        Enemyhealthbar.gameObject.SetActive(true);
+        float fps = 1.0f / Time.deltaTime;
+
+        //Mouse Camera movement
+        if (UIEquipment == true || UICrafting == true)
+        {
+            Mouseactive = true;
+        }
+        //enemy healthbar
+        if (enemytimer <= 5)
+        {
+            Enemyhealthbar.gameObject.SetActive(true);
         }
         // FPS counter
-        float fps = 1.0f / Time.deltaTime;
         if (time > 1f)
         {
             fps = Mathf.Floor(fps);
             FPS.text = fps.ToString() + "FPS";
             time = 0f;
         }
-        time += Time.deltaTime;
-        RaycastHit hit;
+
         // Does the ray intersect any objects excluding the player layer
         Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 3, Color.yellow);
-        Object = null;
-        Itemobject = null;
-        Scriptableobject = null;
-        textMesh.text = null;
+
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 3))
         {
             Object = hit.transform.gameObject;
@@ -75,6 +86,11 @@ public class Itemscanner : MonoBehaviour
                 {
                     //calculate damage and deal it to the enemy
                     float Damage = Player.Damage * Player.Strength;
+                    if (Random.Range(0, 100) < Player.Critchance)
+                    {
+                        Damage *= Player.Critdamage;
+                    }
+                    Damage /= enemy.Defense;
                     enemy.doDamage(Damage);
                 }
             }
@@ -85,7 +101,7 @@ public class Itemscanner : MonoBehaviour
                 textMesh.text = Scriptableobject.DisplayTitle;
                 //Get rarity and change the color of the Text
                 int rarval = (int)Scriptableobject.rarity;
-                if (rarval == 0) { textMesh.color = new Color(0, 0, 0, 255); }
+                if (rarval == 0) { textMesh.color = new Color(0.95f, 0.95f, 0.95f, 255); }
                 if (rarval == 1) { textMesh.color = new Color(0, 227, 0, 255); }
                 if (rarval == 2) { textMesh.color = new Color(0, 0, 277, 255); }
                 if (rarval == 3) { textMesh.color = new Color(186, 0, 254, 255); }
@@ -110,7 +126,7 @@ public class Itemscanner : MonoBehaviour
                 crafting.enabled = true;
                 CraftingStation Station = crafting.Station;
                 textMesh.text = Station.Name;
-                textMesh.color = new Color(0, 0, 0, 255);
+                textMesh.color = new Color(0.95f, 0.95f, 0.95f, 255);
                 StationText.text = Station.Name;
                 //if the player presses E
                 if (Input.GetKeyDown(KeyCode.E))
@@ -127,9 +143,9 @@ public class Itemscanner : MonoBehaviour
             //Lazer hits a breakable set the text to the name and display the tool
             if (hit.collider.CompareTag("Breakable"))
             {
-                textMesh.color = new Color(0, 0, 0, 255);
+                textMesh.color = new Color(0.95f, 0.95f, 0.95f, 255);
                 Breakable breakable = Object.GetComponent<Breakable>();
-                textMesh.text = breakable.Object.Name + " \n Requires " + breakable.Object.Breakeme + " to break";
+                textMesh.text = breakable.Object.Name + " \n Requires " + breakable.Object.Tool + " to break";
                 //presses E
                 if (Input.GetMouseButtonDown(0))
                 {
@@ -143,8 +159,8 @@ public class Itemscanner : MonoBehaviour
                             {
                                 //Get array of every random item pool and add it
                                 List<Itemvalue> alldrops = breakable.getitems();
-                                foreach (Itemvalue Dropeditem in alldrops){inv.Addbreakable(Dropeditem);}
-                                
+                                foreach (Itemvalue Dropeditem in alldrops) { inv.Addbreakable(Dropeditem); }
+
 
                             }
                         }

@@ -1330,7 +1330,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UiScaleMode: 1
-  m_ReferencePixelsPerUnit: 100
+  m_ReferencePixelsPerUnit: 32
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
@@ -1777,7 +1777,7 @@ MonoBehaviour:
   Strength: 1
   Defense: 1
   Critchance: 20
-  Critdamage: 0
+  Critdamage: 20
 --- !u!114 &6979518264139369190
 MonoBehaviour:
   m_ObjectHideFlags: 0

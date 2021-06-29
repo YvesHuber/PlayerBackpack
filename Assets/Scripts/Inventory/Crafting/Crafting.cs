@@ -27,21 +27,21 @@ public class Crafting : MonoBehaviour
     void TaskOnClick()
     {
         pressed = true;
-        Debug.Log("I have been pressed");
     }
     //check if an crafting recepie can be crafted and display a preview
     void Update()
     {
+        //check if the recepie can be crafted
         foreach (CraftingRecepie recepie in Station.Recepies)
         {
             if (recepie.canbecrafted == true)
             {
-                Debug.Log(recepie.Result);
                 Outputholder.value = recepie.Result;
                 Outputholder.amount = 1;
                 Outputholder.filled = false;
             }
         }
+        //reset the field after the item was taken out
         if (Outputholder.value == null)
         {
             pressed = false;

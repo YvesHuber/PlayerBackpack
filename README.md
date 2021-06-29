@@ -8,27 +8,42 @@ and you are done.<br>
 after the inport you can edit all scripts or add new ones
 With a right click can you make new game object like: <br>
 
+## Controlls
+WASD to move <br>
+Space to jump <br>
+C to crawl <br>
+Tab to open invetory <br>
+E to open craftingstations <br>
+Leftclick to hit breakables and enemies <br>
+
+## For the Developers
+
 ### item
 every item can be:<br>
 material to craft <br>
 equipable to increase stats while worn<br>
+consumable to consume stats permenantly <br>
 Not all parameters have to be set when creating an item is should be enough to just set the ones you need / want<br>
 more paramaters can be added the item scirptableobject and used in your own scripts<br>
+#### add item to asset
+to add a item to a gameobjet so you can collet it with e<br>
+give the item the tag item add the itemvalue script add the item to the script<br>
 
 ### enemy
 An enemy is of course an enemy <br>
 every enemy has a array of items it can drop <br>
-the array is build out of prefabs so you can add everything<br>
-each array has a defined rarity <br>
-the drop chance can be 100%, 50%, 20%, 5% and 1% you can allways add new droprates<br>
+the array is build out of enemydropobjects they have a prefab and a dropchance<br>
 there is no ai in the enemy and it is puerly for dropping items on kill<br>
+#### add enemy to asset
+create gameobject give it the enemy tag add the enemy script <br>
+add the enemyobject you created to the script <br>
 
 ### craftingstations
 A crafting station is able to craft recepies that have the same craftingstation<br>
 it has a name and a array of recipies<br>
 you can add an unlimited amount of recepies to each station<br>
 if you want to add a new Station you need to create a new UI set for the crafting script<br>
-you need to add the activator to the Itemscanner as well I am working to make the implementation simpler but its not done yet<br>
+you need to add the activator to the itemscanner as well I am working to make the implementation simpler but its not done yet<br>
 
 ### craftingrecepies
 A crafting recepie is a recepie with an array of items and a output<br>

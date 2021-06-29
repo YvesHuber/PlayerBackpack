@@ -20,7 +20,7 @@ public class Breakable : MonoBehaviour
     //check if the timer is Timebetweenbreaks 
     public bool checktime()
     {
-        if (timer >= Object.Timebetweenbreaks)
+        if (timer  >= Object.Timebetweenbreaks)
         {
             timer = 0;
             return true;
@@ -50,7 +50,7 @@ public class Breakable : MonoBehaviour
     {
         ItemHolder holder = ItemSlot.GetComponent<ItemHolder>();
         Itemvalue value = holder.value;
-        if ((int)value.Equiptype == (int)Object.Breakeme)
+        if ((int)value.Equiptype == (int)Object.Tool)
         {
             return true;
         }

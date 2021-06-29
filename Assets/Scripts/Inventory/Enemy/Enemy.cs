@@ -23,6 +23,7 @@ public class Enemy : MonoBehaviour
     //get the damage and if the hp is 0 destroy self and spawn items
     public void doDamage(float value)
     {
+        Debug.Log(value + "dealt damage");
         Hp -= value;
         if (Hp <= 0)
         {

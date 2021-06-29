@@ -11,7 +11,7 @@ public class ItemHolder : MonoBehaviour, IPointerDownHandler, IBeginDragHandler,
     public Itemvalue value;
     public bool filled = false;
     public int amount = 0;
-    public GameObject img;
+    public GameObject Img;
     public bool Equipmentslot;
     public bool output;
     public bool preview;
@@ -20,11 +20,13 @@ public class ItemHolder : MonoBehaviour, IPointerDownHandler, IBeginDragHandler,
     Image itemBeingDragged;
     Vector3 startPosition;
     GameObject Self;
+    Transform background;
+    Vector3 backgroundstart;
     //check the counter and image of the Slot
     void Update()
     {
         counter.text = " ";
-        image = img.GetComponent<Image>();
+        image = Img.GetComponent<Image>();
         if (value != null)
         {
             filled = true;
@@ -79,7 +81,8 @@ public class ItemHolder : MonoBehaviour, IPointerDownHandler, IBeginDragHandler,
 
         if (filled == true && preview == false) 
         {
-            itemBeingDragged = image;
+            background = this.gameObject.transform.GetChild(0);
+            backgroundstart = background.position;
             startPosition = transform.position;
                 
         }
@@ -91,6 +94,8 @@ public class ItemHolder : MonoBehaviour, IPointerDownHandler, IBeginDragHandler,
         if (filled == true && preview == false)
         {
             transform.position = Input.mousePosition;
+            background.position = startPosition;
+            Img.transform.position = Input.mousePosition;
         }
     }
     //On drop check the slot and switch the items and amounts
@@ -111,6 +116,7 @@ public class ItemHolder : MonoBehaviour, IPointerDownHandler, IBeginDragHandler,
             itemBeingDragged = null;
             // if collision
             gameObject.transform.position = startPosition;
+            background.position = backgroundstart;
         }
     }
     //set the amount of the Item in the slot
