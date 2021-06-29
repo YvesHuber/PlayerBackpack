@@ -57,7 +57,7 @@ public class Crafting : MonoBehaviour
         {
             Outputholder.value = null;
         }
-        Checkforrecipes();
+        Checkforrecepies();
         GiveItemsBack();
     }
     //give items back to the user if he leaves and the bool saveitems is false
@@ -126,7 +126,7 @@ public class Crafting : MonoBehaviour
     }
 
     // check if the item is used in an recipe
-    bool Checkrecipe(CraftingRecipe recipe, bool multipleitems)
+    bool CheckRecepie(CraftingRecipe recipe, bool multipleitems)
     {
         if (multipleitems == true)
         {
@@ -206,34 +206,34 @@ public class Crafting : MonoBehaviour
         return allempty;
     }
     //check if an recipe is craftable
-    void Checkforrecipes()
+    void Checkforrecepies()
     {
-        bool Onerecipe = false;
+        bool OneRecepie = false;
         if (Outputholder.amount < 1)
         {
             Outputholder.value = null;
         }
-        //get recipe
-        foreach (CraftingRecipe Currentrecipe in Station.recipes)
+        //get Recepie
+        foreach (CraftingRecipe Currentrecepie in Station.recipes)
         {
             bool multipleitems = false;
-            Currentrecipe.canbecrafted = false;
-            if (Currentrecipe.Itemvalues.Length > 1)
+            Currentrecepie.canbecrafted = false;
+            if (Currentrecepie.Itemvalues.Length > 1)
             {
                 multipleitems = true;
             }
 
-            Currentrecipe.canbecrafted = Checkrecipe(Currentrecipe, multipleitems);
+            Currentrecepie.canbecrafted = CheckRecepie(Currentrecepie, multipleitems);
             //Evey Item is used you can Craft
-            if (Currentrecipe.canbecrafted == true)
+            if (Currentrecepie.canbecrafted == true)
             {
-                Onerecipe = true;
+                OneRecepie = true;
                 Outputholder.output = true;
-                Craft(Currentrecipe);
+                Craft(Currentrecepie);
 
             }
         }
-        if (Onerecipe != true && Outputholder.output != true)
+        if (OneRecepie != true && Outputholder.output != true)
         {
             Outputholder.value = null;
         }

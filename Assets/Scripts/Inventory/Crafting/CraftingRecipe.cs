@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
-[CreateAssetMenu(fileName = "New Recepie", menuName ="Crafting/CraftingRecepie")]
+[CreateAssetMenu(fileName = "New Recipe", menuName ="Crafting/CraftingRecipe")]
 public class CraftingRecipe : ScriptableObject
 {
     public CraftingStation Place;
