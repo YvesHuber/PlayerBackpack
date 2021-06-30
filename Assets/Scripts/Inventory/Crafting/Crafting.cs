@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+using System.Linq;
 
 public class Crafting : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class Crafting : MonoBehaviour
     private ItemHolder Outputholder;
     public bool pressed = false;
 
+    [SerializeField]
+    List<GameObject> Usedslots;
     //listen to onclick
     void Start()
     {
@@ -101,8 +104,10 @@ public class Crafting : MonoBehaviour
         foreach (GameObject Slot in CraftingSlots)
         {
             ItemHolder holder = Slot.GetComponent<ItemHolder>();
-            if (holder.value == Item)
+
+            if (holder.value == Item && Usedslots.Contains(Slot) == false)
             {
+                Usedslots.Add(Slot);
                 return true;
             }
         }
@@ -125,11 +130,37 @@ public class Crafting : MonoBehaviour
         }
     }
 
+    bool Checkforduplicates(CraftingRecipe recepie)
+    {
+        List<Itemvalue> areused = new List<Itemvalue>();
+        areused.AddRange(recepie.Itemvalues);
+        foreach (GameObject Slot in CraftingSlots)
+        {
+            ItemHolder holder = Slot.GetComponent<ItemHolder>();
+
+            if (areused.Contains(holder.value))
+            {
+                int itemindex = areused.IndexOf(holder.value);
+                if (areused.Count < 1){
+                    return false;
+                }
+                areused.RemoveAt(itemindex);
+                
+            }
+        }
+        if (areused.Count < 1)
+        {
+            return true;
+        }
+        return false;
+    }
+
     // check if the item is used in an recipe
     bool CheckRecepie(CraftingRecipe recipe, bool multipleitems)
     {
         if (multipleitems == true)
         {
+            Usedslots.Clear();
             int t = 0;
             foreach (Itemvalue Item in recipe.Itemvalues)
             {
@@ -138,7 +169,7 @@ public class Crafting : MonoBehaviour
                     return false;
                 }
             }
-            return true;
+            return Checkforduplicates(recipe);
         }
         else
         {

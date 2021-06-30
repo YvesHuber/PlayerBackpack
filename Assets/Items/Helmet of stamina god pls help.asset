@@ -12,10 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 862212a83f2eb4fcba3821f4537beb6a, type: 3}
   m_Name: Helmet of stamina god pls help
   m_EditorClassIdentifier: 
-  id: 2
   Itemtype: 2
   rarity: 2
-  UiIcon: {fileID: 21300000, guid: 0c91c7b7efc53d243a6c0cdb9701a1b3, type: 3}
+  UiIcon: {fileID: 21300000, guid: 2dd4e382484554aedb30de496b18f709, type: 3}
   DisplayTitle: Helmet of Development
   Description: Only Temporary
   Worth: 2
@@ -23,7 +22,6 @@ MonoBehaviour:
   MaxStackSize: 1
   Healthajust: 0
   Staminaajust: 0
-  Manaajust: 0
   Miningspeed: 0
   Critchance: 0
   Critdamage: 0

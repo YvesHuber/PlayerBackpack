@@ -28,6 +28,7 @@ more parameters can be added the item scriptableobject and used in your own scri
 #### add item to asset
 to add a item to a gameobject so you can collect it with e<br>
 give the item the tag item add the itemvalue script add the item to the script<br>
+you need to add the colliders, models and materials here but you can do it later <br>
  
 ### enemy
 An enemy is of course an enemy <br>
@@ -37,6 +38,7 @@ there is no ai in the enemy and it is purely for dropping items on kill<br>
 #### add enemy to asset
 create gameobject give it the enemy tag add the enemy script <br>
 add the enemy object you created to the script <br>
+you need to add the colliders, models and materials here but you can do it later <br>
  
 ### crafting stations
 A crafting station is able to craft recipes that have the same crafting station<br>
@@ -50,7 +52,8 @@ in the Script add the Ui from Player/Playercollider/Cameraposition/Camera/UI/Cra
 submit = Button <br>
 crafting slots = Crafting 1 - 4 <br>
 Output Slot = output <br>
-Inventory = Inventory just click on the circle and select the first one <br>
+Inventory = Inventory just click on the circle and select the first one it is the inventory from the player  <br>
+you need to add the colliders, models and materials here but you can do it later <br>
  
 ### crafting recipes
 A crafting recipe is a recipe with an array of items and a output<br>
@@ -64,10 +67,10 @@ create a breakable object and add your parameters + brekabledropobject <br>
 create a gameobject add the breakable tag <br>
 add the breakable script <br>
 add your breakable object <br>
- 
+you need to add the colliders, models and materials here but you can do it later <br>
+
 ### inventory
 You can move the items between the slots but you can't unstack them<br>
 the maxstacksize controls the max amount of the item<br>
 armor will be equipped on a click and can be equipped by click <br>
- 
 

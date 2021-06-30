@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Workbench
   m_EditorClassIdentifier: 
   Name: Workbench
-  Recepies:
-  - {fileID: 11400000, guid: 6a2343ffda49242c3add90b5e722c0fc, type: 2}
-  - {fileID: 11400000, guid: 3d5112dc651fc401bb78220f89fcf6ee, type: 2}
-  - {fileID: 11400000, guid: 9814aeea7739d469697704ba1f7eb5b9, type: 2}
+  recipes:
+  - {fileID: 11400000, guid: 681bfb1621ac84c4da3cc69407043af5, type: 2}
+  - {fileID: 11400000, guid: 94a1ecffeaea141f6865d5b143841740, type: 2}
+  - {fileID: 11400000, guid: 8284609e79a424fbe8290a858cecdf98, type: 2}
   Saveitems: 0

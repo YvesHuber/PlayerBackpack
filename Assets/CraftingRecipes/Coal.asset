@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b82a013113634a1ba155dc37e21a8be, type: 3}
   m_Name: Coal
   m_EditorClassIdentifier: 
-  Place: {fileID: 0}
-  Itemvalues: []
-  Result: {fileID: 0}
+  Place: {fileID: 11400000, guid: f17570092e65f4c4eb337a12bfbe0d31, type: 2}
+  Itemvalues:
+  - {fileID: 11400000, guid: 5892fce6ef9f647438aeda519de802d5, type: 2}
+  Result: {fileID: 11400000, guid: 7c0f34090f47f411ab962bca649ab31d, type: 2}
   canbecrafted: 0

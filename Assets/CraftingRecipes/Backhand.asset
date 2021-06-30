@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b82a013113634a1ba155dc37e21a8be, type: 3}
+  m_Name: Backhand
+  m_EditorClassIdentifier: 
+  Place: {fileID: 11400000, guid: ab01ef5b86f794befae101c98ec267a9, type: 2}
+  Itemvalues:
+  - {fileID: 11400000, guid: 5892fce6ef9f647438aeda519de802d5, type: 2}
+  - {fileID: 11400000, guid: f7f1eeafb694b42e682cbb30675f4f1a, type: 2}
+  - {fileID: 11400000, guid: f7f1eeafb694b42e682cbb30675f4f1a, type: 2}
+  Result: {fileID: 11400000, guid: 245cf45d1d4584c23a0526187b2e0191, type: 2}
+  canbecrafted: 0

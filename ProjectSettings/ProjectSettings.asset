@@ -470,6 +470,8 @@ PlayerSettings:
   switchNetworkInterfaceManagerInitializeEnabled: 1
   switchPlayerConnectionEnabled: 1
   switchUseNewStyleFilepaths: 0
+  switchUseMicroSleepForYield: 1
+  switchMicroSleepForYieldTime: 25
   ps4NPAgeRating: 12
   ps4NPTitleSecret: 
   ps4NPTrophyPackPath: 
@@ -690,7 +692,7 @@ PlayerSettings:
   cloudProjectId: ee1a5fbd-54a6-423a-a274-2dd8a5c429de
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Evelutuion
+  projectName: Abschlussarbeit
   organizationId: unity_mydoxr-wi6-5pw
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
