@@ -74,3 +74,6 @@ You can move the items between the slots but you can't unstack them<br>
 the maxstacksize controls the max amount of the item<br>
 armor will be equipped on a click and can be equipped by click <br>
 
+
+# are you still stuck?
+message me per Email (cpt.rino@gmail.com)
