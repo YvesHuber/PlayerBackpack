@@ -1862,6 +1862,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1311186545}
     m_Modifications:
+    - target: {fileID: 2908339569842781072, guid: 0c0d16c83539e4f148a430d6c8d2bd49, type: 3}
+      propertyPath: value
+      value: 
+      objectReference: {fileID: 11400000, guid: aebdbcee4e2c94bd3a699b0979b4f771, type: 2}
     - target: {fileID: 2908339569842781075, guid: 0c0d16c83539e4f148a430d6c8d2bd49, type: 3}
       propertyPath: m_Name
       value: Pants
@@ -1983,6 +1987,10 @@ PrefabInstance:
       propertyPath: Submit
       value: 
       objectReference: {fileID: 1644529824}
+    - target: {fileID: 3639106255874040727, guid: 97c49cb7e9483433b93fe8d092f108f6, type: 3}
+      propertyPath: Station
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3639106255874040727, guid: 97c49cb7e9483433b93fe8d092f108f6, type: 3}
       propertyPath: Inventory
       value: 
@@ -2714,6 +2722,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8830599172468315608, guid: 1f7ea8e537bac4e88b855902403983dd, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -6478536213147159724, guid: 5fc3c7141189c4f61bd1468978a3c47c, type: 3}
     - target: {fileID: 8830599172468315613, guid: 1f7ea8e537bac4e88b855902403983dd, type: 3}
       propertyPath: m_Name
       value: Goblin

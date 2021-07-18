@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 862212a83f2eb4fcba3821f4537beb6a, type: 3}
   m_Name: Wood
   m_EditorClassIdentifier: 
-  id: 1
   Itemtype: 0
   rarity: 0
   UiIcon: {fileID: 21300000, guid: ff3d926ded2a4284aa3f318ce2c7389b, type: 3}
@@ -20,7 +19,7 @@ MonoBehaviour:
   Description: A piece of wood
   Worth: 5
   StackSize: 1
-  MaxStackSize: 1
+  MaxStackSize: 2
   Healthajust: 0
   Staminaajust: 0
   Miningspeed: 0

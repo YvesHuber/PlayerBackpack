@@ -5,7 +5,7 @@ ScriptsOnlyBuild:
     - BreakableDropProbability
     - BreakableObject
     - Crafting
-    - CraftingRecepie
+    - CraftingRecipe
     - CraftingStation
     - DropObjectProbability
     - Enemy
@@ -18,6 +18,8 @@ ScriptsOnlyBuild:
     - Stats
     - ThirdPersonCameraControl
     - ThirdPersonCharacterControl
+    AssetStoreTools.dll:
+    - AssetStoreManager
     Unity.CollabProxy.Editor.dll:
     - Unity.Cloud.Collaborate.UserInterface.CollaborateWindow
     - Unity.Cloud.Collaborate.UserInterface.WindowCache
@@ -42,7 +44,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Image
     - UnityEngine.UI.Slider
   sceneClasses:
-    Assets/Scenes/SampleScene.unity:
+    Assets/Scenes/Demoscene.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -71,73 +73,73 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1672}
+      Script: {instanceID: 1674}
     - Class: 114
-      Script: {instanceID: 1752}
+      Script: {instanceID: 1766}
     - Class: 114
-      Script: {instanceID: 1854}
+      Script: {instanceID: 1868}
     - Class: 114
-      Script: {instanceID: 1914}
+      Script: {instanceID: 1928}
     - Class: 114
-      Script: {instanceID: 1946}
+      Script: {instanceID: 1960}
     - Class: 114
-      Script: {instanceID: 2072}
+      Script: {instanceID: 2086}
     - Class: 114
-      Script: {instanceID: 2190}
+      Script: {instanceID: 2204}
     - Class: 114
-      Script: {instanceID: 2264}
+      Script: {instanceID: 2278}
     - Class: 114
-      Script: {instanceID: 2388}
+      Script: {instanceID: 2284}
     - Class: 114
-      Script: {instanceID: 2408}
+      Script: {instanceID: 2404}
     - Class: 114
-      Script: {instanceID: 2462}
+      Script: {instanceID: 2424}
     - Class: 114
-      Script: {instanceID: 2802}
+      Script: {instanceID: 2478}
     - Class: 114
-      Script: {instanceID: 2902}
+      Script: {instanceID: 2818}
     - Class: 114
-      Script: {instanceID: 2946}
+      Script: {instanceID: 2918}
     - Class: 114
-      Script: {instanceID: 3082}
+      Script: {instanceID: 2962}
     - Class: 114
-      Script: {instanceID: 3140}
+      Script: {instanceID: 3098}
     - Class: 114
-      Script: {instanceID: 3164}
+      Script: {instanceID: 3156}
     - Class: 114
-      Script: {instanceID: 3182}
+      Script: {instanceID: 3180}
     - Class: 114
-      Script: {instanceID: 3184}
+      Script: {instanceID: 3198}
     - Class: 114
-      Script: {instanceID: 3248}
+      Script: {instanceID: 3200}
     - Class: 114
-      Script: {instanceID: 3258}
+      Script: {instanceID: 3264}
     - Class: 114
-      Script: {instanceID: 3302}
+      Script: {instanceID: 3274}
     - Class: 114
-      Script: {instanceID: 3322}
+      Script: {instanceID: 3318}
     - Class: 114
-      Script: {instanceID: 3358}
+      Script: {instanceID: 3338}
     - Class: 114
-      Script: {instanceID: 3594}
+      Script: {instanceID: 3374}
     - Class: 114
-      Script: {instanceID: 3642}
+      Script: {instanceID: 3610}
     - Class: 114
-      Script: {instanceID: 3778}
+      Script: {instanceID: 3658}
     - Class: 114
-      Script: {instanceID: 3824}
+      Script: {instanceID: 3796}
     - Class: 114
-      Script: {instanceID: 3844}
+      Script: {instanceID: 3842}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
-      Script: {instanceID: 0}
-    - Class: 135
       Script: {instanceID: 0}
     - Class: 136
       Script: {instanceID: 0}
@@ -180,7 +182,7 @@ ScriptsOnlyBuild:
     className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: 25dbeb2c01e3ba53fe1d7c0b8f190186
+      Hash: 9389f6b0e209e538435f60e6bf79d381
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Itemvalue
@@ -204,7 +206,7 @@ ScriptsOnlyBuild:
     className: Outline
   - hash:
       serializedVersion: 2
-      Hash: 246bbbdd0a11460349a4e8f49081f943
+      Hash: a184b6ab78b58be11e441c3d401f7e5e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Crafting
@@ -336,10 +338,16 @@ ScriptsOnlyBuild:
     className: AudioPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: d849668768a5a0c84d10997515af9808
+      Hash: 10f27feb421ea06dc10f47d784c13bf5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BreakableObject
+  - hash:
+      serializedVersion: 2
+      Hash: d97828d97f0c16a98cfd5f7b08e6339c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CraftingRecipe
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -372,7 +380,7 @@ ScriptsOnlyBuild:
     className: GroupTrack
   - hash:
       serializedVersion: 2
-      Hash: 6a38ac711a02f7457d081b10dd60935a
+      Hash: f09830c926a4520c3ca603364d86bf4b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ItemHolder
@@ -564,7 +572,7 @@ ScriptsOnlyBuild:
     className: ThirdPersonCharacterControl
   - hash:
       serializedVersion: 2
-      Hash: 847ba7c8ad1b619ca597c2762b1b28bd
+      Hash: cc198f530f4401cf5d5082a60d804b47
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Item
@@ -624,7 +632,7 @@ ScriptsOnlyBuild:
     className: TestResultRendererCallback
   - hash:
       serializedVersion: 2
-      Hash: c729e31c11fea0dbab8a1e8f8b007885
+      Hash: e199df52c6edd01fe654271ca22b4e02
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CraftingStation
@@ -664,6 +672,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools
     className: BeforeAfterTestCommandState
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Scenemanager
   - hash:
       serializedVersion: 2
       Hash: 0fd6822f6177297bd0eb4d83cc7a9030
@@ -708,17 +722,11 @@ ScriptsOnlyBuild:
     className: LookWithMouse
   - hash:
       serializedVersion: 2
-      Hash: d97828d97f0c16a98cfd5f7b08e6339c
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CraftingRecepie
-  - hash:
-      serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextContainer
   platform: 19
   scenePathNames:
-  - Assets/Scenes/SampleScene.unity
-  playerPath: /Users/yveshuber/Desktop/pc killer/Evelutuion.exe
+  - Assets/Scenes/Demoscene.unity
+  playerPath: /Users/yveshuber/Desktop/DemoAbschlussarbeit/Evelutuion.exe

@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 862212a83f2eb4fcba3821f4537beb6a, type: 3}
+  m_Name: Test
+  m_EditorClassIdentifier: 
+  Itemtype: 0
+  rarity: 0
+  UiIcon: {fileID: 21300000, guid: 0c91c7b7efc53d243a6c0cdb9701a1b3, type: 3}
+  DisplayTitle: Hallo
+  Description: test
+  Worth: 0
+  StackSize: 0
+  MaxStackSize: 0
+  Healthajust: 0
+  Staminaajust: 0
+  Miningspeed: 0
+  Critchance: 0
+  Critdamage: 0
+  Strength: 0
+  Defense: 0
+  Damage: 0
+  Hp: 0
+  Speed: 0
+  Equiptype: 0

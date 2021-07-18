@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 862212a83f2eb4fcba3821f4537beb6a, type: 3}
   m_Name: Backhandsword
   m_EditorClassIdentifier: 
-  Itemtype: 7
+  Itemtype: 6
   rarity: 2
   UiIcon: {fileID: 21300000, guid: b2434e3989497450a908c8935928735b, type: 3}
-  DisplayTitle: Backhandsword
+  DisplayTitle: Sword
   Description: 
   Worth: 30
   StackSize: 1

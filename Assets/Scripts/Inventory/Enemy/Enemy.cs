@@ -57,7 +57,7 @@ public class Enemy : MonoBehaviour
 
         foreach(DropObjectProbability Drop in Object.Spawnitems){
             float random = Random.Range(0,100);
-            if (random <= Drop.Probabilty + 1){
+            if (random <= Drop.Probabilty + 0.01){
                 items.Add(Drop.Object);
             }
         }

@@ -1,0 +1,1443 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffe70aba2e7074048aca5de573b64a59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SimpleSelectedItems:
+    m_Keys:
+    - Assets/BreakableDrops.meta
+    - Assets/BreakableDrops/Apple.asset
+    - Assets/BreakableDrops/Apple.asset.meta
+    - Assets/BreakableDrops/Rock.asset
+    - Assets/BreakableDrops/Rock.asset.meta
+    - Assets/BreakableDrops/Wood.asset
+    - Assets/BreakableDrops/Wood.asset.meta
+    - Assets/BreakableObject.meta
+    - Assets/BreakableObject/Rock.asset
+    - Assets/BreakableObject/Rock.asset.meta
+    - Assets/BreakableObject/Tree.asset
+    - Assets/BreakableObject/Tree.asset.meta
+    - Assets/CraftingRecipes.meta
+    - Assets/CraftingRecipes/Backhand.asset
+    - Assets/CraftingRecipes/Backhand.asset.meta
+    - Assets/CraftingRecipes/Coal.asset
+    - Assets/CraftingRecipes/Coal.asset.meta
+    - Assets/CraftingRecipes/Pants.asset
+    - Assets/CraftingRecipes/Pants.asset.meta
+    - Assets/CraftingRecipes/Pickaxe.asset
+    - Assets/CraftingRecipes/Pickaxe.asset.meta
+    - Assets/CraftingStations.meta
+    - Assets/CraftingStations/Furnace.asset
+    - Assets/CraftingStations/Furnace.asset.meta
+    - Assets/CraftingStations/Workbench.asset
+    - Assets/CraftingStations/Workbench.asset.meta
+    - Assets/DropProbbabiltyItems.meta
+    - Assets/DropProbbabiltyItems/Alex.asset
+    - Assets/DropProbbabiltyItems/Alex.asset.meta
+    - Assets/DropProbbabiltyItems/leather.asset
+    - Assets/DropProbbabiltyItems/leather.asset.meta
+    - Assets/Enemy.meta
+    - Assets/Enemy/Goblin.asset
+    - Assets/Enemy/Goblin.asset.meta
+    - Assets/Imported.meta
+    - Assets/Imported/6 Free Textures.meta
+    - Assets/Imported/6 Free Textures/Materials.meta
+    - Assets/Imported/6 Free Textures/Materials/Cracked Dirt.mat
+    - Assets/Imported/6 Free Textures/Materials/Cracked Dirt.mat.meta
+    - Assets/Imported/6 Free Textures/Materials/NewBrush.brush
+    - Assets/Imported/6 Free Textures/Materials/NewBrush.brush.meta
+    - Assets/Imported/6 Free Textures/Materials/NewLayer 1.terrainlayer
+    - Assets/Imported/6 Free Textures/Materials/NewLayer 1.terrainlayer.meta
+    - Assets/Imported/6 Free Textures/Materials/NewLayer.terrainlayer
+    - Assets/Imported/6 Free Textures/Materials/NewLayer.terrainlayer.meta
+    - Assets/Imported/6 Free Textures/Materials/Seamless Bark Chips.mat
+    - Assets/Imported/6 Free Textures/Materials/Seamless Bark Chips.mat.meta
+    - Assets/Imported/6 Free Textures/Materials/Seamless Concrete.mat
+    - Assets/Imported/6 Free Textures/Materials/Seamless Concrete.mat.meta
+    - Assets/Imported/6 Free Textures/Materials/Seamless Grass.mat
+    - Assets/Imported/6 Free Textures/Materials/Seamless Grass.mat.meta
+    - Assets/Imported/6 Free Textures/Materials/Seamless Gravel.mat
+    - Assets/Imported/6 Free Textures/Materials/Seamless Gravel.mat.meta
+    - Assets/Imported/6 Free Textures/Materials/Tree Bark Texture.mat
+    - Assets/Imported/6 Free Textures/Materials/Tree Bark Texture.mat.meta
+    - Assets/Imported/6 Free Textures/Textures.meta
+    - Assets/Imported/6 Free Textures/Textures/Cracked Dirt.jpg
+    - Assets/Imported/6 Free Textures/Textures/Cracked Dirt.jpg.meta
+    - Assets/Imported/6 Free Textures/Textures/Seamless Bark Chips.jpg
+    - Assets/Imported/6 Free Textures/Textures/Seamless Bark Chips.jpg.meta
+    - Assets/Imported/6 Free Textures/Textures/Seamless Concrete.jpg
+    - Assets/Imported/6 Free Textures/Textures/Seamless Concrete.jpg.meta
+    - Assets/Imported/6 Free Textures/Textures/Seamless Grass.jpg
+    - Assets/Imported/6 Free Textures/Textures/Seamless Grass.jpg.meta
+    - Assets/Imported/6 Free Textures/Textures/Seamless Gravel.jpg
+    - Assets/Imported/6 Free Textures/Textures/Seamless Gravel.jpg.meta
+    - Assets/Imported/6 Free Textures/Textures/Tree Bark Texture.jpg
+    - Assets/Imported/6 Free Textures/Textures/Tree Bark Texture.jpg.meta
+    - Assets/Imported/Ground textures pack.meta
+    - Assets/Imported/Ground textures pack/Dry ground.meta
+    - Assets/Imported/Ground textures pack/Dry ground/Dry ground pattern.mat
+    - Assets/Imported/Ground textures pack/Dry ground/Dry ground pattern.mat.meta
+    - Assets/Imported/Ground textures pack/Dry ground/diffuse.tga
+    - Assets/Imported/Ground textures pack/Dry ground/diffuse.tga.meta
+    - Assets/Imported/Ground textures pack/Dry ground/normal.tga
+    - Assets/Imported/Ground textures pack/Dry ground/normal.tga.meta
+    - Assets/Imported/Ground textures pack/Dry ground/preview.jpg
+    - Assets/Imported/Ground textures pack/Dry ground/preview.jpg.meta
+    - Assets/Imported/Ground textures pack/Grass & dead leafs 01.meta
+    - Assets/Imported/Ground textures pack/Grass & dead leafs 01/Grass & dead leafs
+      pattern 01.mat
+    - Assets/Imported/Ground textures pack/Grass & dead leafs 01/Grass & dead leafs
+      pattern 01.mat.meta
+    - Assets/Imported/Ground textures pack/Grass & dead leafs 01/diffuse.tga
+    - Assets/Imported/Ground textures pack/Grass & dead leafs 01/diffuse.tga.meta
+    - Assets/Imported/Ground textures pack/Grass & dead leafs 01/normal.tga
+    - Assets/Imported/Ground textures pack/Grass & dead leafs 01/normal.tga.meta
+    - Assets/Imported/Ground textures pack/Grass & dead leafs 01/preview.jpg
+    - Assets/Imported/Ground textures pack/Grass & dead leafs 01/preview.jpg.meta
+    - Assets/Imported/Ground textures pack/Grass & dead leafs 02.meta
+    - Assets/Imported/Ground textures pack/Grass & dead leafs 02/Grass & dead leafs
+      pattern 02.mat
+    - Assets/Imported/Ground textures pack/Grass & dead leafs 02/Grass & dead leafs
+      pattern 02.mat.meta
+    - Assets/Imported/Ground textures pack/Grass & dead leafs 02/diffuse.tga
+    - Assets/Imported/Ground textures pack/Grass & dead leafs 02/diffuse.tga.meta
+    - Assets/Imported/Ground textures pack/Grass & dead leafs 02/normal.tga
+    - Assets/Imported/Ground textures pack/Grass & dead leafs 02/normal.tga.meta
+    - Assets/Imported/Ground textures pack/Grass & dead leafs 02/preview.jpg
+    - Assets/Imported/Ground textures pack/Grass & dead leafs 02/preview.jpg.meta
+    - Assets/Imported/Ground textures pack/Grass & rocks.meta
+    - Assets/Imported/Ground textures pack/Grass & rocks/Grass & rocks pattern.mat
+    - Assets/Imported/Ground textures pack/Grass & rocks/Grass & rocks pattern.mat.meta
+    - Assets/Imported/Ground textures pack/Grass & rocks/diffuse.tga
+    - Assets/Imported/Ground textures pack/Grass & rocks/diffuse.tga.meta
+    - Assets/Imported/Ground textures pack/Grass & rocks/normal.tga
+    - Assets/Imported/Ground textures pack/Grass & rocks/normal.tga.meta
+    - Assets/Imported/Ground textures pack/Grass & rocks/preview.jpg
+    - Assets/Imported/Ground textures pack/Grass & rocks/preview.jpg.meta
+    - Assets/Imported/Ground textures pack/Grass 01.meta
+    - Assets/Imported/Ground textures pack/Grass 01/Grass pattern 01.mat
+    - Assets/Imported/Ground textures pack/Grass 01/Grass pattern 01.mat.meta
+    - Assets/Imported/Ground textures pack/Grass 01/diffuse.tga
+    - Assets/Imported/Ground textures pack/Grass 01/diffuse.tga.meta
+    - Assets/Imported/Ground textures pack/Grass 01/normal.tga
+    - Assets/Imported/Ground textures pack/Grass 01/normal.tga.meta
+    - Assets/Imported/Ground textures pack/Grass 01/preview.jpg
+    - Assets/Imported/Ground textures pack/Grass 01/preview.jpg.meta
+    - Assets/Imported/Ground textures pack/Grass 02.meta
+    - Assets/Imported/Ground textures pack/Grass 02/Grass pattern 02.mat
+    - Assets/Imported/Ground textures pack/Grass 02/Grass pattern 02.mat.meta
+    - Assets/Imported/Ground textures pack/Grass 02/diffuse.tga
+    - Assets/Imported/Ground textures pack/Grass 02/diffuse.tga.meta
+    - Assets/Imported/Ground textures pack/Grass 02/normal.tga
+    - Assets/Imported/Ground textures pack/Grass 02/normal.tga.meta
+    - Assets/Imported/Ground textures pack/Grass 02/preview.jpg
+    - Assets/Imported/Ground textures pack/Grass 02/preview.jpg.meta
+    - Assets/Imported/Ground textures pack/Grass 03.meta
+    - Assets/Imported/Ground textures pack/Grass 03/Grass pattern 03.mat
+    - Assets/Imported/Ground textures pack/Grass 03/Grass pattern 03.mat.meta
+    - Assets/Imported/Ground textures pack/Grass 03/diffuse.tga
+    - Assets/Imported/Ground textures pack/Grass 03/diffuse.tga.meta
+    - Assets/Imported/Ground textures pack/Grass 03/normal.tga
+    - Assets/Imported/Ground textures pack/Grass 03/normal.tga.meta
+    - Assets/Imported/Ground textures pack/Grass 03/preview.jpg
+    - Assets/Imported/Ground textures pack/Grass 03/preview.jpg.meta
+    - Assets/Imported/Ground textures pack/Grass 04.meta
+    - Assets/Imported/Ground textures pack/Grass 04/Grass pattern 04.mat
+    - Assets/Imported/Ground textures pack/Grass 04/Grass pattern 04.mat.meta
+    - Assets/Imported/Ground textures pack/Grass 04/diffuse.tga
+    - Assets/Imported/Ground textures pack/Grass 04/diffuse.tga.meta
+    - Assets/Imported/Ground textures pack/Grass 04/normal.tga
+    - Assets/Imported/Ground textures pack/Grass 04/normal.tga.meta
+    - Assets/Imported/Ground textures pack/Grass 04/preview.jpg
+    - Assets/Imported/Ground textures pack/Grass 04/preview.jpg.meta
+    - Assets/Imported/Ground textures pack/Grass 05.meta
+    - Assets/Imported/Ground textures pack/Grass 05/Grass pattern 05.mat
+    - Assets/Imported/Ground textures pack/Grass 05/Grass pattern 05.mat.meta
+    - Assets/Imported/Ground textures pack/Grass 05/diffuse.tga
+    - Assets/Imported/Ground textures pack/Grass 05/diffuse.tga.meta
+    - Assets/Imported/Ground textures pack/Grass 05/normal.tga
+    - Assets/Imported/Ground textures pack/Grass 05/normal.tga.meta
+    - Assets/Imported/Ground textures pack/Grass 05/preview.jpg
+    - Assets/Imported/Ground textures pack/Grass 05/preview.jpg.meta
+    - Assets/Imported/Ground textures pack/Grass 06.meta
+    - Assets/Imported/Ground textures pack/Grass 06/Grass pattern 06.mat
+    - Assets/Imported/Ground textures pack/Grass 06/Grass pattern 06.mat.meta
+    - Assets/Imported/Ground textures pack/Grass 06/diffuse.tga
+    - Assets/Imported/Ground textures pack/Grass 06/diffuse.tga.meta
+    - Assets/Imported/Ground textures pack/Grass 06/normal.tga
+    - Assets/Imported/Ground textures pack/Grass 06/normal.tga.meta
+    - Assets/Imported/Ground textures pack/Grass 06/preview.jpg
+    - Assets/Imported/Ground textures pack/Grass 06/preview.jpg.meta
+    - Assets/Imported/Ground textures pack/Ground & moss.meta
+    - Assets/Imported/Ground textures pack/Ground & moss/Ground & moss pattern.mat
+    - Assets/Imported/Ground textures pack/Ground & moss/Ground & moss pattern.mat.meta
+    - Assets/Imported/Ground textures pack/Ground & moss/diffuse.tga
+    - Assets/Imported/Ground textures pack/Ground & moss/diffuse.tga.meta
+    - Assets/Imported/Ground textures pack/Ground & moss/normal.tga
+    - Assets/Imported/Ground textures pack/Ground & moss/normal.tga.meta
+    - Assets/Imported/Ground textures pack/Ground & moss/preview.jpg
+    - Assets/Imported/Ground textures pack/Ground & moss/preview.jpg.meta
+    - Assets/Imported/Ground textures pack/Ground & rocks 01.meta
+    - Assets/Imported/Ground textures pack/Ground & rocks 01/Ground & rocks pattern
+      01.mat
+    - Assets/Imported/Ground textures pack/Ground & rocks 01/Ground & rocks pattern
+      01.mat.meta
+    - Assets/Imported/Ground textures pack/Ground & rocks 01/diffuse.tga
+    - Assets/Imported/Ground textures pack/Ground & rocks 01/diffuse.tga.meta
+    - Assets/Imported/Ground textures pack/Ground & rocks 01/normal.tga
+    - Assets/Imported/Ground textures pack/Ground & rocks 01/normal.tga.meta
+    - Assets/Imported/Ground textures pack/Ground & rocks 01/preview.jpg
+    - Assets/Imported/Ground textures pack/Ground & rocks 01/preview.jpg.meta
+    - Assets/Imported/Ground textures pack/Ground & rocks 02.meta
+    - Assets/Imported/Ground textures pack/Ground & rocks 02/Ground & rocks pattern
+      02.mat
+    - Assets/Imported/Ground textures pack/Ground & rocks 02/Ground & rocks pattern
+      02.mat.meta
+    - Assets/Imported/Ground textures pack/Ground & rocks 02/diffuse.tga
+    - Assets/Imported/Ground textures pack/Ground & rocks 02/diffuse.tga.meta
+    - Assets/Imported/Ground textures pack/Ground & rocks 02/normal.tga
+    - Assets/Imported/Ground textures pack/Ground & rocks 02/normal.tga.meta
+    - Assets/Imported/Ground textures pack/Ground & rocks 02/preview.jpg
+    - Assets/Imported/Ground textures pack/Ground & rocks 02/preview.jpg.meta
+    - Assets/Imported/Ground textures pack/Ground & rocks 03.meta
+    - Assets/Imported/Ground textures pack/Ground & rocks 03/Ground & rocks pattern
+      03.mat
+    - Assets/Imported/Ground textures pack/Ground & rocks 03/Ground & rocks pattern
+      03.mat.meta
+    - Assets/Imported/Ground textures pack/Ground & rocks 03/diffuse.tga
+    - Assets/Imported/Ground textures pack/Ground & rocks 03/diffuse.tga.meta
+    - Assets/Imported/Ground textures pack/Ground & rocks 03/normal.tga
+    - Assets/Imported/Ground textures pack/Ground & rocks 03/normal.tga.meta
+    - Assets/Imported/Ground textures pack/Ground & rocks 03/preview.jpg
+    - Assets/Imported/Ground textures pack/Ground & rocks 03/preview.jpg.meta
+    - Assets/Imported/Ground textures pack/Ground & weeds.meta
+    - Assets/Imported/Ground textures pack/Ground & weeds/Ground & weeds.mat
+    - Assets/Imported/Ground textures pack/Ground & weeds/Ground & weeds.mat.meta
+    - Assets/Imported/Ground textures pack/Ground & weeds/diffuse.tga
+    - Assets/Imported/Ground textures pack/Ground & weeds/diffuse.tga.meta
+    - Assets/Imported/Ground textures pack/Ground & weeds/normal.tga
+    - Assets/Imported/Ground textures pack/Ground & weeds/normal.tga.meta
+    - Assets/Imported/Ground textures pack/Ground & weeds/preview.jpg
+    - Assets/Imported/Ground textures pack/Ground & weeds/preview.jpg.meta
+    - Assets/Imported/Ground textures pack/Ground 01.meta
+    - Assets/Imported/Ground textures pack/Ground 01/Ground pattern 01.mat
+    - Assets/Imported/Ground textures pack/Ground 01/Ground pattern 01.mat.meta
+    - Assets/Imported/Ground textures pack/Ground 01/diffuse.tga
+    - Assets/Imported/Ground textures pack/Ground 01/diffuse.tga.meta
+    - Assets/Imported/Ground textures pack/Ground 01/normal.tga
+    - Assets/Imported/Ground textures pack/Ground 01/normal.tga.meta
+    - Assets/Imported/Ground textures pack/Ground 01/preview.jpg
+    - Assets/Imported/Ground textures pack/Ground 01/preview.jpg.meta
+    - Assets/Imported/Ground textures pack/Ground 02.meta
+    - Assets/Imported/Ground textures pack/Ground 02/Ground pattern 02.mat
+    - Assets/Imported/Ground textures pack/Ground 02/Ground pattern 02.mat.meta
+    - Assets/Imported/Ground textures pack/Ground 02/diffuse.tga
+    - Assets/Imported/Ground textures pack/Ground 02/diffuse.tga.meta
+    - Assets/Imported/Ground textures pack/Ground 02/normal.tga
+    - Assets/Imported/Ground textures pack/Ground 02/normal.tga.meta
+    - Assets/Imported/Ground textures pack/Ground 02/preview.jpg
+    - Assets/Imported/Ground textures pack/Ground 02/preview.jpg.meta
+    - Assets/Imported/Ground textures pack/Lava.meta
+    - Assets/Imported/Ground textures pack/Lava/Lava pattern.mat
+    - Assets/Imported/Ground textures pack/Lava/Lava pattern.mat.meta
+    - Assets/Imported/Ground textures pack/Lava/diffuse.tga
+    - Assets/Imported/Ground textures pack/Lava/diffuse.tga.meta
+    - Assets/Imported/Ground textures pack/Lava/emissive.tga
+    - Assets/Imported/Ground textures pack/Lava/emissive.tga.meta
+    - Assets/Imported/Ground textures pack/Lava/normal.tga
+    - Assets/Imported/Ground textures pack/Lava/normal.tga.meta
+    - Assets/Imported/Ground textures pack/Lava/preview.jpg
+    - Assets/Imported/Ground textures pack/Lava/preview.jpg.meta
+    - Assets/Imported/HandPaintedRockTextures.meta
+    - Assets/Imported/HandPaintedRockTextures/Materials.meta
+    - Assets/Imported/HandPaintedRockTextures/Materials/rock_01.mat
+    - Assets/Imported/HandPaintedRockTextures/Materials/rock_01.mat.meta
+    - Assets/Imported/HandPaintedRockTextures/Materials/rock_02.mat
+    - Assets/Imported/HandPaintedRockTextures/Materials/rock_02.mat.meta
+    - Assets/Imported/HandPaintedRockTextures/Materials/rock_03.mat
+    - Assets/Imported/HandPaintedRockTextures/Materials/rock_03.mat.meta
+    - Assets/Imported/HandPaintedRockTextures/Materials/rock_04.mat
+    - Assets/Imported/HandPaintedRockTextures/Materials/rock_04.mat.meta
+    - Assets/Imported/HandPaintedRockTextures/Materials/rock_05.mat
+    - Assets/Imported/HandPaintedRockTextures/Materials/rock_05.mat.meta
+    - Assets/Imported/HandPaintedRockTextures/Textures.meta
+    - Assets/Imported/HandPaintedRockTextures/Textures/rock_01.png
+    - Assets/Imported/HandPaintedRockTextures/Textures/rock_01.png.meta
+    - Assets/Imported/HandPaintedRockTextures/Textures/rock_02.png
+    - Assets/Imported/HandPaintedRockTextures/Textures/rock_02.png.meta
+    - Assets/Imported/HandPaintedRockTextures/Textures/rock_03.png
+    - Assets/Imported/HandPaintedRockTextures/Textures/rock_03.png.meta
+    - Assets/Imported/HandPaintedRockTextures/Textures/rock_04.png
+    - Assets/Imported/HandPaintedRockTextures/Textures/rock_04.png.meta
+    - Assets/Imported/HandPaintedRockTextures/Textures/rock_05.png
+    - Assets/Imported/HandPaintedRockTextures/Textures/rock_05.png.meta
+    - Assets/Imported/Packages.meta
+    - Assets/Imported/Packages/HDRPDefaultResources.meta
+    - Assets/Imported/Packages/HDRPDefaultResources/DefaultHDRISky.exr
+    - Assets/Imported/Packages/HDRPDefaultResources/DefaultHDRISky.exr.meta
+    - Assets/Imported/Packages/HDRPDefaultResources/DefaultHDRPAsset.asset
+    - Assets/Imported/Packages/HDRPDefaultResources/DefaultHDRPAsset.asset.meta
+    - Assets/Imported/Packages/HDRPDefaultResources/DefaultSceneRoot.prefab
+    - Assets/Imported/Packages/HDRPDefaultResources/DefaultSceneRoot.prefab.meta
+    - Assets/Imported/Packages/HDRPDefaultResources/DefaultVFXResources.asset
+    - Assets/Imported/Packages/HDRPDefaultResources/DefaultVFXResources.asset.meta
+    - Assets/Imported/Packages/SampleSceneAssets.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Animations.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Animations/CinematicsTimeline.playable
+    - Assets/Imported/Packages/SampleSceneAssets/Animations/CinematicsTimeline.playable.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Animations/ScreenshotsTimeline.playable
+    - Assets/Imported/Packages/SampleSceneAssets/Animations/ScreenshotsTimeline.playable.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Materials.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/Aluminium_Mat.mat
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/Aluminium_Mat.mat.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/Bamboo_A.mat
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/Bamboo_A.mat.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/Bamboo_Leaf_A.mat
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/Bamboo_Leaf_A.mat.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/Brass_Mat.mat
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/Brass_Mat.mat.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/Bush_01_Mat.mat
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/Bush_01_Mat.mat.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/Collision_Mat.mat
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/Collision_Mat.mat.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/ConcreteCyan_Mat.mat
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/ConcreteCyan_Mat.mat.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/ConcreteHoles_Mat.mat
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/ConcreteHoles_Mat.mat.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/ConcreteMatteGrey_Mat.mat
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/ConcreteMatteGrey_Mat.mat.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/ConcretePolished_Mat.mat
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/ConcretePolished_Mat.mat.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/ConcreteRough_Mat.mat
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/ConcreteRough_Mat.mat.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/ConcreteSmooth_Mat.mat
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/ConcreteSmooth_Mat.mat.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/ConcreteTaupe_Mat.mat
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/ConcreteTaupe_Mat.mat.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/Concrete_Edge_Decal.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/Concrete_Edge_Decal.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/DecalPuddle_Mat.mat
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/DecalPuddle_Mat.mat.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/DecalWearDark_Mat.mat
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/DecalWearDark_Mat.mat.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/DecalWear_Mat.mat
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/DecalWear_Mat.mat.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/Decal_Mat.mat
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/Decal_Mat.mat.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/Drain_Mat.mat
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/Drain_Mat.mat.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/EmissiveBulb_Mat.mat
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/EmissiveBulb_Mat.mat.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/EmissiveStripLight_Mat.mat
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/EmissiveStripLight_Mat.mat.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/Fabric_Mat.mat
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/Fabric_Mat.mat.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/Fern_01_Mat.mat
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/Fern_01_Mat.mat.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/GlassDark_Mat.mat
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/GlassDark_Mat.mat.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/GlassDirt_Mat.mat
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/GlassDirt_Mat.mat.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/Ground_Mat.mat
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/Ground_Mat.mat.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/MarbleFlooring_Mat.mat
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/MarbleFlooring_Mat.mat.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/MetalBlack_Mat.mat
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/MetalBlack_Mat.mat.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/Plant_C.mat
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/Plant_C.mat.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/Rock_A.mat
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/Rock_A.mat.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/Rubber_Mat.mat
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/Rubber_Mat.mat.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/SandblastMetal_Mat.mat
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/SandblastMetal_Mat.mat.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/ShadowProxy_Mat.mat
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/ShadowProxy_Mat.mat.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/WallDirt_Mat.mat
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/WallDirt_Mat.mat.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/WoodCounter_Mat.mat
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/WoodCounter_Mat.mat.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/WoodLight_Mat.mat
+    - Assets/Imported/Packages/SampleSceneAssets/Materials/General/WoodLight_Mat.mat.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Lighting.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Lighting/ShadowProxy_01.fbx
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Lighting/ShadowProxy_01.fbx.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Ball.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Ball/Model.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Ball/Model/Ball.fbx
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Ball/Model/Ball.fbx.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Ball/Model/Base.fbx
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Ball/Model/Base.fbx.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Ball/Prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Ball/Prefab/BallSmall_01.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Ball/Prefab/BallSmall_01.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Ball/Prefab/BallWithBase_01.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Ball/Prefab/BallWithBase_01.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Furniture.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Furniture/Models.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Furniture/Models/Barstool_01.fbx
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Furniture/Models/Barstool_01.fbx.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Furniture/Models/GlassCase_01.fbx
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Furniture/Models/GlassCase_01.fbx.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Furniture/Models/Pot_01.fbx
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Furniture/Models/Pot_01.fbx.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Furniture/Models/RoundTable_01.fbx
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Furniture/Models/RoundTable_01.fbx.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Furniture/Prefabs.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Furniture/Prefabs/BarStool_01.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Furniture/Prefabs/BarStool_01.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Furniture/Prefabs/GlassCase_01.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Furniture/Prefabs/GlassCase_01.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Furniture/Prefabs/LoungeChair_01.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Furniture/Prefabs/LoungeChair_01.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Furniture/Prefabs/PotFern_01.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Furniture/Prefabs/PotFern_01.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Furniture/Prefabs/Pot_01.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Furniture/Prefabs/Pot_01.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Furniture/Prefabs/RoundTable_01.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Furniture/Prefabs/RoundTable_01.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Lights.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Lights/Model.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Lights/Model/CeilingLamp_Lamp_01.fbx
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Lights/Model/CeilingLamp_Lamp_01.fbx.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Lights/Model/Spotlight_Spot_01a.fbx
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Lights/Model/Spotlight_Spot_01a.fbx.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Lights/Model/Spotlight_Spot_01b.fbx
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Lights/Model/Spotlight_Spot_01b.fbx.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Lights/Model/Spotlight_Structure_01a.fbx
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Lights/Model/Spotlight_Structure_01a.fbx.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Lights/Prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Lights/Prefab/CeilingLamp_01.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Lights/Prefab/CeilingLamp_01.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Lights/Prefab/CeilingLamp_Lamp_01.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Lights/Prefab/CeilingLamp_Lamp_01.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Lights/Prefab/Light_Point_Bulb.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Lights/Prefab/Light_Point_Bulb.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Lights/Prefab/Light_Point_Hotspot_Normal.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Lights/Prefab/Light_Point_Hotspot_Normal.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Lights/Prefab/Light_Point_Hotspot_Small.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Lights/Prefab/Light_Point_Hotspot_Small.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Lights/Prefab/Light_Spot_1200lm.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Lights/Prefab/Light_Spot_1200lm.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Lights/Prefab/Light_Spot_1600lm.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Lights/Prefab/Light_Spot_1600lm.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Lights/Prefab/Light_Spot_3200lm.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Lights/Prefab/Light_Spot_3200lm.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Lights/Prefab/Light_Spot_800lm.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Lights/Prefab/Light_Spot_800lm.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Lights/Prefab/Spotlight_01a.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Lights/Prefab/Spotlight_01a.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Lights/Prefab/Spotlight_01b.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Lights/Prefab/Spotlight_01b.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Lights/Prefab/Spotlight_01b_large.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Lights/Prefab/Spotlight_01b_large.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Lights/Prefab/Spotlight_Spot_01a.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Lights/Prefab/Spotlight_Spot_01a.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Lights/Prefab/Spotlight_Spot_01a_lamp.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Lights/Prefab/Spotlight_Spot_01a_lamp.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Lights/Prefab/Spotlight_Spot_01b.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Lights/Prefab/Spotlight_Spot_01b.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Lights/Prefab/Spotlight_Structure_01a.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Lights/Prefab/Spotlight_Structure_01a.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Model.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Model/Bamboo_A.fbx
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Model/Bamboo_A.fbx.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Model/Bamboo_B.fbx
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Model/Bamboo_B.fbx.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Model/Bamboo_C.fbx
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Model/Bamboo_C.fbx.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Model/Bamboo_D.fbx
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Model/Bamboo_D.fbx.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Model/Bush_01.fbx
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Model/Bush_01.fbx.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Model/Fern_01.fbx
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Model/Fern_01.fbx.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Model/Plant_C_02.fbx
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Model/Plant_C_02.fbx.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Model/Plant_C_03.fbx
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Model/Plant_C_03.fbx.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Model/Rock_A_01.fbx
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Model/Rock_A_01.fbx.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Model/Rock_A_02.fbx
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Model/Rock_A_02.fbx.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Model/Rock_A_03.fbx
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Model/Rock_A_03.fbx.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Prefab/Bamboo_A.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Prefab/Bamboo_A.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Prefab/Bamboo_B.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Prefab/Bamboo_B.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Prefab/Bamboo_C.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Prefab/Bamboo_C.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Prefab/Bamboo_D.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Prefab/Bamboo_D.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Prefab/Bush_01.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Prefab/Bush_01.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Prefab/Fern_01.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Prefab/Fern_01.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Prefab/NatureSetPiece_02.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Prefab/NatureSetPiece_02.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Prefab/Plant_C_02.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Prefab/Plant_C_02.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Prefab/Plant_C_03.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Prefab/Plant_C_03.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Prefab/Rock_A_01.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Prefab/Rock_A_01.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Prefab/Rock_A_02.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Prefab/Rock_A_02.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Prefab/Rock_A_03.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Props/Nature/Prefab/Rock_A_03.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Model.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Model/FR_Platform_01.fbx
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Model/FR_Platform_01.fbx.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Model/FR_SectionA_01.fbx
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Model/FR_SectionA_01.fbx.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Model/FS_Aisle_01.fbx
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Model/FS_Aisle_01.fbx.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Model/Railing_01.fbx
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Model/Railing_01.fbx.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Model/SR_CurveWall_01.fbx
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Model/SR_CurveWall_01.fbx.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Model/SR_Pillar_01.fbx
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Model/SR_Pillar_01.fbx.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Model/SR_SectionCeiling_01.fbx
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Model/SR_SectionCeiling_01.fbx.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Model/SR_SectionFloor_01.fbx
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Model/SR_SectionFloor_01.fbx.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Model/SR_SectionWall_01.fbx
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Model/SR_SectionWall_01.fbx.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Model/SR_Wall_01.fbx
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Model/SR_Wall_01.fbx.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Model/ST_Aisle_01.fbx
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Model/ST_Aisle_01.fbx.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Model/TR_Counter_01.fbx
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Model/TR_Counter_01.fbx.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Model/TR_CurveWall_01.fbx
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Model/TR_CurveWall_01.fbx.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Model/TR_Pillar_01.fbx
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Model/TR_Pillar_01.fbx.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Model/TR_SectionA_01.fbx
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Model/TR_SectionA_01.fbx.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Model/TR_SectionB_01.fbx
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Model/TR_SectionB_01.fbx.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Prefab/FR_Platform_01.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Prefab/FR_Platform_01.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Prefab/FR_SectionA_01.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Prefab/FR_SectionA_01.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Prefab/FS_Aisle_01.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Prefab/FS_Aisle_01.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Prefab/Railing_01.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Prefab/Railing_01.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Prefab/SR_CurveWall_01.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Prefab/SR_CurveWall_01.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Prefab/SR_Pillar_01.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Prefab/SR_Pillar_01.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Prefab/SR_SectionCeiling_01.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Prefab/SR_SectionCeiling_01.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Prefab/SR_SectionFloor_01.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Prefab/SR_SectionFloor_01.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Prefab/SR_SectionWall_01.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Prefab/SR_SectionWall_01.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Prefab/SR_Wall_01.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Prefab/SR_Wall_01.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Prefab/ST_Aisle_01.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Prefab/ST_Aisle_01.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Prefab/TR_Counter_01.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Prefab/TR_Counter_01.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Prefab/TR_CurveWall_01.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Prefab/TR_CurveWall_01.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Prefab/TR_Pillar_01.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Prefab/TR_Pillar_01.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Prefab/TR_SectionA_01.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Prefab/TR_SectionA_01.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Prefab/TR_SectionB_01.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Meshes/Structure/Prefab/TR_SectionB_01.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Particles.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Particles/ButterFlies.vfx
+    - Assets/Imported/Packages/SampleSceneAssets/Particles/ButterFlies.vfx.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Particles/FallingLeaves.vfx
+    - Assets/Imported/Packages/SampleSceneAssets/Particles/FallingLeaves.vfx.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Particles/FloatingDust.vfx
+    - Assets/Imported/Packages/SampleSceneAssets/Particles/FloatingDust.vfx.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Scripts.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Scripts/LookWithMouse.cs
+    - Assets/Imported/Packages/SampleSceneAssets/Scripts/LookWithMouse.cs.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Scripts/PlayerControllerFPS.prefab
+    - Assets/Imported/Packages/SampleSceneAssets/Scripts/PlayerControllerFPS.prefab.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Scripts/PlayerMovement.cs
+    - Assets/Imported/Packages/SampleSceneAssets/Scripts/PlayerMovement.cs.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Scripts/SimpleCameraController.cs
+    - Assets/Imported/Packages/SampleSceneAssets/Scripts/SimpleCameraController.cs.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Settings.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Settings/DiffusionProfiles.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Settings/DiffusionProfiles/BambooLeaves.asset
+    - Assets/Imported/Packages/SampleSceneAssets/Settings/DiffusionProfiles/BambooLeaves.asset.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Settings/DiffusionProfiles/Foliage.asset
+    - Assets/Imported/Packages/SampleSceneAssets/Settings/DiffusionProfiles/Foliage.asset.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Settings/DiffusionProfiles/Skin.asset
+    - Assets/Imported/Packages/SampleSceneAssets/Settings/DiffusionProfiles/Skin.asset.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Settings/HDRPHighQuality.asset
+    - Assets/Imported/Packages/SampleSceneAssets/Settings/HDRPHighQuality.asset.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Settings/HDRPLowQuality.asset
+    - Assets/Imported/Packages/SampleSceneAssets/Settings/HDRPLowQuality.asset.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Settings/HDRPMediumQuality.asset
+    - Assets/Imported/Packages/SampleSceneAssets/Settings/HDRPMediumQuality.asset.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Settings/Volumes.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Settings/Volumes/CinematicPhysicalCamera.asset
+    - Assets/Imported/Packages/SampleSceneAssets/Settings/Volumes/CinematicPhysicalCamera.asset.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Settings/Volumes/ScreenshotsTimelineProfile.asset
+    - Assets/Imported/Packages/SampleSceneAssets/Settings/Volumes/ScreenshotsTimelineProfile.asset.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Settings/Volumes/VolumeGlobal.asset
+    - Assets/Imported/Packages/SampleSceneAssets/Settings/Volumes/VolumeGlobal.asset.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Settings/Volumes/VolumeRoom1.asset
+    - Assets/Imported/Packages/SampleSceneAssets/Settings/Volumes/VolumeRoom1.asset.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Settings/Volumes/VolumeRoom2.asset
+    - Assets/Imported/Packages/SampleSceneAssets/Settings/Volumes/VolumeRoom2.asset.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Settings/Volumes/VolumeRoom2Skylight.asset
+    - Assets/Imported/Packages/SampleSceneAssets/Settings/Volumes/VolumeRoom2Skylight.asset.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Settings/Volumes/VolumeRoom3.asset
+    - Assets/Imported/Packages/SampleSceneAssets/Settings/Volumes/VolumeRoom3.asset.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Settings/Volumes/VolumeRoom3Corridor.asset
+    - Assets/Imported/Packages/SampleSceneAssets/Settings/Volumes/VolumeRoom3Corridor.asset.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Settings/Volumes/VolumeRoom3Sitting.asset
+    - Assets/Imported/Packages/SampleSceneAssets/Settings/Volumes/VolumeRoom3Sitting.asset.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/DensityVolumeTextures.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/DensityVolumeTextures/3d_fractal_noise_sample01.tga
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/DensityVolumeTextures/3d_fractal_noise_sample01.tga.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Bamboo_A_Albedo.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Bamboo_A_Albedo.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Bamboo_A_BNM.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Bamboo_A_BNM.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Bamboo_A_Height.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Bamboo_A_Height.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Bamboo_A_MaskMap.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Bamboo_A_MaskMap.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Bamboo_A_Normal.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Bamboo_A_Normal.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Bamboo_A_Thickness.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Bamboo_A_Thickness.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Brass_Albedo.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Brass_Albedo.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Brass_MAODS.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Brass_MAODS.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Brass_Normal.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Brass_Normal.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Bush_01_BC.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Bush_01_BC.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Bush_01_MAODS.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Bush_01_MAODS.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Bush_01_Normal.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Bush_01_Normal.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/ConcreteHoles_Albedo.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/ConcreteHoles_Albedo.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/ConcreteHoles_DetailMap.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/ConcreteHoles_DetailMap.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/ConcreteHoles_MAODS.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/ConcreteHoles_MAODS.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/ConcreteHoles_Normal.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/ConcreteHoles_Normal.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/ConcreteMatteGrey_Albedo.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/ConcreteMatteGrey_Albedo.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/ConcreteMatteGrey_MAODS.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/ConcreteMatteGrey_MAODS.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/ConcreteMatteGrey_Normal.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/ConcreteMatteGrey_Normal.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/ConcretePolished_Albedo.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/ConcretePolished_Albedo.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/ConcretePolished_DetailMap.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/ConcretePolished_DetailMap.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/ConcretePolished_MAODS.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/ConcretePolished_MAODS.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/ConcretePolished_Normal.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/ConcretePolished_Normal.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/ConcreteRough_Albedo.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/ConcreteRough_Albedo.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/ConcreteRough_DetailMap.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/ConcreteRough_DetailMap.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/ConcreteRough_MAODS.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/ConcreteRough_MAODS.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/ConcreteRough_Normal.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/ConcreteRough_Normal.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/ConcreteSmooth_Albedo.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/ConcreteSmooth_Albedo.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/ConcreteSmooth_MAODS.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/ConcreteSmooth_MAODS.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/ConcreteSmooth_Normal.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/ConcreteSmooth_Normal.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/ConcreteTaupe_02_Albedo.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/ConcreteTaupe_02_Albedo.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/ConcreteTaupe_02_DetailMap.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/ConcreteTaupe_02_DetailMap.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/ConcreteTaupe_02_MAODS.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/ConcreteTaupe_02_MAODS.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/ConcreteTaupe_02_Normal.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/ConcreteTaupe_02_Normal.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/DecalPuddle_01_Albedo.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/DecalPuddle_01_Albedo.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/DecalSheet_01A_BC.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/DecalSheet_01A_BC.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/DecalSheet_01A_MOADS.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/DecalSheet_01A_MOADS.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/DecalWear_Albedo.tga
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/DecalWear_Albedo.tga.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/DecalWear_MOADS.tga
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/DecalWear_MOADS.tga.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/DecalWear_Normal.tga
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/DecalWear_Normal.tga.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Drain_Albedo.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Drain_Albedo.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Drain_MAODS.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Drain_MAODS.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Drain_Normal.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Drain_Normal.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Fabric_Albedo.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Fabric_Albedo.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Fabric_MAODS.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Fabric_MAODS.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Fabric_Normal.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Fabric_Normal.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Fern_01_Albedo.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Fern_01_Albedo.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Fern_01_MAODS.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Fern_01_MAODS.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Fern_01_Normal.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Fern_01_Normal.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Fern_01_Thickness.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Fern_01_Thickness.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Ground_MAODS.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Ground_MAODS.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/MarbleFloor_MAODS.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/MarbleFloor_MAODS.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/MarbleFloor_Normal.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/MarbleFloor_Normal.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/MetalBlack_Albedo.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/MetalBlack_Albedo.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/MetalBlack_MAODS.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/MetalBlack_MAODS.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/MetalBlack_Normal.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/MetalBlack_Normal.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Plant_C_Albedo.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Plant_C_Albedo.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Plant_C_MaskMap.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Plant_C_MaskMap.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Plant_C_Normal.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Plant_C_Normal.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Rock_A_MaskMap.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Rock_A_MaskMap.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Rock_A_Normal.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Rock_A_Normal.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Rubber_BC.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Rubber_BC.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Rubber_M.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Rubber_M.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Rubber_N.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/Rubber_N.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/SandblastMetal_Normal.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/SandblastMetal_Normal.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/WoodCounter_Albedo.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/WoodCounter_Albedo.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/WoodCounter_MAODS.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/WoodCounter_MAODS.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/WoodCounter_Normal.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/WoodCounter_Normal.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/WoodLight_Albedo.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/WoodLight_Albedo.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/WoodLight_DetailMap.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/WoodLight_DetailMap.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/WoodLight_MAODS.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/WoodLight_MAODS.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/WoodLight_Normal.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/General/WoodLight_Normal.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/LightCookie.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/LightCookie/SpotLight_Cookie.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/LightCookie/SpotLight_Cookie.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/VFX.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/VFX/BamBoo_Leaves_Albedo.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/VFX/BamBoo_Leaves_Albedo.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/VFX/BamBoo_Leaves_MaskMap.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/VFX/BamBoo_Leaves_MaskMap.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/VFX/BamBoo_Leaves_Normal.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/VFX/BamBoo_Leaves_Normal.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/VFX/ButterFlies_8x1.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/VFX/ButterFlies_8x1.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/VFX/Dust.png
+    - Assets/Imported/Packages/SampleSceneAssets/Textures/VFX/Dust.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/TutorialInfo.meta
+    - Assets/Imported/Packages/SampleSceneAssets/TutorialInfo/Icons.meta
+    - Assets/Imported/Packages/SampleSceneAssets/TutorialInfo/Icons/HDIcon.png
+    - Assets/Imported/Packages/SampleSceneAssets/TutorialInfo/Icons/HDIcon.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/TutorialInfo/Icons/Help_Icon.png
+    - Assets/Imported/Packages/SampleSceneAssets/TutorialInfo/Icons/Help_Icon.png.meta
+    - Assets/Imported/Packages/SampleSceneAssets/TutorialInfo/Layout.wlt
+    - Assets/Imported/Packages/SampleSceneAssets/TutorialInfo/Layout.wlt.meta
+    - Assets/Imported/Packages/SampleSceneAssets/TutorialInfo/Readme.asset
+    - Assets/Imported/Packages/SampleSceneAssets/TutorialInfo/Readme.asset.meta
+    - Assets/Imported/Packages/SampleSceneAssets/TutorialInfo/Scripts.meta
+    - Assets/Imported/Packages/SampleSceneAssets/TutorialInfo/Scripts/Editor.meta
+    - Assets/Imported/Packages/SampleSceneAssets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs
+    - Assets/Imported/Packages/SampleSceneAssets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs.meta
+    - Assets/Imported/Packages/SampleSceneAssets/TutorialInfo/Scripts/Readme.cs
+    - Assets/Imported/Packages/SampleSceneAssets/TutorialInfo/Scripts/Readme.cs.meta
+    - Assets/Imported/Packages/TextMesh Pro.meta
+    - Assets/Imported/Packages/TextMesh Pro/Documentation.meta
+    - Assets/Imported/Packages/TextMesh Pro/Documentation/TextMesh Pro User Guide
+      2016.pdf
+    - Assets/Imported/Packages/TextMesh Pro/Documentation/TextMesh Pro User Guide
+      2016.pdf.meta
+    - Assets/Imported/Packages/TextMesh Pro/Fonts.meta
+    - Assets/Imported/Packages/TextMesh Pro/Fonts/LiberationSans - OFL.txt
+    - Assets/Imported/Packages/TextMesh Pro/Fonts/LiberationSans - OFL.txt.meta
+    - Assets/Imported/Packages/TextMesh Pro/Fonts/LiberationSans.ttf
+    - Assets/Imported/Packages/TextMesh Pro/Fonts/LiberationSans.ttf.meta
+    - Assets/Imported/Packages/TextMesh Pro/Resources.meta
+    - Assets/Imported/Packages/TextMesh Pro/Resources/Fonts & Materials.meta
+    - Assets/Imported/Packages/TextMesh Pro/Resources/Fonts & Materials/LiberationSans
+      SDF - Drop Shadow.mat
+    - Assets/Imported/Packages/TextMesh Pro/Resources/Fonts & Materials/LiberationSans
+      SDF - Drop Shadow.mat.meta
+    - Assets/Imported/Packages/TextMesh Pro/Resources/Fonts & Materials/LiberationSans
+      SDF - Fallback.asset
+    - Assets/Imported/Packages/TextMesh Pro/Resources/Fonts & Materials/LiberationSans
+      SDF - Fallback.asset.meta
+    - Assets/Imported/Packages/TextMesh Pro/Resources/Fonts & Materials/LiberationSans
+      SDF - Outline.mat
+    - Assets/Imported/Packages/TextMesh Pro/Resources/Fonts & Materials/LiberationSans
+      SDF - Outline.mat.meta
+    - Assets/Imported/Packages/TextMesh Pro/Resources/Fonts & Materials/LiberationSans
+      SDF.asset
+    - Assets/Imported/Packages/TextMesh Pro/Resources/Fonts & Materials/LiberationSans
+      SDF.asset.meta
+    - Assets/Imported/Packages/TextMesh Pro/Resources/LineBreaking Following Characters.txt
+    - Assets/Imported/Packages/TextMesh Pro/Resources/LineBreaking Following Characters.txt.meta
+    - Assets/Imported/Packages/TextMesh Pro/Resources/LineBreaking Leading Characters.txt
+    - Assets/Imported/Packages/TextMesh Pro/Resources/LineBreaking Leading Characters.txt.meta
+    - Assets/Imported/Packages/TextMesh Pro/Resources/Sprite Assets.meta
+    - Assets/Imported/Packages/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset
+    - Assets/Imported/Packages/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset.meta
+    - Assets/Imported/Packages/TextMesh Pro/Resources/Style Sheets.meta
+    - Assets/Imported/Packages/TextMesh Pro/Resources/Style Sheets/Default Style
+      Sheet.asset
+    - Assets/Imported/Packages/TextMesh Pro/Resources/Style Sheets/Default Style
+      Sheet.asset.meta
+    - Assets/Imported/Packages/TextMesh Pro/Resources/TMP Settings.asset
+    - Assets/Imported/Packages/TextMesh Pro/Resources/TMP Settings.asset.meta
+    - Assets/Imported/Packages/TextMesh Pro/Shaders.meta
+    - Assets/Imported/Packages/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader
+    - Assets/Imported/Packages/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader.meta
+    - Assets/Imported/Packages/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader
+    - Assets/Imported/Packages/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader.meta
+    - Assets/Imported/Packages/TextMesh Pro/Shaders/TMP_Bitmap.shader
+    - Assets/Imported/Packages/TextMesh Pro/Shaders/TMP_Bitmap.shader.meta
+    - Assets/Imported/Packages/TextMesh Pro/Shaders/TMP_SDF Overlay.shader
+    - Assets/Imported/Packages/TextMesh Pro/Shaders/TMP_SDF Overlay.shader.meta
+    - Assets/Imported/Packages/TextMesh Pro/Shaders/TMP_SDF SSD.shader
+    - Assets/Imported/Packages/TextMesh Pro/Shaders/TMP_SDF SSD.shader.meta
+    - Assets/Imported/Packages/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader
+    - Assets/Imported/Packages/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader.meta
+    - Assets/Imported/Packages/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader
+    - Assets/Imported/Packages/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader.meta
+    - Assets/Imported/Packages/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader
+    - Assets/Imported/Packages/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader.meta
+    - Assets/Imported/Packages/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader
+    - Assets/Imported/Packages/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader.meta
+    - Assets/Imported/Packages/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader
+    - Assets/Imported/Packages/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader.meta
+    - Assets/Imported/Packages/TextMesh Pro/Shaders/TMP_SDF-Surface.shader
+    - Assets/Imported/Packages/TextMesh Pro/Shaders/TMP_SDF-Surface.shader.meta
+    - Assets/Imported/Packages/TextMesh Pro/Shaders/TMP_SDF.shader
+    - Assets/Imported/Packages/TextMesh Pro/Shaders/TMP_SDF.shader.meta
+    - Assets/Imported/Packages/TextMesh Pro/Shaders/TMP_Sprite.shader
+    - Assets/Imported/Packages/TextMesh Pro/Shaders/TMP_Sprite.shader.meta
+    - Assets/Imported/Packages/TextMesh Pro/Shaders/TMPro.cginc
+    - Assets/Imported/Packages/TextMesh Pro/Shaders/TMPro.cginc.meta
+    - Assets/Imported/Packages/TextMesh Pro/Shaders/TMPro_Mobile.cginc
+    - Assets/Imported/Packages/TextMesh Pro/Shaders/TMPro_Mobile.cginc.meta
+    - Assets/Imported/Packages/TextMesh Pro/Shaders/TMPro_Properties.cginc
+    - Assets/Imported/Packages/TextMesh Pro/Shaders/TMPro_Properties.cginc.meta
+    - Assets/Imported/Packages/TextMesh Pro/Shaders/TMPro_Surface.cginc
+    - Assets/Imported/Packages/TextMesh Pro/Shaders/TMPro_Surface.cginc.meta
+    - Assets/Imported/Packages/TextMesh Pro/Sprites.meta
+    - Assets/Imported/Packages/TextMesh Pro/Sprites/EmojiOne Attribution.txt
+    - Assets/Imported/Packages/TextMesh Pro/Sprites/EmojiOne Attribution.txt.meta
+    - Assets/Imported/Packages/TextMesh Pro/Sprites/EmojiOne.json
+    - Assets/Imported/Packages/TextMesh Pro/Sprites/EmojiOne.json.meta
+    - Assets/Imported/Packages/TextMesh Pro/Sprites/EmojiOne.png
+    - Assets/Imported/Packages/TextMesh Pro/Sprites/EmojiOne.png.meta
+    - Assets/Imported/Packages/_TerrainAutoUpgrade.meta
+    - Assets/Imported/Packages/_TerrainAutoUpgrade/layer_Groundplants 1_DGroundplants
+      1_N2023054508611406.terrainlayer
+    - Assets/Imported/Packages/_TerrainAutoUpgrade/layer_Groundplants 1_DGroundplants
+      1_N2023054508611406.terrainlayer.meta
+    - Assets/Imported/Packages/_TerrainAutoUpgrade/layer_RockSharp 1_DRockSharp 1_N793646612c42751.terrainlayer
+    - Assets/Imported/Packages/_TerrainAutoUpgrade/layer_RockSharp 1_DRockSharp 1_N793646612c42751.terrainlayer.meta
+    - Assets/Imported/SkySerie Freebie.meta
+    - Assets/Imported/SkySerie Freebie/6SidedFluffball.mat
+    - Assets/Imported/SkySerie Freebie/6SidedFluffball.mat.meta
+    - Assets/Imported/SkySerie Freebie/6SidedMegaSun.mat
+    - Assets/Imported/SkySerie Freebie/6SidedMegaSun.mat.meta
+    - Assets/Imported/SkySerie Freebie/AmbienceExposure.mat
+    - Assets/Imported/SkySerie Freebie/AmbienceExposure.mat.meta
+    - Assets/Imported/SkySerie Freebie/CasualDay.mat
+    - Assets/Imported/SkySerie Freebie/CasualDay.mat.meta
+    - Assets/Imported/SkySerie Freebie/CloudedSunGlow.mat
+    - Assets/Imported/SkySerie Freebie/CloudedSunGlow.mat.meta
+    - Assets/Imported/SkySerie Freebie/Cloudymorning.mat
+    - Assets/Imported/SkySerie Freebie/Cloudymorning.mat.meta
+    - Assets/Imported/SkySerie Freebie/CoriolisNight4k.mat
+    - Assets/Imported/SkySerie Freebie/CoriolisNight4k.mat.meta
+    - Assets/Imported/SkySerie Freebie/CosmicCoolCloud.mat
+    - Assets/Imported/SkySerie Freebie/CosmicCoolCloud.mat.meta
+    - Assets/Imported/SkySerie Freebie/DarkStorm.mat
+    - Assets/Imported/SkySerie Freebie/DarkStorm.mat.meta
+    - Assets/Imported/SkySerie Freebie/DayInTheClouds.mat
+    - Assets/Imported/SkySerie Freebie/DayInTheClouds.mat.meta
+    - Assets/Imported/SkySerie Freebie/ExampleScenes.meta
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/AmbienceExposure.unity
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/AmbienceExposure.unity.meta
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/AmbienceExposureSettings.lighting
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/AmbienceExposureSettings.lighting.meta
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/CasualDay.unity
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/CasualDay.unity.meta
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/CasualDaySettings.lighting
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/CasualDaySettings.lighting.meta
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/CloudyMorning.unity
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/CloudyMorning.unity.meta
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/CloudyMorningSettings.lighting
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/CloudyMorningSettings.lighting.meta
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/CosmicCoolCloud.unity
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/CosmicCoolCloud.unity.meta
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/CosmicCoolCloudSettings.lighting
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/CosmicCoolCloudSettings.lighting.meta
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/DarkStorm.unity
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/DarkStorm.unity.meta
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/DarkStormSettings.lighting
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/DarkStormSettings.lighting.meta
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/DayInTheClouds.unity
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/DayInTheClouds.unity.meta
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/DayInTheCloudsSettings.lighting
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/DayInTheCloudsSettings.lighting.meta
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/Daylightfreebiedemo.unity
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/Daylightfreebiedemo.unity.meta
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/DaylightfreebiedemoSettings.lighting
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/DaylightfreebiedemoSettings.lighting.meta
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/HighFantasy.unity
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/HighFantasy.unity.meta
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/HighFantasySettings.lighting
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/HighFantasySettings.lighting.meta
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/MidNightFreebieDemo.unity
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/MidNightFreebieDemo.unity.meta
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/PlanetaryFreebie.unity
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/PlanetaryFreebie.unity.meta
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/PlanetaryFreebieSettings.lighting
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/PlanetaryFreebieSettings.lighting.meta
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/SceneObjects.meta
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/SceneObjects/2_10.mat
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/SceneObjects/2_10.mat.meta
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/SceneObjects/4_10.mat
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/SceneObjects/4_10.mat.meta
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/SceneObjects/6_10.mat
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/SceneObjects/6_10.mat.meta
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/SceneObjects/8_10.mat
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/SceneObjects/8_10.mat.meta
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/SceneObjects/DemoObjects.prefab
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/SceneObjects/DemoObjects.prefab.meta
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/SceneObjects/Full.mat
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/SceneObjects/Full.mat.meta
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/SkyhighFreebieDemo.unity
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/SkyhighFreebieDemo.unity.meta
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/SundownFreebieDemo.unity
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/SundownFreebieDemo.unity.meta
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/SunlessFreebieDemo.unity
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/SunlessFreebieDemo.unity.meta
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/UnEarthlyRed.unity
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/UnEarthlyRed.unity.meta
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/UnEarthlyRedSettings.lighting
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/UnEarthlyRedSettings.lighting.meta
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/UnderTheSea.unity
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/UnderTheSea.unity.meta
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/UnderTheSeaSettings.lighting
+    - Assets/Imported/SkySerie Freebie/ExampleScenes/UnderTheSeaSettings.lighting.meta
+    - Assets/Imported/SkySerie Freebie/FluffballDay.mat
+    - Assets/Imported/SkySerie Freebie/FluffballDay.mat.meta
+    - Assets/Imported/SkySerie Freebie/FreebieHdri.meta
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/AmbienceExposure4k.hdr
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/AmbienceExposure4k.hdr.meta
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/CasualDay4K.hdr
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/CasualDay4K.hdr.meta
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/CloudedSunGlow4k.hdr
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/CloudedSunGlow4k.hdr.meta
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/Cloudymorning4k.hdr
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/Cloudymorning4k.hdr.meta
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/CoriolisNight4k.hdr
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/CoriolisNight4k.hdr.meta
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/CosmicCoolCloudBack.hdr
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/CosmicCoolCloudBack.hdr.meta
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/CosmicCoolCloudBottom.hdr
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/CosmicCoolCloudBottom.hdr.meta
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/CosmicCoolCloudFront.hdr
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/CosmicCoolCloudFront.hdr.meta
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/CosmicCoolCloudLeft.hdr
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/CosmicCoolCloudLeft.hdr.meta
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/CosmicCoolCloudRight.hdr
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/CosmicCoolCloudRight.hdr.meta
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/CosmicCoolCloudTop.hdr
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/CosmicCoolCloudTop.hdr.meta
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/DarkStorm4K.hdr
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/DarkStorm4K.hdr.meta
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/DayInTheClouds4k.hdr
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/DayInTheClouds4k.hdr.meta
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/FluffballDay4k.hdr
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/FluffballDay4k.hdr.meta
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/FluffballDayBack.hdr
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/FluffballDayBack.hdr.meta
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/FluffballDayBottom.hdr
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/FluffballDayBottom.hdr.meta
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/FluffballDayFront.hdr
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/FluffballDayFront.hdr.meta
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/FluffballDayLeft.hdr
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/FluffballDayLeft.hdr.meta
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/FluffballDayRight.hdr
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/FluffballDayRight.hdr.meta
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/FluffballDayTop.hdr
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/FluffballDayTop.hdr.meta
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/HighFantasy4k.hdr
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/HighFantasy4k.hdr.meta
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/MegaSun4k.hdr
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/MegaSun4k.hdr.meta
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/MegaSunBack.hdr
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/MegaSunBack.hdr.meta
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/MegaSunBottom.hdr
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/MegaSunBottom.hdr.meta
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/MegaSunFront.hdr
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/MegaSunFront.hdr.meta
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/MegaSunLeft.hdr
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/MegaSunLeft.hdr.meta
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/MegaSunRight.hdr
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/MegaSunRight.hdr.meta
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/MegaSunTop.hdr
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/MegaSunTop.hdr.meta
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/PlanetaryEarth4k.hdr
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/PlanetaryEarth4k.hdr.meta
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/SkyhighFluffycloudField4k.hdr
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/SkyhighFluffycloudField4k.hdr.meta
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/SunlessCirruscover4k.hdr
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/SunlessCirruscover4k.hdr.meta
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/UnderTheSea4k.hdr
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/UnderTheSea4k.hdr.meta
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/UnearthlyRed4k.hdr
+    - Assets/Imported/SkySerie Freebie/FreebieHdri/UnearthlyRed4k.hdr.meta
+    - Assets/Imported/SkySerie Freebie/Hdri setup.txt
+    - Assets/Imported/SkySerie Freebie/Hdri setup.txt.meta
+    - Assets/Imported/SkySerie Freebie/HighFantasy.mat
+    - Assets/Imported/SkySerie Freebie/HighFantasy.mat.meta
+    - Assets/Imported/SkySerie Freebie/MegaSun.mat
+    - Assets/Imported/SkySerie Freebie/MegaSun.mat.meta
+    - Assets/Imported/SkySerie Freebie/PlanetaryEarth.mat
+    - Assets/Imported/SkySerie Freebie/PlanetaryEarth.mat.meta
+    - Assets/Imported/SkySerie Freebie/SkyhighFluffycloudField.mat
+    - Assets/Imported/SkySerie Freebie/SkyhighFluffycloudField.mat.meta
+    - Assets/Imported/SkySerie Freebie/SunlessCirruscover.mat
+    - Assets/Imported/SkySerie Freebie/SunlessCirruscover.mat.meta
+    - Assets/Imported/SkySerie Freebie/UnderTheSea4k.mat
+    - Assets/Imported/SkySerie Freebie/UnderTheSea4k.mat.meta
+    - Assets/Imported/SkySerie Freebie/UnearthlyRed.mat
+    - Assets/Imported/SkySerie Freebie/UnearthlyRed.mat.meta
+    - Assets/Items.meta
+    - Assets/Items/Alex.asset
+    - Assets/Items/Alex.asset.meta
+    - Assets/Items/Apple.asset
+    - Assets/Items/Apple.asset.meta
+    - Assets/Items/Axe.asset
+    - Assets/Items/Axe.asset.meta
+    - Assets/Items/Backhandsword.asset
+    - Assets/Items/Backhandsword.asset.meta
+    - Assets/Items/Coal.asset
+    - Assets/Items/Coal.asset.meta
+    - Assets/Items/Helmet of stamina god pls help.asset
+    - Assets/Items/Helmet of stamina god pls help.asset.meta
+    - Assets/Items/Pants.asset
+    - Assets/Items/Pants.asset.meta
+    - Assets/Items/Pickaxe.asset
+    - Assets/Items/Pickaxe.asset.meta
+    - Assets/Items/Rock.asset
+    - Assets/Items/Rock.asset.meta
+    - Assets/Items/Wood.asset
+    - Assets/Items/Wood.asset.meta
+    - Assets/Materials.meta
+    - Assets/Materials/New Material.mat
+    - Assets/Materials/New Material.mat.meta
+    - Assets/Models.meta
+    - Assets/Models/ArbolTipo1.blend
+    - Assets/Models/ArbolTipo1.blend.meta
+    - Assets/Models/ArbolTipo1.fbx
+    - Assets/Models/ArbolTipo1.fbx.meta
+    - Assets/Models/ArbolTipo2.blend
+    - Assets/Models/ArbolTipo2.blend.meta
+    - Assets/Models/ArbolTipo2.fbx
+    - Assets/Models/ArbolTipo2.fbx.meta
+    - Assets/Models/ArbolTipo3.1.blend
+    - Assets/Models/ArbolTipo3.1.blend.meta
+    - Assets/Models/ArbolTipo3.1.fbx
+    - Assets/Models/ArbolTipo3.1.fbx.meta
+    - Assets/Models/ArbolTipo3.2.blend
+    - Assets/Models/ArbolTipo3.2.blend.meta
+    - Assets/Models/ArbolTipo3.2.fbx
+    - Assets/Models/ArbolTipo3.2.fbx.meta
+    - Assets/Models/ArbolTipo3.3.blend
+    - Assets/Models/ArbolTipo3.3.blend.meta
+    - Assets/Models/ArbolTipo3.3.fbx
+    - Assets/Models/ArbolTipo3.3.fbx.meta
+    - Assets/Models/ArbolTipo4.blend
+    - Assets/Models/ArbolTipo4.blend.meta
+    - Assets/Models/ArbolTipo4.fbx
+    - Assets/Models/ArbolTipo4.fbx.meta
+    - Assets/Models/Low Poly Nature Pack.meta
+    - Assets/Models/Low Poly Nature Pack/fbx.meta
+    - Assets/Models/Low Poly Nature Pack/fbx/Weed01.fbx
+    - Assets/Models/Low Poly Nature Pack/fbx/Weed01.fbx.meta
+    - Assets/Models/Low Poly Nature Pack/fbx/Weed02.fbx
+    - Assets/Models/Low Poly Nature Pack/fbx/Weed02.fbx.meta
+    - Assets/Models/Low Poly Nature Pack/fbx/Weed03.fbx
+    - Assets/Models/Low Poly Nature Pack/fbx/Weed03.fbx.meta
+    - Assets/Models/Low Poly Nature Pack/fbx/Weedplant01.fbx
+    - Assets/Models/Low Poly Nature Pack/fbx/Weedplant01.fbx.meta
+    - Assets/Models/Low Poly Nature Pack/fbx/bush01.fbx
+    - Assets/Models/Low Poly Nature Pack/fbx/bush01.fbx.meta
+    - Assets/Models/Low Poly Nature Pack/fbx/bush02.fbx
+    - Assets/Models/Low Poly Nature Pack/fbx/bush02.fbx.meta
+    - Assets/Models/Low Poly Nature Pack/fbx/bush03.fbx
+    - Assets/Models/Low Poly Nature Pack/fbx/bush03.fbx.meta
+    - Assets/Models/Low Poly Nature Pack/fbx/bush04.fbx
+    - Assets/Models/Low Poly Nature Pack/fbx/bush04.fbx.meta
+    - Assets/Models/Low Poly Nature Pack/fbx/flowerKrokus01.fbx
+    - Assets/Models/Low Poly Nature Pack/fbx/flowerKrokus01.fbx.meta
+    - Assets/Models/Low Poly Nature Pack/fbx/flowerKrokus02.fbx
+    - Assets/Models/Low Poly Nature Pack/fbx/flowerKrokus02.fbx.meta
+    - Assets/Models/Low Poly Nature Pack/fbx/flowerKrokus03.fbx
+    - Assets/Models/Low Poly Nature Pack/fbx/flowerKrokus03.fbx.meta
+    - Assets/Models/Low Poly Nature Pack/fbx/flowerValmue01.fbx
+    - Assets/Models/Low Poly Nature Pack/fbx/flowerValmue01.fbx.meta
+    - Assets/Models/Low Poly Nature Pack/fbx/flowerblue01.fbx
+    - Assets/Models/Low Poly Nature Pack/fbx/flowerblue01.fbx.meta
+    - Assets/Models/Low Poly Nature Pack/fbx/flowercalla.fbx
+    - Assets/Models/Low Poly Nature Pack/fbx/flowercalla.fbx.meta
+    - Assets/Models/Low Poly Nature Pack/fbx/flowererantis01.fbx
+    - Assets/Models/Low Poly Nature Pack/fbx/flowererantis01.fbx.meta
+    - Assets/Models/Low Poly Nature Pack/fbx/flowers01.fbx
+    - Assets/Models/Low Poly Nature Pack/fbx/flowers01.fbx.meta
+    - Assets/Models/Low Poly Nature Pack/fbx/flowers02.fbx
+    - Assets/Models/Low Poly Nature Pack/fbx/flowers02.fbx.meta
+    - Assets/Models/Low Poly Nature Pack/fbx/flowers04.fbx
+    - Assets/Models/Low Poly Nature Pack/fbx/flowers04.fbx.meta
+    - Assets/Models/Low Poly Nature Pack/fbx/flowers05.fbx
+    - Assets/Models/Low Poly Nature Pack/fbx/flowers05.fbx.meta
+    - Assets/Models/Low Poly Nature Pack/fbx/flowertulipan01.fbx
+    - Assets/Models/Low Poly Nature Pack/fbx/flowertulipan01.fbx.meta
+    - Assets/Models/Low Poly Nature Pack/fbx/flowertulipan02.fbx
+    - Assets/Models/Low Poly Nature Pack/fbx/flowertulipan02.fbx.meta
+    - Assets/Models/Low Poly Nature Pack/fbx/flowertulipan03.fbx
+    - Assets/Models/Low Poly Nature Pack/fbx/flowertulipan03.fbx.meta
+    - Assets/Models/Low Poly Nature Pack/fbx/flowertulipan04.fbx
+    - Assets/Models/Low Poly Nature Pack/fbx/flowertulipan04.fbx.meta
+    - Assets/Models/Low Poly Nature Pack/fbx/flowertulipan05.fbx
+    - Assets/Models/Low Poly Nature Pack/fbx/flowertulipan05.fbx.meta
+    - Assets/Models/Low Poly Nature Pack/fbx/mushroom01.fbx
+    - Assets/Models/Low Poly Nature Pack/fbx/mushroom01.fbx.meta
+    - Assets/Models/Low Poly Nature Pack/fbx/mushroom02.fbx
+    - Assets/Models/Low Poly Nature Pack/fbx/mushroom02.fbx.meta
+    - Assets/Models/Low Poly Nature Pack/fbx/pinecone01.fbx
+    - Assets/Models/Low Poly Nature Pack/fbx/pinecone01.fbx.meta
+    - Assets/Models/Low Poly Nature Pack/fbx/stone01.fbx
+    - Assets/Models/Low Poly Nature Pack/fbx/stone01.fbx.meta
+    - Assets/Models/Low Poly Nature Pack/fbx/stone02.fbx
+    - Assets/Models/Low Poly Nature Pack/fbx/stone02.fbx.meta
+    - Assets/Models/Low Poly Nature Pack/fbx/stone03.fbx
+    - Assets/Models/Low Poly Nature Pack/fbx/stone03.fbx.meta
+    - Assets/Models/Low Poly Nature Pack/fbx/stone04.fbx
+    - Assets/Models/Low Poly Nature Pack/fbx/stone04.fbx.meta
+    - Assets/Models/Low Poly Nature Pack/fbx/threeleaf01.fbx
+    - Assets/Models/Low Poly Nature Pack/fbx/threeleaf01.fbx.meta
+    - Assets/Models/Low Poly Nature Pack/fbx/tree01.fbx
+    - Assets/Models/Low Poly Nature Pack/fbx/tree01.fbx.meta
+    - Assets/Models/Low Poly Nature Pack/fbx/tree02.fbx
+    - Assets/Models/Low Poly Nature Pack/fbx/tree02.fbx.meta
+    - Assets/Models/Low Poly Nature Pack/fbx/tree03.fbx
+    - Assets/Models/Low Poly Nature Pack/fbx/tree03.fbx.meta
+    - Assets/Models/Low Poly Nature Pack/fbx/tree04.fbx
+    - Assets/Models/Low Poly Nature Pack/fbx/tree04.fbx.meta
+    - Assets/Models/Low Poly Nature Pack/fbx/tree05.fbx
+    - Assets/Models/Low Poly Nature Pack/fbx/tree05.fbx.meta
+    - Assets/Models/Low Poly Nature Pack/fbx/weedplant02.fbx
+    - Assets/Models/Low Poly Nature Pack/fbx/weedplant02.fbx.meta
+    - Assets/Models/Low Poly Nature Pack/fbx/weedplant03.fbx
+    - Assets/Models/Low Poly Nature Pack/fbx/weedplant03.fbx.meta
+    - Assets/Models/Low Poly Nature Pack/fbx/weedplant04.fbx
+    - Assets/Models/Low Poly Nature Pack/fbx/weedplant04.fbx.meta
+    - Assets/Models/Low Poly Nature Pack/fbx/weedplant05.fbx
+    - Assets/Models/Low Poly Nature Pack/fbx/weedplant05.fbx.meta
+    - Assets/Models/Low Poly Nature Pack/texture.meta
+    - Assets/Models/Low Poly Nature Pack/texture/materialtexture.png
+    - Assets/Models/Low Poly Nature Pack/texture/materialtexture.png.meta
+    - Assets/Models/Schwert.fbx
+    - Assets/Models/Schwert.fbx.meta
+    - Assets/Models/Sword.fbx
+    - Assets/Models/Sword.fbx.meta
+    - Assets/Models/Workbench.fbx
+    - Assets/Models/Workbench.fbx.meta
+    - Assets/Models/logs.fbx
+    - Assets/Models/logs.fbx.meta
+    - Assets/Models/rock.fbx
+    - Assets/Models/rock.fbx.meta
+    - Assets/Models/rocks.meta
+    - Assets/Models/rocks/04.meta
+    - Assets/Models/rocks/04/diffuse.tga
+    - Assets/Models/rocks/04/diffuse.tga.meta
+    - Assets/Models/rocks/04/normal.tga
+    - Assets/Models/rocks/04/normal.tga.meta
+    - Assets/Models/rocks/04/preview.jpg
+    - Assets/Models/rocks/04/preview.jpg.meta
+    - Assets/Models/rocks/04/rock_04.fbx
+    - Assets/Models/rocks/04/rock_04.fbx.meta
+    - Assets/Models/rocks/04/rock_04.obj
+    - Assets/Models/rocks/04/rock_04.obj.meta
+    - Assets/Models/rocks/04/specular.tga
+    - Assets/Models/rocks/04/specular.tga.meta
+    - Assets/Models/rocks/preview.jpg
+    - Assets/Models/rocks/preview.jpg.meta
+    - Assets/Models/rocks/readme.txt
+    - Assets/Models/rocks/readme.txt.meta
+    - Assets/Models/tree.fbx
+    - Assets/Models/tree.fbx.meta
+    - Assets/Models/untitled.fbx
+    - Assets/Models/untitled.fbx.meta
+    - Assets/Models/weapon_ml0 - fireaxe.fbx
+    - Assets/Models/weapon_ml0 - fireaxe.fbx.meta
+    - Assets/Prefabs.meta
+    - Assets/Prefabs/Breakables.meta
+    - Assets/Prefabs/Breakables/Rock.prefab
+    - Assets/Prefabs/Breakables/Rock.prefab.meta
+    - Assets/Prefabs/Breakables/Tree.prefab
+    - Assets/Prefabs/Breakables/Tree.prefab.meta
+    - Assets/Prefabs/Crafting Stations.meta
+    - Assets/Prefabs/Crafting Stations/Furnace.prefab
+    - Assets/Prefabs/Crafting Stations/Furnace.prefab.meta
+    - Assets/Prefabs/Crafting Stations/Workbench.prefab
+    - Assets/Prefabs/Crafting Stations/Workbench.prefab.meta
+    - Assets/Prefabs/Enemy.meta
+    - Assets/Prefabs/Enemy/Goblin.prefab
+    - Assets/Prefabs/Enemy/Goblin.prefab.meta
+    - Assets/Prefabs/Items.meta
+    - Assets/Prefabs/Items/Axe.prefab
+    - Assets/Prefabs/Items/Axe.prefab.meta
+    - Assets/Prefabs/Items/Helmet of Development.prefab
+    - Assets/Prefabs/Items/Helmet of Development.prefab.meta
+    - Assets/Prefabs/Items/Leather.prefab
+    - Assets/Prefabs/Items/Leather.prefab.meta
+    - Assets/Prefabs/Items/Pants.prefab
+    - Assets/Prefabs/Items/Pants.prefab.meta
+    - Assets/Prefabs/Items/Wood.prefab
+    - Assets/Prefabs/Items/Wood.prefab.meta
+    - Assets/Prefabs/Landscape.meta
+    - Assets/Prefabs/Landscape/Bush01.prefab
+    - Assets/Prefabs/Landscape/Bush01.prefab.meta
+    - Assets/Prefabs/Landscape/Grass1.prefab
+    - Assets/Prefabs/Landscape/Grass1.prefab.meta
+    - Assets/Prefabs/Landscape/Grass2.prefab
+    - Assets/Prefabs/Landscape/Grass2.prefab.meta
+    - Assets/Prefabs/Landscape/New Terrain 1.asset
+    - Assets/Prefabs/Landscape/New Terrain 1.asset.meta
+    - Assets/Prefabs/Landscape/New Terrain.asset
+    - Assets/Prefabs/Landscape/New Terrain.asset.meta
+    - Assets/Prefabs/Player.prefab
+    - Assets/Prefabs/Player.prefab.meta
+    - Assets/Prefabs/UI.meta
+    - Assets/Prefabs/UI/Slotprefab.prefab
+    - Assets/Prefabs/UI/Slotprefab.prefab.meta
+    - Assets/Scenes.meta
+    - Assets/Scenes/Demoscene.unity
+    - Assets/Scenes/Demoscene.unity.meta
+    - Assets/Scenes/SampleScene.meta
+    - Assets/Scenes/SampleScene/LightingData.asset
+    - Assets/Scenes/SampleScene/LightingData.asset.meta
+    - Assets/Scenes/SampleScene/LightingSettings1Draft.lighting
+    - Assets/Scenes/SampleScene/LightingSettings1Draft.lighting.meta
+    - Assets/Scenes/SampleScene/LightingSettings2Medium.lighting
+    - Assets/Scenes/SampleScene/LightingSettings2Medium.lighting.meta
+    - Assets/Scenes/SampleScene/LightingSettings3High.lighting
+    - Assets/Scenes/SampleScene/LightingSettings3High.lighting.meta
+    - Assets/Scenes/SampleScene/LightingSettings4Ultra.lighting
+    - Assets/Scenes/SampleScene/LightingSettings4Ultra.lighting.meta
+    - Assets/Scenes/SampleScene/Lightmap-0_comp_dir.png
+    - Assets/Scenes/SampleScene/Lightmap-0_comp_dir.png.meta
+    - Assets/Scenes/SampleScene/Lightmap-0_comp_light.exr
+    - Assets/Scenes/SampleScene/Lightmap-0_comp_light.exr.meta
+    - Assets/Scenes/SampleScene/Lightmap-1_comp_dir.png
+    - Assets/Scenes/SampleScene/Lightmap-1_comp_dir.png.meta
+    - Assets/Scenes/SampleScene/Lightmap-1_comp_light.exr
+    - Assets/Scenes/SampleScene/Lightmap-1_comp_light.exr.meta
+    - Assets/Scenes/SampleScene/Lightmap-2_comp_dir.png
+    - Assets/Scenes/SampleScene/Lightmap-2_comp_dir.png.meta
+    - Assets/Scenes/SampleScene/Lightmap-2_comp_light.exr
+    - Assets/Scenes/SampleScene/Lightmap-2_comp_light.exr.meta
+    - Assets/Scenes/SampleScene/Lightmap-3_comp_dir.png
+    - Assets/Scenes/SampleScene/Lightmap-3_comp_dir.png.meta
+    - Assets/Scenes/SampleScene/Lightmap-3_comp_light.exr
+    - Assets/Scenes/SampleScene/Lightmap-3_comp_light.exr.meta
+    - Assets/Scenes/SampleScene/Lightmap-4_comp_dir.png
+    - Assets/Scenes/SampleScene/Lightmap-4_comp_dir.png.meta
+    - Assets/Scenes/SampleScene/Lightmap-4_comp_light.exr
+    - Assets/Scenes/SampleScene/Lightmap-4_comp_light.exr.meta
+    - Assets/Scenes/SampleScene/Lightmap-5_comp_dir.png
+    - Assets/Scenes/SampleScene/Lightmap-5_comp_dir.png.meta
+    - Assets/Scenes/SampleScene/Lightmap-5_comp_light.exr
+    - Assets/Scenes/SampleScene/Lightmap-5_comp_light.exr.meta
+    - Assets/Scenes/SampleScene/Lightmap-6_comp_dir.png
+    - Assets/Scenes/SampleScene/Lightmap-6_comp_dir.png.meta
+    - Assets/Scenes/SampleScene/Lightmap-6_comp_light.exr
+    - Assets/Scenes/SampleScene/Lightmap-6_comp_light.exr.meta
+    - Assets/Scenes/SampleScene/ReflectionProbe-0.exr
+    - Assets/Scenes/SampleScene/ReflectionProbe-0.exr.meta
+    - Assets/Scenes/SampleScene/ReflectionProbe-1.exr
+    - Assets/Scenes/SampleScene/ReflectionProbe-1.exr.meta
+    - Assets/Scenes/SampleScene/ReflectionProbe-10.exr
+    - Assets/Scenes/SampleScene/ReflectionProbe-10.exr.meta
+    - Assets/Scenes/SampleScene/ReflectionProbe-11.exr
+    - Assets/Scenes/SampleScene/ReflectionProbe-11.exr.meta
+    - Assets/Scenes/SampleScene/ReflectionProbe-12.exr
+    - Assets/Scenes/SampleScene/ReflectionProbe-12.exr.meta
+    - Assets/Scenes/SampleScene/ReflectionProbe-13.exr
+    - Assets/Scenes/SampleScene/ReflectionProbe-13.exr.meta
+    - Assets/Scenes/SampleScene/ReflectionProbe-14.exr
+    - Assets/Scenes/SampleScene/ReflectionProbe-14.exr.meta
+    - Assets/Scenes/SampleScene/ReflectionProbe-15.exr
+    - Assets/Scenes/SampleScene/ReflectionProbe-15.exr.meta
+    - Assets/Scenes/SampleScene/ReflectionProbe-16.exr
+    - Assets/Scenes/SampleScene/ReflectionProbe-16.exr.meta
+    - Assets/Scenes/SampleScene/ReflectionProbe-17.exr
+    - Assets/Scenes/SampleScene/ReflectionProbe-17.exr.meta
+    - Assets/Scenes/SampleScene/ReflectionProbe-2.exr
+    - Assets/Scenes/SampleScene/ReflectionProbe-2.exr.meta
+    - Assets/Scenes/SampleScene/ReflectionProbe-3.exr
+    - Assets/Scenes/SampleScene/ReflectionProbe-3.exr.meta
+    - Assets/Scenes/SampleScene/ReflectionProbe-4.exr
+    - Assets/Scenes/SampleScene/ReflectionProbe-4.exr.meta
+    - Assets/Scenes/SampleScene/ReflectionProbe-5.exr
+    - Assets/Scenes/SampleScene/ReflectionProbe-5.exr.meta
+    - Assets/Scenes/SampleScene/ReflectionProbe-6.exr
+    - Assets/Scenes/SampleScene/ReflectionProbe-6.exr.meta
+    - Assets/Scenes/SampleScene/ReflectionProbe-7.exr
+    - Assets/Scenes/SampleScene/ReflectionProbe-7.exr.meta
+    - Assets/Scenes/SampleScene/ReflectionProbe-8.exr
+    - Assets/Scenes/SampleScene/ReflectionProbe-8.exr.meta
+    - Assets/Scenes/SampleScene/ReflectionProbe-9.exr
+    - Assets/Scenes/SampleScene/ReflectionProbe-9.exr.meta
+    - Assets/Scenes/SampleSceneSettings.lighting
+    - Assets/Scenes/SampleSceneSettings.lighting.meta
+    - Assets/Scenes/Scenemanager.cs
+    - Assets/Scenes/Scenemanager.cs.meta
+    - Assets/Scripts.meta
+    - Assets/Scripts/Inventory.meta
+    - Assets/Scripts/Inventory/Breakable.meta
+    - Assets/Scripts/Inventory/Breakable/Breakable.cs
+    - Assets/Scripts/Inventory/Breakable/Breakable.cs.meta
+    - Assets/Scripts/Inventory/Breakable/BreakableDropProbability.cs
+    - Assets/Scripts/Inventory/Breakable/BreakableDropProbability.cs.meta
+    - Assets/Scripts/Inventory/Breakable/BreakableObject.cs
+    - Assets/Scripts/Inventory/Breakable/BreakableObject.cs.meta
+    - Assets/Scripts/Inventory/Crafting.meta
+    - Assets/Scripts/Inventory/Crafting/Crafting.cs
+    - Assets/Scripts/Inventory/Crafting/Crafting.cs.meta
+    - Assets/Scripts/Inventory/Crafting/CraftingRecipe.cs
+    - Assets/Scripts/Inventory/Crafting/CraftingRecipe.cs.meta
+    - Assets/Scripts/Inventory/Crafting/CraftingStation.cs
+    - Assets/Scripts/Inventory/Crafting/CraftingStation.cs.meta
+    - Assets/Scripts/Inventory/Enemy.meta
+    - Assets/Scripts/Inventory/Enemy/DropObjectProbability.cs
+    - Assets/Scripts/Inventory/Enemy/DropObjectProbability.cs.meta
+    - Assets/Scripts/Inventory/Enemy/Enemy.cs
+    - Assets/Scripts/Inventory/Enemy/Enemy.cs.meta
+    - Assets/Scripts/Inventory/Enemy/EnemyObject.cs
+    - Assets/Scripts/Inventory/Enemy/EnemyObject.cs.meta
+    - Assets/Scripts/Inventory/Inventory.cs
+    - Assets/Scripts/Inventory/Inventory.cs.meta
+    - Assets/Scripts/Inventory/Items.meta
+    - Assets/Scripts/Inventory/Items/Item.cs
+    - Assets/Scripts/Inventory/Items/Item.cs.meta
+    - Assets/Scripts/Inventory/Items/ItemHolder.cs
+    - Assets/Scripts/Inventory/Items/ItemHolder.cs.meta
+    - Assets/Scripts/Inventory/Items/Itemvalue.cs
+    - Assets/Scripts/Inventory/Items/Itemvalue.cs.meta
+    - Assets/Scripts/Player.meta
+    - Assets/Scripts/Player/Itemscanner.cs
+    - Assets/Scripts/Player/Itemscanner.cs.meta
+    - Assets/Scripts/Player/Stats.cs
+    - Assets/Scripts/Player/Stats.cs.meta
+    - Assets/Scripts/Player/ThirdPersonCameraControl.cs
+    - Assets/Scripts/Player/ThirdPersonCameraControl.cs.meta
+    - Assets/Scripts/Player/ThirdPersonCharacterControl.cs
+    - Assets/Scripts/Player/ThirdPersonCharacterControl.cs.meta
+    - Assets/Sprites.meta
+    - Assets/Sprites/Apple.png
+    - Assets/Sprites/Apple.png.meta
+    - Assets/Sprites/Axe.png
+    - Assets/Sprites/Axe.png.meta
+    - Assets/Sprites/Close.png
+    - Assets/Sprites/Close.png.meta
+    - Assets/Sprites/Coal.png
+    - Assets/Sprites/Coal.png.meta
+    - Assets/Sprites/Inventorypanel.png
+    - Assets/Sprites/Inventorypanel.png.meta
+    - Assets/Sprites/Inventoryslot.png
+    - Assets/Sprites/Inventoryslot.png.meta
+    - Assets/Sprites/Leather.png
+    - Assets/Sprites/Leather.png.meta
+    - Assets/Sprites/Materials.meta
+    - Assets/Sprites/Pants.png
+    - Assets/Sprites/Pants.png.meta
+    - Assets/Sprites/Rock.png
+    - Assets/Sprites/Rock.png.meta
+    - Assets/Sprites/Sword.png
+    - Assets/Sprites/Sword.png.meta
+    - Assets/Sprites/Wood.png
+    - Assets/Sprites/Wood.png.meta
+    - Assets/Sprites/pickaxe.png
+    - Assets/Sprites/pickaxe.png.meta
+    - Assets/Sprites/roll.png
+    - Assets/Sprites/roll.png.meta
+    - Assets/Terrain.meta
+    - Assets/Terrain/New Terrain 1.asset
+    - Assets/Terrain/New Terrain 1.asset.meta
+    - Assets/Terrain/New Terrain.asset
+    - Assets/Terrain/New Terrain.asset.meta
+    - Packages/manifest.json
+    - Packages/packages-lock.json
+    - ProjectSettings/EditorBuildSettings.asset
+    - ProjectSettings/ProjectSettings.asset
+    - ProjectSettings/ProjectVersion.txt
+    - ProjectSettings/TagManager.asset
+    - ProjectSettings/UnityConnectSettings.asset
+    - 
+    m_Values: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  RevisionSummary: 
+  ChangesSearchValue: 
+  SelectedHistoryRevision: 
+  HistoryPageNumber: 0
+  TabIndex: 0
